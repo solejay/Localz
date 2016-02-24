@@ -2,14 +2,18 @@
 //  UpComingCell.swift
 //  Localz
 //
-//  Created by Segun Solaja on 2/16/16.
-//
 //
 
 import UIKit
 
 class UpComingCell: UITableViewCell {
 
+  @IBOutlet weak var guideNameLabel: UILabel!
+  
+  @IBOutlet weak var timeLabel: UILabel!
+  @IBOutlet weak var tourType: UILabel!
+  
+  @IBOutlet weak var guidePhotoView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

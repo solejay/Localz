@@ -2,34 +2,62 @@
 //  UpcomingDetailController.swift
 //  Localz
 //
-//  Created by Segun Solaja on 2/16/16.
-//
 //
 
 import UIKit
 
 class UpcomingDetailController: UIViewController {
 
+  @IBOutlet weak var sendMessageButton: UIButton!
+  @IBOutlet weak var cancelButton: UIButton!
+  @IBOutlet weak var theScrollView: UIScrollView!
+  var cancelActivityView: CancelActivitiesView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        theScrollView.contentInset = UIEdgeInsets(top: CGRectGetHeight((self.navigationController?.navigationBar.frame)!) + 20, left: 0, bottom: 120, right: 0)
+      
+      cancelActivityView = NSBundle.mainBundle().loadNibNamed("CancelActivitiesView", owner: nil, options: nil).first as! CancelActivitiesView  
+      cancelActivityView.frame = self.view.bounds
+      cancelActivityView.hidden = true
+      cancelActivityView.takeBackButton.addTarget(self, action: "takeBackButtonPressed", forControlEvents: .TouchUpInside)
+       cancelActivityView.dontCancelButton.addTarget(self, action: "dontCancelButtonPressed", forControlEvents: .TouchUpInside)
+      cancelButton.addTarget(self, action: "cancelButtonTapped", forControlEvents: .TouchUpInside)
+      self.view.addSubview(cancelActivityView)
+      
     }
-
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(animated: Bool) {
+      super.viewWillAppear(animated)
+      self.title = "UPCOMING ACTIVITIES"
     }
-    */
+  
+  
+  
+   
 
+}
+
+extension UpcomingDetailController{
+  func  cancelButtonTapped(){
+    cancelActivityView.hidden  = false
+    self.navigationController?.navigationBarHidden = true
+    UIApplication.sharedApplication().statusBarHidden = true
+  }
+  func takeBackButtonPressed(){
+    cancelActivityView.hidden  = true
+    self.navigationController?.navigationBarHidden = false
+    UIApplication.sharedApplication().statusBarHidden = false
+    self.navigationController?.popToRootViewControllerAnimated(true)
+  }
+  func dontCancelButtonPressed(){
+    cancelActivityView.hidden = true
+    self.navigationController?.navigationBarHidden = false
+    UIApplication.sharedApplication().statusBarHidden = false
+  }
 }

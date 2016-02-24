@@ -2,34 +2,49 @@
 //  UpcomingViewController.swift
 //  Localz
 //
-//  Created by Segun Solaja on 2/16/16.
-//
 //
 
 import UIKit
 
-class UpcomingViewController: UIViewController {
+class UpcomingViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
 
+  @IBOutlet weak var upcomingTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.configureView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+    func configureView(){
+        
+        upcomingTableView.delegate = self
+        upcomingTableView.dataSource = self
+        upcomingTableView.registerNib(UINib(nibName: "UpcomingCell", bundle: nil), forCellReuseIdentifier: "upcomingCell")
+      
+        upcomingTableView.tableFooterView = UIView(frame: CGRectZero)
+        upcomingTableView.estimatedRowHeight = 44
+        upcomingTableView.rowHeight = UITableViewAutomaticDimension
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.title = "UPCOMING ACTIVITIES"
+  }
+  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 1
+  }
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let cell = upcomingTableView.dequeueReusableCellWithIdentifier("upcomingCell") as! UpComingCell
+    cell.guidePhotoView.layer.cornerRadius  = CGRectGetWidth(cell.guidePhotoView.bounds) / 2
+    cell.guidePhotoView.layer.borderWidth = 2
+    cell.guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+    return cell
+  }
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("upcomingDetail") as!UpcomingDetailController
+    self.navigationItem.title = ""
+    self.navigationController?.pushViewController(controller, animated: true)
+  }
+   
 
 }

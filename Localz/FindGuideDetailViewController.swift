@@ -2,94 +2,95 @@
 //  FindGuideDetailViewController.swift
 //  Localz
 //
-//  Created by Segun Solaja on 2/15/16.
-//
 //
 
 import UIKit
+import EDStarRating
+import LTNavigationBar
 
 class FindGuideDetailViewController: UITableViewController {
-
+  var oldColor:UIColor!
+  
+  @IBOutlet weak var guidePhotoView: UIImageView!
+  @IBOutlet weak var ratingsView1: EDStarRating!
+  @IBOutlet weak var ratingsView2: EDStarRating!
+  
+  @IBOutlet weak var bookGuideButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+      self.automaticallyAdjustsScrollViewInsets =  false;
+      self.edgesForExtendedLayout = .Top
+     // self.extendedLayoutIncludesOpaqueBars = false
+      self.tableView.tableFooterView = UIView(frame: CGRectZero)
+      
+      bookGuideButton.addTarget(self, action: "bookGuide", forControlEvents: .TouchUpInside)
+      guidePhotoView.layer.cornerRadius  = CGRectGetWidth(guidePhotoView.bounds) / 2
+      guidePhotoView.layer.borderWidth = 2
+      guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+      
+      
+      ratingsView1.rating = 3.5
+      ratingsView1.starImage = UIImage(named:"star.png")
+      ratingsView1.starHighlightedImage =  UIImage(named:"starhighlighted.png");
+      ratingsView1.maxRating = 5
+     // ratingsView1.delegate = self;
+      ratingsView1.horizontalMargin = 0;
+      ratingsView1.editable = false;
+     ratingsView1.displayMode = UInt(EDStarRatingDisplayHalf)
+      
+      
+      ratingsView2.rating = 3.5
+      ratingsView2.starImage = UIImage(named:"star.png")
+      ratingsView2.starHighlightedImage =  UIImage(named:"starhighlighted.png");
+      ratingsView2.maxRating = 5
+      // ratingsView1.delegate = self;
+      ratingsView2.horizontalMargin = 0;
+      ratingsView1.editable = false;
+      ratingsView2.displayMode = UInt(EDStarRatingDisplayHalf)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    oldColor = (self.navigationController?.navigationBar.barTintColor)!
+    makeNavigationBarTransparent(self)
+    
+  }
+  override func viewWillDisappear(animated: Bool) {
+    super.viewWillDisappear(animated)
+     makeNavigationBarOpaque(self, color: oldColor)
+  }
+  override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    return 44
+  }
+  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+     if(indexPath.row == 2 || indexPath.row == 4){
+      return UITableViewAutomaticDimension
+    }else{
+      return super.tableView(tableView, heightForRowAtIndexPath: indexPath)
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+  }
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    if(indexPath.row == 3){
+      let controller = self.storyboard?.instantiateViewControllerWithIdentifier("tourDetails") as! TourDetailsViewController
+      self.navigationItem.title = ""
+      self.navigationController?.pushViewController(controller, animated: true)
     }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+  }
+  
+  override func scrollViewDidScroll(scrollView: UIScrollView) {
+    let offSetY = scrollView.contentOffset.y
+    if(offSetY > 50){
+      let alpha = min(1, 1 - (50 + 64 - offSetY) / 64)
+      self.navigationController?.navigationBar.lt_setBackgroundColor(oldColor.colorWithAlphaComponent(alpha))
+    }else{
+      self.navigationController?.navigationBar.lt_setBackgroundColor(oldColor.colorWithAlphaComponent(0))
     }
+  }
+  
+  func bookGuide(){
+    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("bookGuide") as! BookGuideViewController
+    self.navigationItem.title = ""
+    self.navigationController?.pushViewController(controller, animated: true)
+  }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

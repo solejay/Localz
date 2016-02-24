@@ -2,34 +2,51 @@
 //  HistoryViewController.swift
 //  Localz
 //
-//  Created by Segun Solaja on 2/16/16.
-//
 //
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class HistoryViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
+    @IBOutlet weak var historyTableView: UITableView!
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      super.viewDidLoad()
+      self.configureView()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+  
+  func configureView(){
     
+    historyTableView.delegate = self
+    historyTableView.dataSource = self
+    historyTableView.registerNib(UINib(nibName: "UpcomingCell", bundle: nil), forCellReuseIdentifier: "upcomingCell")
+    
+    historyTableView.tableFooterView = UIView(frame: CGRectZero)
+    historyTableView.estimatedRowHeight = 44
+    historyTableView.rowHeight = UITableViewAutomaticDimension
+  }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.title = "HISTORY"
+  }
+  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 1
+  }
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let cell = historyTableView.dequeueReusableCellWithIdentifier("upcomingCell") as! UpComingCell
+    cell.guidePhotoView.layer.cornerRadius  = CGRectGetWidth(cell.guidePhotoView.bounds) / 2
+    cell.guidePhotoView.layer.borderWidth = 2
+    cell.guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+    return cell
+  }
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("historyDetail") as! HistoryDetailViewController
+    self.navigationItem.title = ""
+    self.navigationController?.pushViewController(controller, animated: true)
+  }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }

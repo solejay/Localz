@@ -2,20 +2,15 @@
 //  SelectTransportView.swift
 //  Localz
 //
-//  Created by Segun Solaja on 2/20/16.
-//
 //
 
 import UIKit
 
 class SelectTransportView: UIView {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
+  @IBOutlet weak var noButton: UIButton!
 
+  @IBOutlet weak var addresLabel: UILabel!
+  @IBOutlet weak var addLocationButton: UIButton!
+  @IBOutlet weak var pickUpButton: UIButton!
 }

@@ -1,15 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham Book.ttf">
+            <string>GothamBook</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LocationOverlay" customModule="Localz" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPA-Qj-OqG">
+                    <rect key="frame" x="150" y="175" width="300" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36O-AV-pxI">
+                            <rect key="frame" x="20" y="87" width="260" height="100"/>
+                            <string key="text">Localz works best with location services turned on, but you can also select location and date manually in the top navigation bar.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Locate" translatesAutoresizingMaskIntoConstraints="NO" id="g7g-FO-4Zm">
+                            <rect key="frame" x="134" y="27" width="33" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="3Tj-fK-3Yd"/>
+                                <constraint firstAttribute="width" constant="33" id="ZAJ-Un-6lb"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z8-kT-aov">
+                            <rect key="frame" x="8" y="188" width="284" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="BCH-aq-bHp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="15"/>
+                            <state key="normal" title="GOT IT, THANKS">
+                                <color key="titleColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5Z8-kT-aov" secondAttribute="trailing" constant="8" id="2Ny-No-Wup"/>
+                        <constraint firstAttribute="height" constant="250" id="44b-z2-5RH"/>
+                        <constraint firstAttribute="trailing" secondItem="36O-AV-pxI" secondAttribute="trailing" constant="20" id="BuV-Uf-eJf"/>
+                        <constraint firstItem="36O-AV-pxI" firstAttribute="leading" secondItem="VPA-Qj-OqG" secondAttribute="leading" constant="20" id="DDO-BY-hAJ"/>
+                        <constraint firstItem="g7g-FO-4Zm" firstAttribute="centerX" secondItem="VPA-Qj-OqG" secondAttribute="centerX" id="Jpf-LG-0Ty"/>
+                        <constraint firstItem="5Z8-kT-aov" firstAttribute="leading" secondItem="VPA-Qj-OqG" secondAttribute="leading" constant="8" id="JsF-vM-kbq"/>
+                        <constraint firstItem="36O-AV-pxI" firstAttribute="top" secondItem="g7g-FO-4Zm" secondAttribute="bottom" constant="16" id="Tmr-U2-o6y"/>
+                        <constraint firstItem="5Z8-kT-aov" firstAttribute="top" secondItem="36O-AV-pxI" secondAttribute="bottom" constant="1" id="bdl-xL-vxO"/>
+                        <constraint firstAttribute="width" constant="300" id="fbi-8a-Mu3"/>
+                        <constraint firstItem="g7g-FO-4Zm" firstAttribute="top" secondItem="VPA-Qj-OqG" secondAttribute="top" constant="27" id="ndP-8p-mpw"/>
+                        <constraint firstAttribute="bottom" secondItem="5Z8-kT-aov" secondAttribute="bottom" constant="19" id="yp2-I7-iOR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.35000000000000003" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VPA-Qj-OqG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3UI-Pc-KLW"/>
+                <constraint firstItem="VPA-Qj-OqG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="P79-D9-qYr"/>
+            </constraints>
+            <connections>
+                <outlet property="gotItButton" destination="5Z8-kT-aov" id="T7a-q8-SkC"/>
+            </connections>
         </view>
     </objects>
+    <resources>
+        <image name="Locate" width="26" height="39"/>
+    </resources>
 </document>

@@ -2,19 +2,49 @@
 //  SettingsViewController.swift
 //  Localz
 //
-//  Created by Segun Solaja on 2/18/16.
-//
 //
 
 import UIKit
+import PagingMenuController
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController,PagingMenuControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureView()
         // Do any additional setup after loading the view.
     }
+    func configureView(){
+      
+      let profileController = self.storyboard?.instantiateViewControllerWithIdentifier("profileSettings") as! ProfileSettingViewController
+      profileController.title = "PROFILE"
+      
+      let paymentsController = self.storyboard?.instantiateViewControllerWithIdentifier("payments") as! PaymentsViewController  
+      paymentsController.title = "PAYMENTS"
+      let viewControllers = [profileController,paymentsController]
+      
+      let options = PagingMenuOptions()
+      options.menuHeight = 44
+      options.backgroundColor = UIColor(hex: "#2F2F2F")
+      options.selectedBackgroundColor = UIColor(hex: "#2F2F2F")
+      options.selectedTextColor = UIColor.whiteColor()
+      options.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+      options.font = UIFont(name: "Gotham Book", size: 13)!
+      options.selectedFont = UIFont(name: "Gotham Book", size: 13)!
+      options.menuDisplayMode = .SegmentedControl
+      options.menuItemMode = .Underline(height: 3, color: UIColor.whiteColor(), horizontalPadding: 30, verticalPadding: 3)
+      
+      
+      //Configure Page Controller
+      let pagingMenuController = self.childViewControllers.first as! PagingMenuController
+      pagingMenuController.delegate = self
+      pagingMenuController.setup(viewControllers: viewControllers, options: options)
+    }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.title = "SETTINGS"
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -22,14 +52,11 @@ class SettingsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+  func willMoveToMenuPage(page: Int) {
+  }
+  
+  func didMoveToMenuPage(page: Int) {
+  }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

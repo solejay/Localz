@@ -1,15 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SideBarHeader" customModule="Localz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headshot-dan" translatesAutoresizingMaskIntoConstraints="NO" id="kOc-He-PDW">
+                    <rect key="frame" x="14" y="77" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="CV6-Eb-5Y4"/>
+                        <constraint firstAttribute="width" constant="60" id="ydC-vR-RLm"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel_Mike83" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvA-KB-KXO">
+                    <rect key="frame" x="82" y="77" width="93" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6L-cO-Tdc" customClass="EDStarRating">
+                    <rect key="frame" x="82" y="117" width="100" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="5Lv-ah-xlu"/>
+                        <constraint firstAttribute="width" constant="100" id="61M-x4-y7U"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explorer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaS-1x-DiT">
+                    <rect key="frame" x="82" y="98" width="50" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.52549019607843139" green="0.52549019607843139" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zvA-KB-KXO" firstAttribute="top" secondItem="kOc-He-PDW" secondAttribute="top" id="1sE-EJ-H4A"/>
+                <constraint firstItem="zvA-KB-KXO" firstAttribute="leading" secondItem="kOc-He-PDW" secondAttribute="trailing" constant="8" id="7bT-dt-rCa"/>
+                <constraint firstItem="F6L-cO-Tdc" firstAttribute="top" secondItem="uaS-1x-DiT" secondAttribute="bottom" constant="3" id="Ce5-Wk-13I"/>
+                <constraint firstItem="uaS-1x-DiT" firstAttribute="leading" secondItem="zvA-KB-KXO" secondAttribute="leading" id="UIi-7R-jUb"/>
+                <constraint firstItem="kOc-He-PDW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="77" id="ZJz-rG-TSd"/>
+                <constraint firstItem="F6L-cO-Tdc" firstAttribute="leading" secondItem="uaS-1x-DiT" secondAttribute="leading" id="hZq-wR-WCG"/>
+                <constraint firstItem="uaS-1x-DiT" firstAttribute="top" secondItem="zvA-KB-KXO" secondAttribute="bottom" constant="4" id="jyD-ZV-CFo"/>
+                <constraint firstItem="kOc-He-PDW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="r8K-FR-5iV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="guideNameLabel" destination="zvA-KB-KXO" id="Iui-kt-TxB"/>
+                <outlet property="guidePhotoView" destination="kOc-He-PDW" id="2WQ-jf-mCu"/>
+                <outlet property="ratingView" destination="F6L-cO-Tdc" id="6F3-o9-h0w"/>
+                <outlet property="type" destination="uaS-1x-DiT" id="BOC-Os-TNl"/>
+            </connections>
         </view>
     </objects>
+    <resources>
+        <image name="headshot-dan" width="74" height="74"/>
+    </resources>
 </document>

@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  Localz
 //
-//  Created by Segun Solaja on 2/13/16.
-//
-//
+
 
 import UIKit
+import Fabric
+import Crashlytics
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
+    Fabric.with([Crashlytics.self])
+
+
+    
+    UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+    UINavigationBar.appearance().barTintColor = UIColor(hex: "#2F2F2F")
+    UINavigationBar.appearance().translucent = false
+    UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(),NSFontAttributeName: UIFont(name: "Gotham Book", size: 16)!]
     return true
   }
 
