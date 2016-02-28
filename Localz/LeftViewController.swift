@@ -11,6 +11,14 @@ import EDStarRating
 
 class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlideMenuDelegate {
   var logout:LogoutView!
+  
+  @IBOutlet weak var findGuideCell: UITableViewCell!
+  
+  @IBOutlet weak var pendingRequestCell: UITableViewCell!
+  
+  @IBOutlet weak var photoCell: UITableViewCell!
+  @IBOutlet weak var manageCalenderCell: UITableViewCell!
+  var isGuideMode:Int = NSUserDefaults.standardUserDefaults().objectForKey("mode") as! Int
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
@@ -36,6 +44,8 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
     header.guidePhotoView.layer.borderWidth = 2
     header.guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
     
+    header.type.text = isGuideMode == 1 ? "Guide" : "Explorer"
+    
     header.frame = CGRectMake(0, 0, 260, 200)
     header.ratingView.rating = 3.5
     header.ratingView.starImage = UIImage(named:"star.png")
@@ -52,7 +62,11 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
         // Dispose of any resources that can be recreated.
     }
   func selectedIndexPath() -> NSIndexPath! {
-    return NSIndexPath(forItem: 0, inSection: 0)
+    if(isGuideMode == 1){
+        return NSIndexPath(forItem: 1, inSection: 0)
+    }else{
+       return NSIndexPath(forItem: 0, inSection: 0)
+    }
   }
   func  segueIdForIndexPath(indexPath: NSIndexPath!) -> String! {
     var stringIndex:String!
@@ -60,9 +74,12 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
     switch(indexPath.row){
     case 0 : stringIndex = "home"
     case 1 : stringIndex = "upcoming"
-    case 2 : stringIndex = "history"
-    case 3 : stringIndex = "settings"
-    default : stringIndex = "home"
+    case 2 : stringIndex = "pendingRequest"
+    case 3 : stringIndex = "manageCalendar"
+    case 4 : stringIndex = "history"
+    case 5 : stringIndex = "photos"
+    case 6 : stringIndex = "settings"
+    default : stringIndex = "upcoming"
       //default : stringIndex = "settings"
     }
     return stringIndex
@@ -72,6 +89,25 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
     cell.backgroundColor = UIColor.clearColor()
    
   }
+  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    let cell: UITableViewCell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
+   
+    if(isGuideMode == 1){
+        if(cell == findGuideCell){
+            return 0
+        }else{
+          return UITableViewAutomaticDimension
+      }
+    }else{
+      if(cell == pendingRequestCell || cell == photoCell || cell == manageCalenderCell){
+        return 0
+      }else{
+        return UITableViewAutomaticDimension
+      }
+    }
+    
+  }
+
   func configureMenuButton(menuButton: UIButton!) {
     menuButton.frame = CGRectMake(0, 0, 40, 29);
     menuButton.setImage(UIImage(named:"menu-icon"), forState: UIControlState.Normal)

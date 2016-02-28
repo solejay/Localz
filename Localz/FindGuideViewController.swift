@@ -32,6 +32,7 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
       
       self.potentialButton.layer.cornerRadius = 4
       self.filterButton.layer.cornerRadius = 4
+      self.filterButton.addTarget(self, action: "showFilterView", forControlEvents: .TouchUpInside)
       guideList = GuideObject.getGuide()
       
     }
@@ -81,6 +82,12 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  
+  func showFilterView(){
+    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("filterView") as! FilterViewController
+    self.navigationItem.title = ""
+    self.navigationController?.pushViewController(controller, animated: true)
+  }
     
 
   

@@ -10,8 +10,22 @@
             <string>GothamMedium</string>
             <string>GothamMedium</string>
             <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
         </mutableArray>
         <mutableArray key="Gotham Book.ttf">
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
             <string>GothamBook</string>
             <string>GothamBook</string>
             <string>GothamBook</string>
@@ -269,7 +283,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Find Your Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vw7-Zp-flN">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -290,7 +304,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Upcoming Activities (1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0iB-gG-HhY">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -301,8 +315,44 @@
                                             <segue destination="q6N-Fp-Cau" kind="custom" identifier="upcoming" customClass="SASlideMenuContentSegue" id="yMM-3g-lNP"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="VAA-Gu-i0M" style="IBUITableViewCellStyleDefault" id="ZhM-zP-OyI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="y6q-RL-PkN" style="IBUITableViewCellStyleDefault" id="dGP-nG-pPc">
                                         <rect key="frame" x="0.0" y="88" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dGP-nG-pPc" id="Ojc-DR-yQH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Pending Request (2)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y6q-RL-PkN">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="K9t-cS-Ph6" style="IBUITableViewCellStyleDefault" id="s5Q-Hs-nEU">
+                                        <rect key="frame" x="0.0" y="132" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s5Q-Hs-nEU" id="6IW-eI-ZYQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Manage Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K9t-cS-Ph6">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="VAA-Gu-i0M" style="IBUITableViewCellStyleDefault" id="ZhM-zP-OyI">
+                                        <rect key="frame" x="0.0" y="176" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZhM-zP-OyI" id="hgD-QR-COb">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -311,7 +361,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAA-Gu-i0M">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -322,17 +372,35 @@
                                             <segue destination="c4V-af-7PA" kind="custom" identifier="history" customClass="SASlideMenuContentSegue" id="eMb-3k-amg"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="fdK-R5-HER" style="IBUITableViewCellStyleDefault" id="bni-I4-osE">
+                                        <rect key="frame" x="0.0" y="220" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bni-I4-osE" id="Wwx-oF-kmR">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fdK-R5-HER">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="0L3-d3-3Pv" style="IBUITableViewCellStyleDefault" id="i63-wh-aJe">
-                                        <rect key="frame" x="0.0" y="132" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="264" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i63-wh-aJe" id="8bu-6c-Rv3">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0L3-d3-3Pv">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Account Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0L3-d3-3Pv">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -344,7 +412,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="V4h-Wc-hcs" style="IBUITableViewCellStyleDefault" id="WlO-Oc-9O0">
-                                        <rect key="frame" x="0.0" y="176" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="308" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WlO-Oc-9O0" id="bOK-ko-phm">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -353,7 +421,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V4h-Wc-hcs">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -369,6 +437,12 @@
                             <outlet property="delegate" destination="dEj-vY-omH" id="Cky-D6-fz9"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="findGuideCell" destination="LCo-GY-CjB" id="GXA-5h-WVz"/>
+                        <outlet property="manageCalenderCell" destination="s5Q-Hs-nEU" id="Yvv-uT-TpP"/>
+                        <outlet property="pendingRequestCell" destination="dGP-nG-pPc" id="HTr-k3-n4K"/>
+                        <outlet property="photoCell" destination="bni-I4-osE" id="ocN-Cr-WOm"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuy-wi-2Zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2004,6 +2078,234 @@ If you want a guide who will take you around the ins and outs of the city and pr
             </objects>
             <point key="canvasLocation" x="4059" y="948"/>
         </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="kau-ZQ-qRK">
+            <objects>
+                <viewController storyboardIdentifier="filterView" id="5TJ-w4-lCp" customClass="FilterViewController" customModule="Localz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EnT-8b-EF2"/>
+                        <viewControllerLayoutGuide type="bottom" id="o5z-CR-o9x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oRa-XT-o5U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysy-lw-vQL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8g-me-oDH">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPM-j6-tRN">
+                                                <rect key="frame" x="24" y="32" width="550" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="Chg-db-Vrt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
+                                                <color key="textColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LANGUAGES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsk-WP-Cwx">
+                                                <rect key="frame" x="24" y="106" width="550" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="vKc-Vh-irU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
+                                                <color key="textColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURLY RATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugt-7q-Amt">
+                                                <rect key="frame" x="24" y="183" width="550" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="SKN-MH-2Av"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
+                                                <color key="textColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYb-cm-B7E">
+                                                <rect key="frame" x="24" y="50" width="550" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="2WC-8R-RvZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVs-BG-dgy">
+                                                <rect key="frame" x="24" y="126" width="550" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Yes-sm-rnP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICKUP &amp; DROPOFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJr-ZP-lzB">
+                                                <rect key="frame" x="24" y="419" width="554" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="Ims-nK-7ad"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
+                                                <color key="textColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkv-Du-AX6" customClass="MARKRangeSlider">
+                                                <rect key="frame" x="24" y="212" width="550" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2er-68-LNX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bb5-Rr-bLW">
+                                                <rect key="frame" x="24" y="300" width="554" height="108"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49Q-bF-pg1">
+                                                        <rect key="frame" x="0.0" y="5" width="65" height="60"/>
+                                                        <state key="normal" image="HasCar"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCM-La-6dY">
+                                                        <rect key="frame" x="115" y="5" width="65" height="60"/>
+                                                        <state key="normal" image="pickup_no2"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU9-mY-dH9">
+                                                        <rect key="frame" x="136" y="75" width="22" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9Z-V1-xmG">
+                                                        <rect key="frame" x="18" y="75" width="28" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="108" id="Nz6-Ab-Qbw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUx-3u-sxe">
+                                                <rect key="frame" x="24" y="437" width="554" height="104"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDk-HK-SYU">
+                                                        <rect key="frame" x="0.0" y="5" width="65" height="60"/>
+                                                        <state key="normal" image="pickup-fill-small"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrL-IC-J3e">
+                                                        <rect key="frame" x="116" y="5" width="65" height="60"/>
+                                                        <state key="normal" image="pickup_no2"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Taf-FG-Xbk">
+                                                        <rect key="frame" x="137" y="75" width="22" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEp-K0-hMm">
+                                                        <rect key="frame" x="18" y="75" width="28" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="104" id="JYF-WB-uFX"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="IJr-ZP-lzB" firstAttribute="trailing" secondItem="Bb5-Rr-bLW" secondAttribute="trailing" id="35l-8c-wMn"/>
+                                            <constraint firstItem="sUx-3u-sxe" firstAttribute="leading" secondItem="IJr-ZP-lzB" secondAttribute="leading" id="3L4-qk-aYD"/>
+                                            <constraint firstItem="KYb-cm-B7E" firstAttribute="top" secondItem="yPM-j6-tRN" secondAttribute="bottom" constant="3" id="5Hm-i1-0fM"/>
+                                            <constraint firstItem="tsk-WP-Cwx" firstAttribute="top" secondItem="KYb-cm-B7E" secondAttribute="bottom" constant="21" id="Afo-oM-Tab"/>
+                                            <constraint firstItem="yPM-j6-tRN" firstAttribute="top" secondItem="S8g-me-oDH" secondAttribute="top" constant="32" id="Cdt-iF-Gzv"/>
+                                            <constraint firstItem="BVs-BG-dgy" firstAttribute="top" secondItem="tsk-WP-Cwx" secondAttribute="bottom" constant="5" id="DEW-Hk-dCo"/>
+                                            <constraint firstItem="sUx-3u-sxe" firstAttribute="top" secondItem="IJr-ZP-lzB" secondAttribute="bottom" constant="3" id="GaV-zE-Xw9"/>
+                                            <constraint firstItem="Gkv-Du-AX6" firstAttribute="trailing" secondItem="ugt-7q-Amt" secondAttribute="trailing" id="He9-7l-L7c"/>
+                                            <constraint firstItem="BVs-BG-dgy" firstAttribute="trailing" secondItem="tsk-WP-Cwx" secondAttribute="trailing" id="IBc-g1-e8j"/>
+                                            <constraint firstItem="IJr-ZP-lzB" firstAttribute="top" secondItem="Bb5-Rr-bLW" secondAttribute="bottom" constant="11" id="Q1f-aj-6O7"/>
+                                            <constraint firstItem="Gkv-Du-AX6" firstAttribute="leading" secondItem="ugt-7q-Amt" secondAttribute="leading" id="Rvf-CP-lem"/>
+                                            <constraint firstItem="tsk-WP-Cwx" firstAttribute="leading" secondItem="KYb-cm-B7E" secondAttribute="leading" id="X7O-LW-sbZ"/>
+                                            <constraint firstItem="ugt-7q-Amt" firstAttribute="top" secondItem="BVs-BG-dgy" secondAttribute="bottom" constant="22" id="YlJ-xg-IWq"/>
+                                            <constraint firstItem="yPM-j6-tRN" firstAttribute="leading" secondItem="S8g-me-oDH" secondAttribute="leading" constant="24" id="ZA8-1z-7eP"/>
+                                            <constraint firstItem="tsk-WP-Cwx" firstAttribute="trailing" secondItem="KYb-cm-B7E" secondAttribute="trailing" id="dKQ-bY-xcH"/>
+                                            <constraint firstItem="sUx-3u-sxe" firstAttribute="trailing" secondItem="IJr-ZP-lzB" secondAttribute="trailing" id="e1u-gn-XsI"/>
+                                            <constraint firstItem="ugt-7q-Amt" firstAttribute="trailing" secondItem="BVs-BG-dgy" secondAttribute="trailing" id="gGS-74-c3P"/>
+                                            <constraint firstItem="IJr-ZP-lzB" firstAttribute="leading" secondItem="Bb5-Rr-bLW" secondAttribute="leading" id="hAN-jr-JxU"/>
+                                            <constraint firstItem="Gkv-Du-AX6" firstAttribute="top" secondItem="ugt-7q-Amt" secondAttribute="bottom" constant="14" id="lSr-bd-hFq"/>
+                                            <constraint firstItem="KYb-cm-B7E" firstAttribute="leading" secondItem="yPM-j6-tRN" secondAttribute="leading" id="nPV-cS-JEQ"/>
+                                            <constraint firstItem="ugt-7q-Amt" firstAttribute="leading" secondItem="BVs-BG-dgy" secondAttribute="leading" id="r78-BP-2OD"/>
+                                            <constraint firstItem="KYb-cm-B7E" firstAttribute="trailing" secondItem="yPM-j6-tRN" secondAttribute="trailing" id="r8c-8Q-wqE"/>
+                                            <constraint firstItem="BVs-BG-dgy" firstAttribute="leading" secondItem="tsk-WP-Cwx" secondAttribute="leading" id="rS0-Pg-gAF"/>
+                                            <constraint firstAttribute="trailing" secondItem="yPM-j6-tRN" secondAttribute="trailing" constant="26" id="zNx-4a-DPi"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GUIDE PROVIDES TRANSPORTATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOw-Vc-wDZ">
+                                        <rect key="frame" x="24" y="282" width="554" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="T3H-98-vUY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
+                                        <color key="textColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="S8g-me-oDH" secondAttribute="bottom" id="3dD-hh-hnX"/>
+                                    <constraint firstItem="Bb5-Rr-bLW" firstAttribute="top" secondItem="HOw-Vc-wDZ" secondAttribute="bottom" constant="3" id="9Wj-Kd-lIC"/>
+                                    <constraint firstItem="Bb5-Rr-bLW" firstAttribute="trailing" secondItem="HOw-Vc-wDZ" secondAttribute="trailing" id="Jt6-vR-3F4"/>
+                                    <constraint firstItem="S8g-me-oDH" firstAttribute="centerX" secondItem="ysy-lw-vQL" secondAttribute="centerX" id="Wqh-Q3-IAp"/>
+                                    <constraint firstItem="Bb5-Rr-bLW" firstAttribute="leading" secondItem="HOw-Vc-wDZ" secondAttribute="leading" id="ca0-po-QAy"/>
+                                    <constraint firstItem="S8g-me-oDH" firstAttribute="top" secondItem="ysy-lw-vQL" secondAttribute="top" id="eW5-OX-2Tg"/>
+                                    <constraint firstAttribute="trailing" secondItem="S8g-me-oDH" secondAttribute="trailing" id="feH-26-F7a"/>
+                                    <constraint firstItem="HOw-Vc-wDZ" firstAttribute="top" secondItem="ysy-lw-vQL" secondAttribute="top" constant="282" id="guT-AI-A6x"/>
+                                    <constraint firstAttribute="trailing" secondItem="HOw-Vc-wDZ" secondAttribute="trailing" constant="22" id="jBJ-nm-AVa"/>
+                                    <constraint firstItem="S8g-me-oDH" firstAttribute="leading" secondItem="ysy-lw-vQL" secondAttribute="leading" id="qZ2-hm-ARV"/>
+                                    <constraint firstItem="HOw-Vc-wDZ" firstAttribute="leading" secondItem="ysy-lw-vQL" secondAttribute="leading" constant="24" id="xpo-xK-2SY"/>
+                                    <constraint firstItem="S8g-me-oDH" firstAttribute="centerY" secondItem="ysy-lw-vQL" secondAttribute="centerY" id="zrf-zt-kjE"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNs-yd-YLA">
+                                <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="yTS-PE-d1L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="15"/>
+                                <state key="normal" title="APPLY FILTERS">
+                                    <color key="titleColor" red="0.99883601639999997" green="0.99883601639999997" blue="0.99883601639999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o5z-CR-o9x" firstAttribute="top" secondItem="aNs-yd-YLA" secondAttribute="bottom" id="Aqm-Cs-hsK"/>
+                            <constraint firstAttribute="trailing" secondItem="aNs-yd-YLA" secondAttribute="trailing" id="F5L-h5-rcq"/>
+                            <constraint firstAttribute="trailing" secondItem="ysy-lw-vQL" secondAttribute="trailing" id="Nih-fJ-Phz"/>
+                            <constraint firstItem="ysy-lw-vQL" firstAttribute="bottom" secondItem="o5z-CR-o9x" secondAttribute="top" id="Zqy-gx-Cu8"/>
+                            <constraint firstItem="aNs-yd-YLA" firstAttribute="leading" secondItem="oRa-XT-o5U" secondAttribute="leading" id="bu6-ea-rOV"/>
+                            <constraint firstItem="ysy-lw-vQL" firstAttribute="top" secondItem="oRa-XT-o5U" secondAttribute="top" id="e3D-y7-qch"/>
+                            <constraint firstItem="ysy-lw-vQL" firstAttribute="leading" secondItem="oRa-XT-o5U" secondAttribute="leading" id="reF-4r-6P8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="applyFilterButton" destination="aNs-yd-YLA" id="3kZ-Do-lwv"/>
+                        <outlet property="catergoryTextField" destination="KYb-cm-B7E" id="6Oa-Qn-33j"/>
+                        <outlet property="guideTransportNoButton" destination="FCM-La-6dY" id="2Kb-V2-gfy"/>
+                        <outlet property="guideTransportYesButton" destination="49Q-bF-pg1" id="ehe-vg-cSa"/>
+                        <outlet property="languagesTextField" destination="BVs-BG-dgy" id="VrR-Ry-3qO"/>
+                        <outlet property="pickupNoButton" destination="WrL-IC-J3e" id="Iur-mR-Scs"/>
+                        <outlet property="pickupYesButton" destination="zDk-HK-SYU" id="z3D-fU-xD2"/>
+                        <outlet property="scrollView" destination="ysy-lw-vQL" id="06u-0G-ZuU"/>
+                        <outlet property="slider" destination="Gkv-Du-AX6" id="LUA-ks-TUy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLC-Hn-9Ri" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4059" y="1665"/>
+        </scene>
         <!--Book Guide View Controller-->
         <scene sceneID="dOD-Wu-XC5">
             <objects>
@@ -2336,22 +2638,22 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                 </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="localz1" translatesAutoresizingMaskIntoConstraints="NO" id="Wba-S7-g5g">
-                                <rect key="frame" x="0.0" y="93" width="600" height="460"/>
+                                <rect key="frame" x="0.0" y="101" width="600" height="452"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="460" id="t71-lg-bLl"/>
+                                    <constraint firstAttribute="height" constant="452" id="t71-lg-bLl"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBq-5I-6v1">
-                                <rect key="frame" x="0.0" y="92" width="600" height="461"/>
+                                <rect key="frame" x="0.0" y="101" width="600" height="452"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSEUM TOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xor-7C-qV7">
-                                        <rect key="frame" x="241" y="39" width="118" height="13.5"/>
+                                        <rect key="frame" x="241" y="30" width="118" height="13.5"/>
                                         <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkl-hT-LTq">
-                                        <rect key="frame" x="23" y="71" width="141" height="21"/>
+                                        <rect key="frame" x="23" y="62" width="141" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="141" id="DlA-eg-bMB"/>
                                             <constraint firstAttribute="height" constant="21" id="aYa-Dr-UrV"/>
@@ -2361,31 +2663,31 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 9th, 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3k-vc-tv3">
-                                        <rect key="frame" x="23" y="93" width="91" height="16"/>
+                                        <rect key="frame" x="23" y="84" width="91" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEU-WY-1WG">
-                                        <rect key="frame" x="23" y="122" width="32" height="17"/>
+                                        <rect key="frame" x="23" y="113" width="32" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3PM - 6PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMy-zn-apI">
-                                        <rect key="frame" x="23" y="144" width="68.5" height="16"/>
+                                        <rect key="frame" x="23" y="135" width="68.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup &amp; Dropoff" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meF-Z7-J72">
-                                        <rect key="frame" x="23" y="178" width="110.5" height="17"/>
+                                        <rect key="frame" x="23" y="169" width="110.5" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S48-b2-8w5">
-                                        <rect key="frame" x="23" y="200" width="257" height="16"/>
+                                        <rect key="frame" x="23" y="191" width="257" height="16"/>
                                         <string key="text">123 Cathedral Street, Baltimore, MD 21210
 </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -2393,25 +2695,25 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOa-68-Cvi">
-                                        <rect key="frame" x="23" y="229" width="64" height="17"/>
+                                        <rect key="frame" x="23" y="220" width="64" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1b-W5-2t6">
-                                        <rect key="frame" x="23" y="251" width="44" height="16"/>
+                                        <rect key="frame" x="23" y="242" width="44" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hourly Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jL-mg-xVe">
-                                        <rect key="frame" x="23" y="289" width="75.5" height="17"/>
+                                        <rect key="frame" x="23" y="280" width="75.5" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$16/hour" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="615-08-WbF">
-                                        <rect key="frame" x="23" y="311" width="55" height="16"/>
+                                        <rect key="frame" x="23" y="302" width="55" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2437,7 +2739,7 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                     <constraint firstItem="t1b-W5-2t6" firstAttribute="top" secondItem="MOa-68-Cvi" secondAttribute="bottom" constant="5" id="jVp-ym-hgc"/>
                                     <constraint firstItem="Nkl-hT-LTq" firstAttribute="top" secondItem="xor-7C-qV7" secondAttribute="bottom" constant="18.5" id="jud-Ut-vlI"/>
                                     <constraint firstItem="IMy-zn-apI" firstAttribute="leading" secondItem="wEU-WY-1WG" secondAttribute="leading" id="nF3-3c-3GE"/>
-                                    <constraint firstItem="xor-7C-qV7" firstAttribute="top" secondItem="hBq-5I-6v1" secondAttribute="top" constant="39" id="pPQ-8g-1qh"/>
+                                    <constraint firstItem="xor-7C-qV7" firstAttribute="top" secondItem="hBq-5I-6v1" secondAttribute="top" constant="30" id="pPQ-8g-1qh"/>
                                     <constraint firstItem="r3k-vc-tv3" firstAttribute="leading" secondItem="Nkl-hT-LTq" secondAttribute="leading" id="pYd-h1-403"/>
                                     <constraint firstItem="MOa-68-Cvi" firstAttribute="top" secondItem="S48-b2-8w5" secondAttribute="bottom" constant="13" id="qGI-JZ-6wH"/>
                                     <constraint firstItem="wEU-WY-1WG" firstAttribute="leading" secondItem="r3k-vc-tv3" secondAttribute="leading" id="uVe-a7-gdC"/>
@@ -2495,16 +2797,17 @@ If you want a guide who will take you around the ins and outs of the city and pr
                             <constraint firstAttribute="trailing" secondItem="Xdj-1o-P2D" secondAttribute="trailing" id="gto-S7-zRY"/>
                             <constraint firstItem="Xdj-1o-P2D" firstAttribute="top" secondItem="Wba-S7-g5g" secondAttribute="bottom" id="h8b-Yc-qNA"/>
                             <constraint firstAttribute="trailing" secondItem="Wba-S7-g5g" secondAttribute="trailing" id="j11-KS-1tV"/>
-                            <constraint firstItem="hBq-5I-6v1" firstAttribute="top" secondItem="Wba-S7-g5g" secondAttribute="top" constant="-1" id="lQu-yF-L1I"/>
+                            <constraint firstItem="hBq-5I-6v1" firstAttribute="top" secondItem="Wba-S7-g5g" secondAttribute="top" id="lQu-yF-L1I"/>
                             <constraint firstItem="jcA-GY-7XD" firstAttribute="trailing" secondItem="qwk-Ff-ecY" secondAttribute="trailing" id="sto-OP-hqV"/>
                             <constraint firstItem="hBq-5I-6v1" firstAttribute="bottom" secondItem="Wba-S7-g5g" secondAttribute="bottom" id="tYi-Fc-3jw"/>
                             <constraint firstItem="NwF-iu-39s" firstAttribute="top" secondItem="q3i-BL-qic" secondAttribute="bottom" constant="8" id="tcg-IS-PuH"/>
                             <constraint firstAttribute="trailing" secondItem="qwk-Ff-ecY" secondAttribute="trailing" constant="20" id="x7w-7s-b75"/>
-                            <constraint firstItem="Wba-S7-g5g" firstAttribute="top" secondItem="jcA-GY-7XD" secondAttribute="bottom" constant="5" id="xDJ-EU-PHA"/>
+                            <constraint firstItem="Wba-S7-g5g" firstAttribute="top" secondItem="jcA-GY-7XD" secondAttribute="bottom" constant="13" id="xDJ-EU-PHA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="completeButton" destination="Xdj-1o-P2D" id="Bfg-kr-d7E"/>
+                        <outlet property="guidePhotoView" destination="NwF-iu-39s" id="FKw-V1-teN"/>
                         <outlet property="ratingView" destination="QcG-pi-4Um" id="Ytw-OA-eQL"/>
                     </connections>
                 </viewController>
@@ -2773,10 +3076,13 @@ If you want a guide who will take you around the ins and outs of the city and pr
                             <constraint firstItem="sv1-xA-DbU" firstAttribute="top" secondItem="yIe-yn-zaP" secondAttribute="top" id="qxe-IZ-z19"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="sv1-xA-DbU" id="vW3-Eg-SCo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xec-eL-fu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6788" y="941"/>
+            <point key="canvasLocation" x="7104" y="939"/>
         </scene>
         <!--Paging Menu Controller-->
         <scene sceneID="hN8-fD-scO">
@@ -3138,6 +3444,8 @@ If you want a guide who will take you around the ins and outs of the city and pr
         <image name="paypal" width="124" height="49"/>
         <image name="paypal2" width="228" height="45"/>
         <image name="pickup-dropoff" width="25" height="25"/>
+        <image name="pickup-fill-small" width="30" height="31"/>
+        <image name="pickup_no2" width="33" height="33"/>
         <image name="potential-icon" width="14" height="14"/>
         <image name="visa" width="47" height="47"/>
     </resources>

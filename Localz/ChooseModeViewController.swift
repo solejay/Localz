@@ -60,16 +60,16 @@ class ChooseModeViewController: UIViewController {
 }
 extension ChooseModeViewController{
   func explore(button:UIButton){
-    button.selected = !button.selected
-    guideButton.selected = !guideButton.selected
+    button.selected = true
+    guideButton.selected = false
     buttonStyleForState(button)
     buttonStyleForState(guideButton)
     locationOverlay.hidden = false
     
   }
   func guide(button:UIButton){
-    button.selected = !button.selected
-    explorerButton.selected = !explorerButton.selected
+    button.selected = true
+    explorerButton.selected = false
     buttonStyleForState(button)
     buttonStyleForState(explorerButton)
     locationOverlay.hidden = false
@@ -84,6 +84,14 @@ extension ChooseModeViewController{
     let nextAction: UIAlertAction = UIAlertAction(title: "OK", style: .Default) { action -> Void in
       //Do some other stuff
       let controller = self.storyboard?.instantiateViewControllerWithIdentifier("home") as! SASlideMenuRootViewController
+      if(self.guideButton.selected == true){
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("mode")
+        NSUserDefaults.standardUserDefaults().setInteger(1, forKey: "mode")
+      }else{
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("mode")
+        NSUserDefaults.standardUserDefaults().setInteger(0, forKey: "mode")
+      }
+    
       self.presentViewController(controller, animated: true, completion: nil)
     }
     alertController.addAction(nextAction)

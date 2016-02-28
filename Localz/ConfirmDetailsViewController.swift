@@ -8,6 +8,7 @@ import UIKit
 import EDStarRating
 class ConfirmDetailsViewController: UIViewController {
 
+  @IBOutlet weak var guidePhotoView: UIImageView!
   @IBOutlet weak var completeButton: UIButton!
   @IBOutlet weak var ratingView: EDStarRating!
   var cancelActivityView:CancelActivitiesView!
@@ -40,6 +41,10 @@ class ConfirmDetailsViewController: UIViewController {
     ratingView.horizontalMargin = 0;
     ratingView.editable = false;
     ratingView.displayMode = UInt(EDStarRatingDisplayHalf)
+    
+    guidePhotoView.layer.cornerRadius  = CGRectGetWidth(guidePhotoView.bounds) / 2
+    guidePhotoView.layer.borderWidth = 2
+    guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
   }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -20,6 +20,7 @@
 		8E1DF8251C6F7D3A009E40A0 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DF8241C6F7D3A009E40A0 /* LeftViewController.swift */; };
 		8E1DF8271C6F832C009E40A0 /* FindGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DF8261C6F832C009E40A0 /* FindGuideViewController.swift */; };
 		8E1DF82A1C6F91F5009E40A0 /* GuideViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DF8291C6F91F5009E40A0 /* GuideViewCell.swift */; };
+		8E2225091C80F0C80051D7CC /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2225081C80F0C80051D7CC /* FilterViewController.swift */; };
 		8E4F68021C6F2FDC00BF9EEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F68011C6F2FDC00BF9EEB /* AppDelegate.swift */; };
 		8E4F68041C6F2FDC00BF9EEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F68031C6F2FDC00BF9EEB /* ViewController.swift */; };
 		8E4F68071C6F2FDC00BF9EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4F68051C6F2FDC00BF9EEB /* Main.storyboard */; };
@@ -98,6 +99,7 @@
 		8E1DF8241C6F7D3A009E40A0 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		8E1DF8261C6F832C009E40A0 /* FindGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGuideViewController.swift; sourceTree = "<group>"; };
 		8E1DF8291C6F91F5009E40A0 /* GuideViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewCell.swift; sourceTree = "<group>"; };
+		8E2225081C80F0C80051D7CC /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		8E4F67FE1C6F2FDC00BF9EEB /* Localz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Localz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4F68011C6F2FDC00BF9EEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E4F68031C6F2FDC00BF9EEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				8E00EE701C78A62700C460D2 /* BookActivityDetailsController.swift */,
 				8E5BAE701C799C6A00A1B173 /* ConfirmDetailsViewController.swift */,
 				8E5BAE721C79CCAE00A1B173 /* BookingCompletedViewController.swift */,
+				8E2225081C80F0C80051D7CC /* FilterViewController.swift */,
 			);
 			name = HomeViewControllers;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 				8EC997D11C71F41600B4941A /* FindGuideDetailViewController.swift in Sources */,
 				8E5BAE751C79CD0900A1B173 /* ImagePreview.swift in Sources */,
 				8E9BB50B1C74F5F1007B8D7F /* HistoryDetailViewController.swift in Sources */,
+				8E2225091C80F0C80051D7CC /* FilterViewController.swift in Sources */,
 				8E00EE731C78ACBA00C460D2 /* ScheduleTimeView.swift in Sources */,
 				8E1DF8271C6F832C009E40A0 /* FindGuideViewController.swift in Sources */,
 				8E5BAE731C79CCAE00A1B173 /* BookingCompletedViewController.swift in Sources */,
