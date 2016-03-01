@@ -5,7 +5,20 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="GOTHAM-BOLD.TTF">
+            <string>GothamBold</string>
+            <string>GothamBold</string>
+        </mutableArray>
         <mutableArray key="GOTHAM-MEDIUM.TTF">
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
             <string>GothamMedium</string>
             <string>GothamMedium</string>
             <string>GothamMedium</string>
@@ -20,6 +33,16 @@
             <string>GothamMedium</string>
         </mutableArray>
         <mutableArray key="Gotham Book.ttf">
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
             <string>GothamBook</string>
             <string>GothamBook</string>
             <string>GothamBook</string>
@@ -357,8 +380,29 @@
                                             <segue destination="QAt-Cp-RZl" kind="custom" identifier="manageCalendar" customClass="SASlideMenuContentSegue" id="DKx-CX-VwI"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="VAA-Gu-i0M" style="IBUITableViewCellStyleDefault" id="ZhM-zP-OyI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="Cr3-8s-hdA" style="IBUITableViewCellStyleDefault" id="83o-Pq-R6g">
                                         <rect key="frame" x="0.0" y="176" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="83o-Pq-R6g" id="ie2-0n-JEq">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cr3-8s-hdA">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="fPw-eH-aph" kind="custom" identifier="historyGuideMode" customClass="SASlideMenuContentSegue" id="3YH-hM-WFU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="VAA-Gu-i0M" style="IBUITableViewCellStyleDefault" id="ZhM-zP-OyI">
+                                        <rect key="frame" x="0.0" y="220" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZhM-zP-OyI" id="hgD-QR-COb">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -375,11 +419,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="c4V-af-7PA" kind="custom" identifier="history" customClass="SASlideMenuContentSegue" id="eMb-3k-amg"/>
+                                            <segue destination="c4V-af-7PA" kind="custom" identifier="history" customClass="SASlideMenuContentSegue" id="68k-8W-ngF"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="fdK-R5-HER" style="IBUITableViewCellStyleDefault" id="bni-I4-osE">
-                                        <rect key="frame" x="0.0" y="220" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="264" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bni-I4-osE" id="Wwx-oF-kmR">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -400,7 +444,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="0L3-d3-3Pv" style="IBUITableViewCellStyleDefault" id="i63-wh-aJe">
-                                        <rect key="frame" x="0.0" y="264" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="308" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i63-wh-aJe" id="8bu-6c-Rv3">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -421,7 +465,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="V4h-Wc-hcs" style="IBUITableViewCellStyleDefault" id="WlO-Oc-9O0">
-                                        <rect key="frame" x="0.0" y="308" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="352" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WlO-Oc-9O0" id="bOK-ko-phm">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -451,6 +495,8 @@
                     </tableView>
                     <connections>
                         <outlet property="findGuideCell" destination="LCo-GY-CjB" id="GXA-5h-WVz"/>
+                        <outlet property="historyExploreCell" destination="ZhM-zP-OyI" id="0HX-vI-Vgd"/>
+                        <outlet property="historyGuideCell" destination="83o-Pq-R6g" id="GcT-IT-BgX"/>
                         <outlet property="manageCalenderCell" destination="s5Q-Hs-nEU" id="Yvv-uT-TpP"/>
                         <outlet property="pendingRequestCell" destination="dGP-nG-pPc" id="HTr-k3-n4K"/>
                         <outlet property="photoCell" destination="bni-I4-osE" id="ocN-Cr-WOm"/>
@@ -493,6 +539,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaU-qZ-cuV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="220" y="2092"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wyh-e7-i8e">
+            <objects>
+                <navigationController id="fPw-eH-aph" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NUn-zG-0xq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rvn-oe-RUr" kind="relationship" relationship="rootViewController" id="cqh-ov-egF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gg-Ft-Kfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3334" y="-1321"/>
+        </scene>
+        <!--History Guide Mode View Controller-->
+        <scene sceneID="4P0-x2-jKO">
+            <objects>
+                <viewController id="Rvn-oe-RUr" customClass="HistoryGuideModeViewController" customModule="Localz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jku-r1-lmP"/>
+                        <viewControllerLayoutGuide type="bottom" id="mL7-f8-5Ql"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6P3-uI-ZDL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muY-fW-MbB">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <connections>
+                                    <segue destination="ntW-I0-Qgv" kind="embed" id="bCY-GP-WzJ"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="muY-fW-MbB" firstAttribute="top" secondItem="jku-r1-lmP" secondAttribute="bottom" id="5ul-ug-bOr"/>
+                            <constraint firstItem="mL7-f8-5Ql" firstAttribute="top" secondItem="muY-fW-MbB" secondAttribute="bottom" id="8J2-Xe-tJO"/>
+                            <constraint firstAttribute="trailing" secondItem="muY-fW-MbB" secondAttribute="trailing" id="rNs-vf-rK2"/>
+                            <constraint firstItem="muY-fW-MbB" firstAttribute="leading" secondItem="6P3-uI-ZDL" secondAttribute="leading" id="tl5-qr-16O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TTL-X6-cNt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LpO-Ga-O1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4115" y="-1338"/>
         </scene>
         <!--Choose Mode View Controller-->
         <scene sceneID="r8N-Xl-GqL">
@@ -957,13 +1052,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meghan Johnson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHx-6b-xV5">
-                                                <rect key="frame" x="241" y="116" width="118" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <rect key="frame" x="236.5" y="116" width="128.5" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-mB-aWW">
-                                                <rect key="frame" x="265" y="149" width="70" height="1"/>
+                                                <rect key="frame" x="265" y="144.5" width="70" height="1"/>
                                                 <color key="backgroundColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="DCt-4d-Ov2"/>
@@ -971,94 +1066,94 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frU-JL-VPT">
-                                                <rect key="frame" x="27" y="165" width="546" height="21"/>
+                                                <rect key="frame" x="27" y="160.5" width="546" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="5Ys-Bx-Kd9"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC332" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlV-4o-OXG">
-                                                <rect key="frame" x="27" y="188" width="546" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="27" y="183.5" width="546" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUq-FT-AkV">
-                                                <rect key="frame" x="27" y="219" width="546" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <rect key="frame" x="27" y="210" width="546" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum Tour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGS-HT-blY">
-                                                <rect key="frame" x="27" y="242" width="546" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="27" y="228.5" width="546" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-pT-tdb">
-                                                <rect key="frame" x="27" y="280" width="546" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <rect key="frame" x="27" y="262" width="546" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 9th, 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7j-yn-oDG">
-                                                <rect key="frame" x="27" y="302" width="546" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="27" y="279.5" width="546" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDe-nh-tG7">
-                                                <rect key="frame" x="27" y="339" width="546" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <rect key="frame" x="27" y="312" width="546" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3PM - 6PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaZ-hf-hlc">
-                                                <rect key="frame" x="27" y="363" width="546" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="27" y="331.5" width="546" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup/Dropoff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG1-Ug-TnE">
-                                                <rect key="frame" x="27" y="397" width="546" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <rect key="frame" x="27" y="361" width="546" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKb-Jg-lOH">
-                                                <rect key="frame" x="27" y="425" width="546" height="36"/>
+                                                <rect key="frame" x="27" y="384.5" width="546" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="JLk-ZM-bNg"/>
                                                 </constraints>
                                                 <string key="text">123 Cathedral Street, Baltimore, MD 21210
 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANo-Tm-tYl">
-                                                <rect key="frame" x="27" y="464" width="546" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <rect key="frame" x="27" y="423.5" width="546" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynB-Lu-l06">
-                                                <rect key="frame" x="27" y="487" width="546" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="27" y="442" width="546" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFo-Ll-SKg">
-                                                <rect key="frame" x="27" y="521" width="546" height="17.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <rect key="frame" x="27" y="471.5" width="546" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ow5-Yf-aKa">
-                                                <rect key="frame" x="27" y="546" width="546" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <rect key="frame" x="27" y="492.5" width="546" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1135,8 +1230,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityTitleLabel" destination="YUq-FT-AkV" id="GCm-wU-EmS"/>
+                        <outlet property="activityValueLable" destination="gGS-HT-blY" id="qyE-bx-w5N"/>
+                        <outlet property="confirmationCodeLabel" destination="KlV-4o-OXG" id="iBG-0j-WBt"/>
+                        <outlet property="dateValueLabel" destination="l7j-yn-oDG" id="te7-xg-K3z"/>
                         <outlet property="guidePhotoView" destination="s0v-d5-Kr3" id="xy6-Sm-NnA"/>
+                        <outlet property="languageValueLabel" destination="ynB-Lu-l06" id="D73-Zf-tCs"/>
+                        <outlet property="pickupDropValLabel" destination="IKb-Jg-lOH" id="FeZ-7W-pBU"/>
+                        <outlet property="priceTitleLabel" destination="jFo-Ll-SKg" id="PkW-Fz-ahL"/>
+                        <outlet property="priceValueLabel" destination="ow5-Yf-aKa" id="a0X-Vb-PON"/>
                         <outlet property="theScrollView" destination="E9v-tj-4ZZ" id="sNl-Q8-F0J"/>
+                        <outlet property="timeValueLabel" destination="XaZ-hf-hlc" id="6BZ-pc-klp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txL-eb-6et" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1282,7 +1386,7 @@ TO LOG OUT</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQr-xu-hAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="4762"/>
+            <point key="canvasLocation" x="1527" y="7078"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l9v-WT-vWf">
@@ -3708,6 +3812,127 @@ If you want a guide who will take you around the ins and outs of the city and pr
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jii-km-WcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4162" y="4441"/>
+        </scene>
+        <!--Payment History View Controller-->
+        <scene sceneID="Cjf-Nr-cZJ">
+            <objects>
+                <viewController storyboardIdentifier="paymentHistory" id="3iJ-hi-ryl" customClass="PaymentHistoryViewController" customModule="Localz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ul-1g-x8l"/>
+                        <viewControllerLayoutGuide type="bottom" id="bVe-gI-lcA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dt3-lT-7Bb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="117" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ko9-UQ-q33">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="paymentHistoryCell" rowHeight="117" id="jce-Cc-Fbe" customClass="PaymentHistoryCell" customModule="Localz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jce-Cc-Fbe" id="vZl-du-WPe">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="116.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seahawks2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd9-rY-2jk">
+                                                    <rect key="frame" x="21" y="8" width="484" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Hfx-4X-fXi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/02/15, 2:00pm - 5:00pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbR-iw-ukJ">
+                                                    <rect key="frame" x="21" y="34" width="484" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="yeY-8j-Rzi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum Tour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oF-Bc-gLg">
+                                                    <rect key="frame" x="21" y="60" width="484" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="JA0-O5-2uh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earned $35.27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnx-br-KZL">
+                                                    <rect key="frame" x="21" y="83" width="484" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="7mB-Fc-UC8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
+                                                    <color key="textColor" red="0.058823529411764705" green="0.82745098039215681" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdW-PN-zXz">
+                                                    <rect key="frame" x="513" y="10" width="79" height="94"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="79" id="0LW-TG-wgm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="16"/>
+                                                    <color key="textColor" red="0.058823529409999999" green="0.82745098039999998" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1oF-Bc-gLg" firstAttribute="top" secondItem="dbR-iw-ukJ" secondAttribute="bottom" constant="5" id="AuL-5l-Lip"/>
+                                                <constraint firstAttribute="bottom" secondItem="mdW-PN-zXz" secondAttribute="bottom" constant="12.5" id="GYv-og-SuI"/>
+                                                <constraint firstItem="dbR-iw-ukJ" firstAttribute="top" secondItem="Nd9-rY-2jk" secondAttribute="bottom" constant="5" id="JWU-86-3Ae"/>
+                                                <constraint firstItem="mdW-PN-zXz" firstAttribute="top" secondItem="vZl-du-WPe" secondAttribute="top" constant="10" id="PWn-2a-Za6"/>
+                                                <constraint firstItem="dnx-br-KZL" firstAttribute="leading" secondItem="1oF-Bc-gLg" secondAttribute="leading" id="Qgd-5c-847"/>
+                                                <constraint firstItem="Nd9-rY-2jk" firstAttribute="top" secondItem="vZl-du-WPe" secondAttribute="top" constant="8" id="RKH-Wt-dCX"/>
+                                                <constraint firstAttribute="trailing" secondItem="mdW-PN-zXz" secondAttribute="trailing" constant="8" id="UUz-q9-yxp"/>
+                                                <constraint firstItem="1oF-Bc-gLg" firstAttribute="leading" secondItem="dbR-iw-ukJ" secondAttribute="leading" id="WrL-hY-490"/>
+                                                <constraint firstItem="Nd9-rY-2jk" firstAttribute="leading" secondItem="vZl-du-WPe" secondAttribute="leading" constant="21" id="bA4-Du-neE"/>
+                                                <constraint firstItem="dnx-br-KZL" firstAttribute="top" secondItem="1oF-Bc-gLg" secondAttribute="bottom" constant="2" id="co1-H9-mlb"/>
+                                                <constraint firstItem="mdW-PN-zXz" firstAttribute="leading" secondItem="Nd9-rY-2jk" secondAttribute="trailing" constant="8" id="jiz-pX-CDM"/>
+                                                <constraint firstItem="dbR-iw-ukJ" firstAttribute="trailing" secondItem="Nd9-rY-2jk" secondAttribute="trailing" id="me7-Y9-fpN"/>
+                                                <constraint firstItem="dbR-iw-ukJ" firstAttribute="leading" secondItem="Nd9-rY-2jk" secondAttribute="leading" id="pZ8-cp-slp"/>
+                                                <constraint firstItem="dnx-br-KZL" firstAttribute="trailing" secondItem="1oF-Bc-gLg" secondAttribute="trailing" id="wdq-hM-bTS"/>
+                                                <constraint firstItem="1oF-Bc-gLg" firstAttribute="trailing" secondItem="dbR-iw-ukJ" secondAttribute="trailing" id="wfm-qC-vYg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bVe-gI-lcA" firstAttribute="top" secondItem="Ko9-UQ-q33" secondAttribute="bottom" id="2af-h2-m2y"/>
+                            <constraint firstAttribute="trailing" secondItem="Ko9-UQ-q33" secondAttribute="trailing" id="HEh-i0-fIJ"/>
+                            <constraint firstItem="Ko9-UQ-q33" firstAttribute="top" secondItem="Dt3-lT-7Bb" secondAttribute="top" id="PDj-0p-WdB"/>
+                            <constraint firstItem="Ko9-UQ-q33" firstAttribute="leading" secondItem="Dt3-lT-7Bb" secondAttribute="leading" id="VnU-r3-6vt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="paymentHistoryTableView" destination="Ko9-UQ-q33" id="k6K-nZ-mTD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDC-hn-sas" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4989" y="4548"/>
+        </scene>
+        <!--Paging Menu Controller-->
+        <scene sceneID="USp-8N-jIv">
+            <objects>
+                <viewController id="ntW-I0-Qgv" customClass="PagingMenuController" customModule="PagingMenuController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="91D-B5-buv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h30-01-dWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4842" y="-1328"/>
         </scene>
     </scenes>
     <resources>

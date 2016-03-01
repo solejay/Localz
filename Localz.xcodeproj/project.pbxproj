@@ -47,6 +47,9 @@
 		8E671DED1C73CF7B0020F2C8 /* UpcomingDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E671DEC1C73CF7B0020F2C8 /* UpcomingDetailController.swift */; };
 		8E6B79531C79EA5D00B79EAA /* GuideObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B79521C79EA5D00B79EAA /* GuideObject.swift */; };
 		8E6F08211C85636300528ED6 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F08201C85636300528ED6 /* LogoutViewController.swift */; };
+		8E6F08231C859F8400528ED6 /* HistoryGuideModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F08221C859F8400528ED6 /* HistoryGuideModeViewController.swift */; };
+		8E6F08251C85AC9200528ED6 /* PaymentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F08241C85AC9200528ED6 /* PaymentHistoryCell.swift */; };
+		8E6F08281C85AE0800528ED6 /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F08271C85AE0800528ED6 /* PaymentHistoryViewController.swift */; };
 		8E749A8C1C6F71F700B4FF81 /* Gotham Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A871C6F71F700B4FF81 /* Gotham Book.ttf */; };
 		8E749A8D1C6F71F700B4FF81 /* GOTHAM-BLACK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A881C6F71F700B4FF81 /* GOTHAM-BLACK.TTF */; };
 		8E749A8E1C6F71F700B4FF81 /* GOTHAM-BOLD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A891C6F71F700B4FF81 /* GOTHAM-BOLD.TTF */; };
@@ -133,6 +136,9 @@
 		8E671DEC1C73CF7B0020F2C8 /* UpcomingDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingDetailController.swift; sourceTree = "<group>"; };
 		8E6B79521C79EA5D00B79EAA /* GuideObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideObject.swift; sourceTree = "<group>"; };
 		8E6F08201C85636300528ED6 /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		8E6F08221C859F8400528ED6 /* HistoryGuideModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryGuideModeViewController.swift; sourceTree = "<group>"; };
+		8E6F08241C85AC9200528ED6 /* PaymentHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryCell.swift; sourceTree = "<group>"; };
+		8E6F08271C85AE0800528ED6 /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
 		8E749A871C6F71F700B4FF81 /* Gotham Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Book.ttf"; sourceTree = "<group>"; };
 		8E749A881C6F71F700B4FF81 /* GOTHAM-BLACK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-BLACK.TTF"; sourceTree = "<group>"; };
 		8E749A891C6F71F700B4FF81 /* GOTHAM-BOLD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-BOLD.TTF"; sourceTree = "<group>"; };
@@ -209,6 +215,7 @@
 				8EE449841C70999100BA10D3 /* SideBarHeader.xib */,
 				8E671DE31C73C0B80020F2C8 /* UpComingCell.swift */,
 				8E671DE51C73C0CB0020F2C8 /* UpcomingCell.xib */,
+				8E6F08241C85AC9200528ED6 /* PaymentHistoryCell.swift */,
 			);
 			name = CustomCells;
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 		8E4F682F1C6F386700BF9EEB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E6F08261C85ADE000528ED6 /* Payment */,
 				8E6F081F1C85635100528ED6 /* Logout */,
 				8E56F9251C766C9500332EEA /* Settings */,
 				8E671DE91C73C5AE0020F2C8 /* History */,
@@ -317,7 +325,6 @@
 			children = (
 				8E56F9261C766CB400332EEA /* SettingsViewController.swift */,
 				8E56F9281C76737000332EEA /* ProfileSettingViewController.swift */,
-				8E56F92A1C7675D800332EEA /* PaymentsViewController.swift */,
 				8EA9F7131C767D1700E41079 /* DescriptionViewController.swift */,
 			);
 			name = Settings;
@@ -337,6 +344,7 @@
 			children = (
 				8E671DEA1C73C5CA0020F2C8 /* HistoryViewController.swift */,
 				8E9BB50A1C74F5F1007B8D7F /* HistoryDetailViewController.swift */,
+				8E6F08221C859F8400528ED6 /* HistoryGuideModeViewController.swift */,
 			);
 			name = History;
 			sourceTree = "<group>";
@@ -355,6 +363,15 @@
 				8E6F08201C85636300528ED6 /* LogoutViewController.swift */,
 			);
 			name = Logout;
+			sourceTree = "<group>";
+		};
+		8E6F08261C85ADE000528ED6 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				8E56F92A1C7675D800332EEA /* PaymentsViewController.swift */,
+				8E6F08271C85AE0800528ED6 /* PaymentHistoryViewController.swift */,
+			);
+			name = Payment;
 			sourceTree = "<group>";
 		};
 		8E749A861C6F71DA00B4FF81 /* Fonts */ = {
@@ -658,6 +675,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E00EE711C78A62700C460D2 /* BookActivityDetailsController.swift in Sources */,
+				8E6F08251C85AC9200528ED6 /* PaymentHistoryCell.swift in Sources */,
 				8E4F68381C6F491800BF9EEB /* Utils.swift in Sources */,
 				8ED7C8261C72510F00D95A28 /* TourDetailsViewController.swift in Sources */,
 				8E671DED1C73CF7B0020F2C8 /* UpcomingDetailController.swift in Sources */,
@@ -668,6 +686,7 @@
 				8E4F68021C6F2FDC00BF9EEB /* AppDelegate.swift in Sources */,
 				8E4F68351C6F458700BF9EEB /* ChooseModeViewController.swift in Sources */,
 				8E671DE41C73C0B80020F2C8 /* UpComingCell.swift in Sources */,
+				8E6F08231C859F8400528ED6 /* HistoryGuideModeViewController.swift in Sources */,
 				8E4F68331C6F3C6100BF9EEB /* SignInViewController.swift in Sources */,
 				8E9BB5071C74EDE6007B8D7F /* CancelActivitiesView.swift in Sources */,
 				8E9BB50D1C74F62D007B8D7F /* LogoutView.swift in Sources */,
@@ -691,6 +710,7 @@
 				8E00EE791C78B06400C460D2 /* SelectTransportView.swift in Sources */,
 				8EA9F7141C767D1700E41079 /* DescriptionViewController.swift in Sources */,
 				8E00EE6B1C77A01500C460D2 /* CardView.swift in Sources */,
+				8E6F08281C85AE0800528ED6 /* PaymentHistoryViewController.swift in Sources */,
 				8E56F9291C76737000332EEA /* ProfileSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

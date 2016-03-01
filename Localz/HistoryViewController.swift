@@ -31,7 +31,7 @@ class HistoryViewController: UIViewController,UITableViewDataSource,UITableViewD
     self.title = "HISTORY"
   }
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1
+    return 2
   }
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = historyTableView.dequeueReusableCellWithIdentifier("upcomingCell") as! UpComingCell

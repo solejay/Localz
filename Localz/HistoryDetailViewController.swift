@@ -7,8 +7,24 @@
 import UIKit
 
 class HistoryDetailViewController: UIViewController {
+  @IBOutlet weak var confirmationCodeLabel: UILabel!
+  
+  @IBOutlet weak var activityTitleLabel: UILabel!
+  
+  @IBOutlet weak var activityValueLable: UILabel!
+  
+  
+  @IBOutlet weak var timeValueLabel: UILabel!
+  @IBOutlet weak var dateValueLabel: UILabel!
+  
+  @IBOutlet weak var pickupDropValLabel: UILabel!
+  
+  @IBOutlet weak var languageValueLabel: UILabel!
+  
+  @IBOutlet weak var priceTitleLabel: UILabel!
   @IBOutlet weak var guidePhotoView: UIImageView!
 
+  @IBOutlet weak var priceValueLabel: UILabel!
   @IBOutlet weak var theScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +34,17 @@ class HistoryDetailViewController: UIViewController {
     guidePhotoView.layer.cornerRadius  = CGRectGetWidth(guidePhotoView.bounds) / 2
     guidePhotoView.layer.borderWidth = 2
     guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
-
+    
+    let mode = NSUserDefaults.standardUserDefaults().objectForKey("mode") as! Int
+    if(mode == 1){
+      activityTitleLabel.text = "Earnings"
+      activityValueLable.text = "$54 @ $16/hr"
+      activityValueLable.textColor = UIColor(hex: "#0FD3A7")
+      
+      priceValueLabel.hidden = true
+      priceTitleLabel.hidden = true
+    }
+    
     theScrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 120, right: 0)
   }
   override func viewWillAppear(animated: Bool) {

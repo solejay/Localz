@@ -4,8 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="GOTHAM-MEDIUM.TTF">
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+        </mutableArray>
         <mutableArray key="Gotham Book.ttf">
-            <string>GothamBook</string>
             <string>GothamBook</string>
         </mutableArray>
     </customFonts>
@@ -33,22 +37,22 @@
                                 </vibrancyEffect>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARE YOU SURE YOU WANT TO CANCEL THIS ACTIVITY?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAh-0A-lPx">
-                                <rect key="frame" x="172" y="85" width="257" height="45"/>
+                                <rect key="frame" x="172" y="119" width="257" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="aoD-Ak-2aH"/>
                                     <constraint firstAttribute="width" constant="257" id="oIM-0g-9sd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                 <color key="textColor" red="0.99883601639999997" green="0.99883601639999997" blue="0.99883601639999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This cannot be undone and may affect your guide rating and reviews." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc4-r7-Ipv">
-                                <rect key="frame" x="172" y="138" width="257" height="45"/>
+                                <rect key="frame" x="172" y="172" width="257" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7dU-xM-hnI"/>
                                     <constraint firstAttribute="width" constant="257" id="Cut-c0-Ane"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
                                 <color key="textColor" red="0.99883601639999997" green="0.99883601639999997" blue="0.99883601639999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -59,7 +63,7 @@
                                     <constraint firstAttribute="height" constant="49" id="WPc-ij-bdY"/>
                                     <constraint firstAttribute="width" constant="257" id="ZxA-Y0-kdf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                 <state key="normal" title="NO DON’T CANCEL">
                                     <color key="titleColor" red="0.99883601639999997" green="0.99883601639999997" blue="0.99883601639999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -71,7 +75,7 @@
                                     <constraint firstAttribute="width" constant="257" id="VCO-q0-kAi"/>
                                     <constraint firstAttribute="height" constant="49" id="pOD-1E-Fof"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
                                 <state key="normal" title="YES, TAKE ME BACK">
                                     <color key="titleColor" red="0.99883601639999997" green="0.99883601639999997" blue="0.99883601639999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -81,14 +85,14 @@
                             <constraint firstItem="Nc4-r7-Ipv" firstAttribute="centerX" secondItem="gAh-0A-lPx" secondAttribute="centerX" id="36V-dC-TcG"/>
                             <constraint firstAttribute="trailing" secondItem="h0l-PN-o35" secondAttribute="trailing" id="3os-MM-hPr"/>
                             <constraint firstItem="qTh-s4-b8F" firstAttribute="centerX" secondItem="bJJ-j8-sjZ" secondAttribute="centerX" id="AWs-xn-frK"/>
-                            <constraint firstItem="bJJ-j8-sjZ" firstAttribute="top" secondItem="Nc4-r7-Ipv" secondAttribute="bottom" constant="94" id="AnW-sX-JjK"/>
+                            <constraint firstItem="bJJ-j8-sjZ" firstAttribute="top" secondItem="Nc4-r7-Ipv" secondAttribute="bottom" constant="60" id="AnW-sX-JjK"/>
                             <constraint firstItem="h0l-PN-o35" firstAttribute="top" secondItem="F5j-lb-7zf" secondAttribute="top" id="CVb-0Y-U5f"/>
                             <constraint firstAttribute="bottom" secondItem="h0l-PN-o35" secondAttribute="bottom" id="F7s-bU-lYQ"/>
                             <constraint firstItem="qTh-s4-b8F" firstAttribute="top" secondItem="bJJ-j8-sjZ" secondAttribute="bottom" constant="13" id="IQF-RB-Nz1"/>
                             <constraint firstItem="bJJ-j8-sjZ" firstAttribute="centerX" secondItem="Nc4-r7-Ipv" secondAttribute="centerX" id="cfX-3c-je2"/>
                             <constraint firstItem="gAh-0A-lPx" firstAttribute="centerX" secondItem="F5j-lb-7zf" secondAttribute="centerX" id="mAz-RN-ayo"/>
                             <constraint firstItem="h0l-PN-o35" firstAttribute="leading" secondItem="F5j-lb-7zf" secondAttribute="leading" id="nmW-nq-yvy"/>
-                            <constraint firstItem="gAh-0A-lPx" firstAttribute="top" secondItem="F5j-lb-7zf" secondAttribute="top" constant="85" id="ryu-Co-Wba"/>
+                            <constraint firstItem="gAh-0A-lPx" firstAttribute="top" secondItem="F5j-lb-7zf" secondAttribute="top" constant="119" id="ryu-Co-Wba"/>
                             <constraint firstItem="Nc4-r7-Ipv" firstAttribute="top" secondItem="gAh-0A-lPx" secondAttribute="bottom" constant="8" id="vHl-l5-rTK"/>
                         </constraints>
                     </view>

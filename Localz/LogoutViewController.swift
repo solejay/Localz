@@ -29,6 +29,7 @@ class LogoutViewController: UIViewController {
     self.dismissViewControllerAnimated(false, completion: nil)
   }
   func yesButtonPressed(){
+    NSUserDefaults.standardUserDefaults().removeObjectForKey("mode")
     let rootController = self.storyboard?.instantiateViewControllerWithIdentifier("viewController") as! ViewController
     self.view.window?.rootViewController = rootController
   }

@@ -11,13 +11,17 @@ import EDStarRating
 
 class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlideMenuDelegate {
   var logout:LogoutView!
+  @IBOutlet weak var historyGuideCell: UITableViewCell!
   
+  @IBOutlet weak var historyExploreCell: UITableViewCell!
+
   @IBOutlet weak var findGuideCell: UITableViewCell!
   
   @IBOutlet weak var pendingRequestCell: UITableViewCell!
   
   @IBOutlet weak var photoCell: UITableViewCell!
   @IBOutlet weak var manageCalenderCell: UITableViewCell!
+  var historyIdentifier:String!
   var isGuideMode:Int = NSUserDefaults.standardUserDefaults().objectForKey("mode") as! Int
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +39,12 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
       logout = NSBundle.mainBundle().loadNibNamed("LogoutView", owner: nil, options: nil).first as! LogoutView
       
     
-      
+     
     }
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+  
+  }
   func createHeader() -> SideBarHeader{
     let header = NSBundle.mainBundle().loadNibNamed("SideBarHeader", owner: nil, options: nil).first as! SideBarHeader
     
@@ -71,14 +79,16 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
   func  segueIdForIndexPath(indexPath: NSIndexPath!) -> String! {
     var stringIndex:String!
     print(indexPath.row)
+
     switch(indexPath.row){
     case 0 : stringIndex = "home"
     case 1 : stringIndex = "upcoming"
     case 2 : stringIndex = "pendingRequest"
     case 3 : stringIndex = "manageCalendar"
-    case 4 : stringIndex = "history"
-    case 5 : stringIndex = "photos"
-    case 6 : stringIndex = "settings"
+    case 4 : stringIndex = "historyGuideMode"
+    case 5 : stringIndex = "history"
+    case 6 : stringIndex = "photos"
+    case 7 : stringIndex = "settings"
     default : stringIndex = "logout"
       //default : stringIndex = "settings"
     }
@@ -98,7 +108,7 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
    
   }
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    if(indexPath.row == 7){
+    if(indexPath.row == 8){
       let controller = self.storyboard?.instantiateViewControllerWithIdentifier("logout") as! LogoutViewController  
       self.presentViewController(controller, animated: false, completion: nil)
     }
@@ -107,13 +117,13 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
     let cell: UITableViewCell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
    
     if(isGuideMode == 1){
-        if(cell == findGuideCell){
+        if(cell == findGuideCell || cell == historyExploreCell){
             return 0
         }else{
           return UITableViewAutomaticDimension
       }
     }else{
-      if(cell == pendingRequestCell || cell == photoCell || cell == manageCalenderCell){
+      if(cell == pendingRequestCell || cell == photoCell || cell == manageCalenderCell || cell == historyGuideCell){
         return 0
       }else{
         return UITableViewAutomaticDimension
