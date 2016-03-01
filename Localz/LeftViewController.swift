@@ -102,6 +102,12 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
       return true
     }
   }
+  func disablePanGestureForIndexPath(indexPath: NSIndexPath!) -> Bool {
+    if(indexPath.row == 0){
+      return true
+    }
+    return false
+  }
  
   override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
     cell.backgroundColor = UIColor.clearColor()

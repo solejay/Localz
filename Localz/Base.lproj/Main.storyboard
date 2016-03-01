@@ -2675,7 +2675,7 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICKUP &amp; DROPOFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJr-ZP-lzB">
-                                                <rect key="frame" x="24" y="419" width="554" height="15"/>
+                                                <rect key="frame" x="24" y="430" width="554" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="Ims-nK-7ad"/>
                                                 </constraints>
@@ -2683,15 +2683,22 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                                 <color key="textColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkv-Du-AX6" customClass="MARKRangeSlider">
-                                                <rect key="frame" x="24" y="212" width="550" height="50"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkv-Du-AX6" customClass="TTRangeSlider">
+                                                <rect key="frame" x="24" y="212" width="550" height="65"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="2er-68-LNX"/>
+                                                    <constraint firstAttribute="height" constant="65" id="2er-68-LNX"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableStep" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bb5-Rr-bLW">
-                                                <rect key="frame" x="24" y="300" width="554" height="108"/>
+                                                <rect key="frame" x="24" y="311" width="554" height="108"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49Q-bF-pg1">
                                                         <rect key="frame" x="0.0" y="5" width="65" height="60"/>
@@ -2720,7 +2727,7 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUx-3u-sxe">
-                                                <rect key="frame" x="24" y="437" width="554" height="104"/>
+                                                <rect key="frame" x="24" y="448" width="554" height="104"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDk-HK-SYU">
                                                         <rect key="frame" x="0.0" y="5" width="65" height="60"/>
@@ -2778,7 +2785,7 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GUIDE PROVIDES TRANSPORTATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOw-Vc-wDZ">
-                                        <rect key="frame" x="24" y="282" width="554" height="15"/>
+                                        <rect key="frame" x="24" y="288" width="554" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="T3H-98-vUY"/>
                                         </constraints>
@@ -2789,13 +2796,13 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="S8g-me-oDH" secondAttribute="bottom" id="3dD-hh-hnX"/>
-                                    <constraint firstItem="Bb5-Rr-bLW" firstAttribute="top" secondItem="HOw-Vc-wDZ" secondAttribute="bottom" constant="3" id="9Wj-Kd-lIC"/>
+                                    <constraint firstItem="Bb5-Rr-bLW" firstAttribute="top" secondItem="HOw-Vc-wDZ" secondAttribute="bottom" constant="8" id="9Wj-Kd-lIC"/>
                                     <constraint firstItem="Bb5-Rr-bLW" firstAttribute="trailing" secondItem="HOw-Vc-wDZ" secondAttribute="trailing" id="Jt6-vR-3F4"/>
                                     <constraint firstItem="S8g-me-oDH" firstAttribute="centerX" secondItem="ysy-lw-vQL" secondAttribute="centerX" id="Wqh-Q3-IAp"/>
                                     <constraint firstItem="Bb5-Rr-bLW" firstAttribute="leading" secondItem="HOw-Vc-wDZ" secondAttribute="leading" id="ca0-po-QAy"/>
                                     <constraint firstItem="S8g-me-oDH" firstAttribute="top" secondItem="ysy-lw-vQL" secondAttribute="top" id="eW5-OX-2Tg"/>
                                     <constraint firstAttribute="trailing" secondItem="S8g-me-oDH" secondAttribute="trailing" id="feH-26-F7a"/>
-                                    <constraint firstItem="HOw-Vc-wDZ" firstAttribute="top" secondItem="ysy-lw-vQL" secondAttribute="top" constant="282" id="guT-AI-A6x"/>
+                                    <constraint firstItem="HOw-Vc-wDZ" firstAttribute="top" secondItem="ysy-lw-vQL" secondAttribute="top" constant="288" id="guT-AI-A6x"/>
                                     <constraint firstAttribute="trailing" secondItem="HOw-Vc-wDZ" secondAttribute="trailing" constant="22" id="jBJ-nm-AVa"/>
                                     <constraint firstItem="S8g-me-oDH" firstAttribute="leading" secondItem="ysy-lw-vQL" secondAttribute="leading" id="qZ2-hm-ARV"/>
                                     <constraint firstItem="HOw-Vc-wDZ" firstAttribute="leading" secondItem="ysy-lw-vQL" secondAttribute="leading" constant="24" id="xpo-xK-2SY"/>
@@ -4067,6 +4074,10 @@ If you want a guide who will take you around the ins and outs of the city and pr
         <scene sceneID="USp-8N-jIv">
             <objects>
                 <viewController id="ntW-I0-Qgv" customClass="PagingMenuController" customModule="PagingMenuController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GVP-bF-hbs"/>
+                        <viewControllerLayoutGuide type="bottom" id="6fV-G7-GUA"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="91D-B5-buv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -6,8 +6,8 @@ pod 'EDStarRating'
 pod 'PagingMenuController'
 pod 'LTNavigationBar'
 pod 'Fabric'
-pod 'MARKRangeSlider'
 pod 'Crashlytics'
+pod 'TTRangeSlider'
 
 link_with ‘Localz’, ‘LocalzTests'
 
