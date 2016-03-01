@@ -50,6 +50,9 @@
 		8E6F08231C859F8400528ED6 /* HistoryGuideModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F08221C859F8400528ED6 /* HistoryGuideModeViewController.swift */; };
 		8E6F08251C85AC9200528ED6 /* PaymentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F08241C85AC9200528ED6 /* PaymentHistoryCell.swift */; };
 		8E6F08281C85AE0800528ED6 /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F08271C85AE0800528ED6 /* PaymentHistoryViewController.swift */; };
+		8E6F082B1C85BFBC00528ED6 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F082A1C85BFBC00528ED6 /* PhotoCollectionViewController.swift */; };
+		8E6F082D1C85C13000528ED6 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F082C1C85C13000528ED6 /* PhotoCollectionViewCell.swift */; };
+		8E6F082F1C85D90700528ED6 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F082E1C85D90700528ED6 /* PhotoDetailViewController.swift */; };
 		8E749A8C1C6F71F700B4FF81 /* Gotham Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A871C6F71F700B4FF81 /* Gotham Book.ttf */; };
 		8E749A8D1C6F71F700B4FF81 /* GOTHAM-BLACK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A881C6F71F700B4FF81 /* GOTHAM-BLACK.TTF */; };
 		8E749A8E1C6F71F700B4FF81 /* GOTHAM-BOLD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A891C6F71F700B4FF81 /* GOTHAM-BOLD.TTF */; };
@@ -139,6 +142,9 @@
 		8E6F08221C859F8400528ED6 /* HistoryGuideModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryGuideModeViewController.swift; sourceTree = "<group>"; };
 		8E6F08241C85AC9200528ED6 /* PaymentHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryCell.swift; sourceTree = "<group>"; };
 		8E6F08271C85AE0800528ED6 /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
+		8E6F082A1C85BFBC00528ED6 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		8E6F082C1C85C13000528ED6 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		8E6F082E1C85D90700528ED6 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		8E749A871C6F71F700B4FF81 /* Gotham Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Book.ttf"; sourceTree = "<group>"; };
 		8E749A881C6F71F700B4FF81 /* GOTHAM-BLACK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-BLACK.TTF"; sourceTree = "<group>"; };
 		8E749A891C6F71F700B4FF81 /* GOTHAM-BOLD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-BOLD.TTF"; sourceTree = "<group>"; };
@@ -216,6 +222,7 @@
 				8E671DE31C73C0B80020F2C8 /* UpComingCell.swift */,
 				8E671DE51C73C0CB0020F2C8 /* UpcomingCell.xib */,
 				8E6F08241C85AC9200528ED6 /* PaymentHistoryCell.swift */,
+				8E6F082C1C85C13000528ED6 /* PhotoCollectionViewCell.swift */,
 			);
 			name = CustomCells;
 			sourceTree = "<group>";
@@ -281,6 +288,7 @@
 		8E4F682F1C6F386700BF9EEB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E6F08291C85BF9C00528ED6 /* Photos */,
 				8E6F08261C85ADE000528ED6 /* Payment */,
 				8E6F081F1C85635100528ED6 /* Logout */,
 				8E56F9251C766C9500332EEA /* Settings */,
@@ -372,6 +380,15 @@
 				8E6F08271C85AE0800528ED6 /* PaymentHistoryViewController.swift */,
 			);
 			name = Payment;
+			sourceTree = "<group>";
+		};
+		8E6F08291C85BF9C00528ED6 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F082A1C85BFBC00528ED6 /* PhotoCollectionViewController.swift */,
+				8E6F082E1C85D90700528ED6 /* PhotoDetailViewController.swift */,
+			);
+			name = Photos;
 			sourceTree = "<group>";
 		};
 		8E749A861C6F71DA00B4FF81 /* Fonts */ = {
@@ -675,6 +692,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E00EE711C78A62700C460D2 /* BookActivityDetailsController.swift in Sources */,
+				8E6F082D1C85C13000528ED6 /* PhotoCollectionViewCell.swift in Sources */,
 				8E6F08251C85AC9200528ED6 /* PaymentHistoryCell.swift in Sources */,
 				8E4F68381C6F491800BF9EEB /* Utils.swift in Sources */,
 				8ED7C8261C72510F00D95A28 /* TourDetailsViewController.swift in Sources */,
@@ -702,10 +720,12 @@
 				8E1DF8271C6F832C009E40A0 /* FindGuideViewController.swift in Sources */,
 				8E5BAE731C79CCAE00A1B173 /* BookingCompletedViewController.swift in Sources */,
 				8E671DE81C73C2900020F2C8 /* UpcomingViewController.swift in Sources */,
+				8E6F082B1C85BFBC00528ED6 /* PhotoCollectionViewController.swift in Sources */,
 				8E5BAE711C799C6A00A1B173 /* ConfirmDetailsViewController.swift in Sources */,
 				8E6B79531C79EA5D00B79EAA /* GuideObject.swift in Sources */,
 				8E00EE6F1C77BC3600C460D2 /* BookGuideViewController.swift in Sources */,
 				8E56F92B1C7675D800332EEA /* PaymentsViewController.swift in Sources */,
+				8E6F082F1C85D90700528ED6 /* PhotoDetailViewController.swift in Sources */,
 				8E4F683A1C6F55AC00BF9EEB /* LocationOverlay.swift in Sources */,
 				8E00EE791C78B06400C460D2 /* SelectTransportView.swift in Sources */,
 				8EA9F7141C767D1700E41079 /* DescriptionViewController.swift in Sources */,
