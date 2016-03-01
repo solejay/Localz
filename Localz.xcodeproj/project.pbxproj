@@ -46,6 +46,7 @@
 		8E671DEB1C73C5CA0020F2C8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E671DEA1C73C5CA0020F2C8 /* HistoryViewController.swift */; };
 		8E671DED1C73CF7B0020F2C8 /* UpcomingDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E671DEC1C73CF7B0020F2C8 /* UpcomingDetailController.swift */; };
 		8E6B79531C79EA5D00B79EAA /* GuideObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B79521C79EA5D00B79EAA /* GuideObject.swift */; };
+		8E6F08211C85636300528ED6 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F08201C85636300528ED6 /* LogoutViewController.swift */; };
 		8E749A8C1C6F71F700B4FF81 /* Gotham Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A871C6F71F700B4FF81 /* Gotham Book.ttf */; };
 		8E749A8D1C6F71F700B4FF81 /* GOTHAM-BLACK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A881C6F71F700B4FF81 /* GOTHAM-BLACK.TTF */; };
 		8E749A8E1C6F71F700B4FF81 /* GOTHAM-BOLD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A891C6F71F700B4FF81 /* GOTHAM-BOLD.TTF */; };
@@ -131,6 +132,7 @@
 		8E671DEA1C73C5CA0020F2C8 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		8E671DEC1C73CF7B0020F2C8 /* UpcomingDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingDetailController.swift; sourceTree = "<group>"; };
 		8E6B79521C79EA5D00B79EAA /* GuideObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideObject.swift; sourceTree = "<group>"; };
+		8E6F08201C85636300528ED6 /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		8E749A871C6F71F700B4FF81 /* Gotham Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Book.ttf"; sourceTree = "<group>"; };
 		8E749A881C6F71F700B4FF81 /* GOTHAM-BLACK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-BLACK.TTF"; sourceTree = "<group>"; };
 		8E749A891C6F71F700B4FF81 /* GOTHAM-BOLD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-BOLD.TTF"; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 		8E4F682F1C6F386700BF9EEB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E6F081F1C85635100528ED6 /* Logout */,
 				8E56F9251C766C9500332EEA /* Settings */,
 				8E671DE91C73C5AE0020F2C8 /* History */,
 				8E671DE21C73BF2B0020F2C8 /* Upcoming */,
@@ -344,6 +347,14 @@
 				8E6B79521C79EA5D00B79EAA /* GuideObject.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		8E6F081F1C85635100528ED6 /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F08201C85636300528ED6 /* LogoutViewController.swift */,
+			);
+			name = Logout;
 			sourceTree = "<group>";
 		};
 		8E749A861C6F71DA00B4FF81 /* Fonts */ = {
@@ -664,6 +675,7 @@
 				8E00EE7B1C78BE9000C460D2 /* ChooseLanguage.swift in Sources */,
 				8EE449831C70995F00BA10D3 /* SideBarHeader.swift in Sources */,
 				8EC997D11C71F41600B4941A /* FindGuideDetailViewController.swift in Sources */,
+				8E6F08211C85636300528ED6 /* LogoutViewController.swift in Sources */,
 				8E5BAE751C79CD0900A1B173 /* ImagePreview.swift in Sources */,
 				8E9BB50B1C74F5F1007B8D7F /* HistoryDetailViewController.swift in Sources */,
 				8E2225091C80F0C80051D7CC /* FilterViewController.swift in Sources */,

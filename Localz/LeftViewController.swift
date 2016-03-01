@@ -33,9 +33,9 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
       
       
       logout = NSBundle.mainBundle().loadNibNamed("LogoutView", owner: nil, options: nil).first as! LogoutView
-      logout.frame = self.view.bounds
-      logout.hidden = true
-      self.view.addSubview(logout)
+      
+    
+      
     }
   func createHeader() -> SideBarHeader{
     let header = NSBundle.mainBundle().loadNibNamed("SideBarHeader", owner: nil, options: nil).first as! SideBarHeader
@@ -79,15 +79,29 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
     case 4 : stringIndex = "history"
     case 5 : stringIndex = "photos"
     case 6 : stringIndex = "settings"
-    default : stringIndex = "upcoming"
+    default : stringIndex = "logout"
       //default : stringIndex = "settings"
     }
     return stringIndex
   }
   
+   override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+    if(identifier == "logout" ){
+      return false
+    }else{
+      return true
+    }
+  }
+ 
   override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
     cell.backgroundColor = UIColor.clearColor()
    
+  }
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    if(indexPath.row == 7){
+      let controller = self.storyboard?.instantiateViewControllerWithIdentifier("logout") as! LogoutViewController  
+      self.presentViewController(controller, animated: false, completion: nil)
+    }
   }
   override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
     let cell: UITableViewCell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
