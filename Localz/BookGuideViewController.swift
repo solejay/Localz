@@ -8,6 +8,7 @@ import UIKit
 import EDStarRating
 class BookGuideViewController: UIViewController {
   
+  @IBOutlet weak var guidePhotoView: UIImageView!
   @IBOutlet weak var ratingsView: EDStarRating!
   @IBOutlet weak var nighlifeOverlay: UIView!
   @IBOutlet weak var outDoorsOverlay: UIView!
@@ -52,6 +53,10 @@ class BookGuideViewController: UIViewController {
     ratingsView.horizontalMargin = 0;
     ratingsView.editable = false;
     ratingsView.displayMode = UInt(EDStarRatingDisplayHalf)
+    
+    guidePhotoView.layer.cornerRadius  = CGRectGetWidth(guidePhotoView.bounds) / 2
+    guidePhotoView.layer.borderWidth = 2
+    guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
 
   }
     override func didReceiveMemoryWarning() {

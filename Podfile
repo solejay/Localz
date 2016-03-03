@@ -8,6 +8,7 @@ pod 'LTNavigationBar'
 pod 'Fabric'
 pod 'Crashlytics'
 pod 'TTRangeSlider'
+pod 'THCalendarDatePicker'
 
 link_with ‘Localz’, ‘LocalzTests'
 

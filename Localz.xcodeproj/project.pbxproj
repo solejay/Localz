@@ -17,6 +17,8 @@
 		8E00EE791C78B06400C460D2 /* SelectTransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E00EE781C78B06400C460D2 /* SelectTransportView.swift */; };
 		8E00EE7B1C78BE9000C460D2 /* ChooseLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E00EE7A1C78BE9000C460D2 /* ChooseLanguage.swift */; };
 		8E00EE7D1C78BEC600C460D2 /* ChooseLanguage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E00EE7C1C78BEC600C460D2 /* ChooseLanguage.xib */; };
+		8E026D7C1C88564200724A45 /* PickDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E026D7B1C88564200724A45 /* PickDateView.swift */; };
+		8E026D7E1C88565B00724A45 /* PickDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E026D7D1C88565B00724A45 /* PickDateView.xib */; };
 		8E1DF8251C6F7D3A009E40A0 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DF8241C6F7D3A009E40A0 /* LeftViewController.swift */; };
 		8E1DF8271C6F832C009E40A0 /* FindGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DF8261C6F832C009E40A0 /* FindGuideViewController.swift */; };
 		8E1DF82A1C6F91F5009E40A0 /* GuideViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DF8291C6F91F5009E40A0 /* GuideViewCell.swift */; };
@@ -58,6 +60,7 @@
 		8E749A8E1C6F71F700B4FF81 /* GOTHAM-BOLD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A891C6F71F700B4FF81 /* GOTHAM-BOLD.TTF */; };
 		8E749A8F1C6F71F700B4FF81 /* GOTHAM-LIGHT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A8A1C6F71F700B4FF81 /* GOTHAM-LIGHT.TTF */; };
 		8E749A901C6F71F700B4FF81 /* GOTHAM-MEDIUM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A8B1C6F71F700B4FF81 /* GOTHAM-MEDIUM.TTF */; };
+		8E7947511C884AEA00C41101 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7947501C884AEA00C41101 /* LocationViewController.swift */; };
 		8E9BB5071C74EDE6007B8D7F /* CancelActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9BB5061C74EDE6007B8D7F /* CancelActivitiesView.swift */; };
 		8E9BB5091C74EE0A007B8D7F /* CancelActivitiesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9BB5081C74EE0A007B8D7F /* CancelActivitiesView.xib */; };
 		8E9BB50B1C74F5F1007B8D7F /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9BB50A1C74F5F1007B8D7F /* HistoryDetailViewController.swift */; };
@@ -103,6 +106,8 @@
 		8E00EE781C78B06400C460D2 /* SelectTransportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTransportView.swift; sourceTree = "<group>"; };
 		8E00EE7A1C78BE9000C460D2 /* ChooseLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLanguage.swift; sourceTree = "<group>"; };
 		8E00EE7C1C78BEC600C460D2 /* ChooseLanguage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseLanguage.xib; sourceTree = "<group>"; };
+		8E026D7B1C88564200724A45 /* PickDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickDateView.swift; sourceTree = "<group>"; };
+		8E026D7D1C88565B00724A45 /* PickDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickDateView.xib; sourceTree = "<group>"; };
 		8E1DF8241C6F7D3A009E40A0 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		8E1DF8261C6F832C009E40A0 /* FindGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGuideViewController.swift; sourceTree = "<group>"; };
 		8E1DF8291C6F91F5009E40A0 /* GuideViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewCell.swift; sourceTree = "<group>"; };
@@ -150,6 +155,7 @@
 		8E749A891C6F71F700B4FF81 /* GOTHAM-BOLD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-BOLD.TTF"; sourceTree = "<group>"; };
 		8E749A8A1C6F71F700B4FF81 /* GOTHAM-LIGHT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-LIGHT.TTF"; sourceTree = "<group>"; };
 		8E749A8B1C6F71F700B4FF81 /* GOTHAM-MEDIUM.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-MEDIUM.TTF"; sourceTree = "<group>"; };
+		8E7947501C884AEA00C41101 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		8E9BB5061C74EDE6007B8D7F /* CancelActivitiesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelActivitiesView.swift; sourceTree = "<group>"; };
 		8E9BB5081C74EE0A007B8D7F /* CancelActivitiesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelActivitiesView.xib; sourceTree = "<group>"; };
 		8E9BB50A1C74F5F1007B8D7F /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +215,7 @@
 				8E5BAE701C799C6A00A1B173 /* ConfirmDetailsViewController.swift */,
 				8E5BAE721C79CCAE00A1B173 /* BookingCompletedViewController.swift */,
 				8E2225081C80F0C80051D7CC /* FilterViewController.swift */,
+				8E7947501C884AEA00C41101 /* LocationViewController.swift */,
 			);
 			name = HomeViewControllers;
 			sourceTree = "<group>";
@@ -420,6 +427,8 @@
 				8E00EE7C1C78BEC600C460D2 /* ChooseLanguage.xib */,
 				8E5BAE741C79CD0900A1B173 /* ImagePreview.swift */,
 				8E5BAE761C79CD3200A1B173 /* ImagePreview.xib */,
+				8E026D7B1C88564200724A45 /* PickDateView.swift */,
+				8E026D7D1C88565B00724A45 /* PickDateView.xib */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -560,6 +569,7 @@
 				8E749A901C6F71F700B4FF81 /* GOTHAM-MEDIUM.TTF in Resources */,
 				8E00EE751C78ACE300C460D2 /* ScheduleTimeView.xib in Resources */,
 				8E749A8C1C6F71F700B4FF81 /* Gotham Book.ttf in Resources */,
+				8E026D7E1C88565B00724A45 /* PickDateView.xib in Resources */,
 				8E4F683C1C6F55D100BF9EEB /* LocationOverlay.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +707,7 @@
 				8E4F68381C6F491800BF9EEB /* Utils.swift in Sources */,
 				8ED7C8261C72510F00D95A28 /* TourDetailsViewController.swift in Sources */,
 				8E671DED1C73CF7B0020F2C8 /* UpcomingDetailController.swift in Sources */,
+				8E026D7C1C88564200724A45 /* PickDateView.swift in Sources */,
 				8E56F9271C766CB400332EEA /* SettingsViewController.swift in Sources */,
 				8E1DF82A1C6F91F5009E40A0 /* GuideViewCell.swift in Sources */,
 				8E671DEB1C73C5CA0020F2C8 /* HistoryViewController.swift in Sources */,
@@ -712,6 +723,7 @@
 				8E00EE7B1C78BE9000C460D2 /* ChooseLanguage.swift in Sources */,
 				8EE449831C70995F00BA10D3 /* SideBarHeader.swift in Sources */,
 				8EC997D11C71F41600B4941A /* FindGuideDetailViewController.swift in Sources */,
+				8E7947511C884AEA00C41101 /* LocationViewController.swift in Sources */,
 				8E6F08211C85636300528ED6 /* LogoutViewController.swift in Sources */,
 				8E5BAE751C79CD0900A1B173 /* ImagePreview.swift in Sources */,
 				8E9BB50B1C74F5F1007B8D7F /* HistoryDetailViewController.swift in Sources */,

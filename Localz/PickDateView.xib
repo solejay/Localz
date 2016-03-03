@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham Book.ttf">
+            <string>GothamBook</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PickDateView" customModule="Localz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHEN DO YOU WANT TO MEET UP?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0L-dH-4YN">
+                    <rect key="frame" x="8" y="54" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="WKF-pL-x2H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
+                    <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EC-9W-zKq">
+                    <rect key="frame" x="150" y="105" width="300" height="281"/>
+                    <color key="backgroundColor" red="0.98484848484848486" green="0.98484848484848486" blue="0.98484848484848486" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Rhf-ME-VSK"/>
+                        <constraint firstAttribute="height" constant="281" id="Rkf-Cs-NbB"/>
+                        <constraint firstAttribute="width" constant="300" id="VvB-fn-FAR"/>
+                        <constraint firstAttribute="height" constant="281" id="wSP-Pe-cV0"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Rhf-ME-VSK"/>
+                            <exclude reference="Rkf-Cs-NbB"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Rhf-ME-VSK"/>
+                            <include reference="Rkf-Cs-NbB"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1EC-9W-zKq" firstAttribute="centerX" secondItem="M0L-dH-4YN" secondAttribute="centerX" id="7Zz-LV-n8L"/>
+                <constraint firstItem="M0L-dH-4YN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="54" id="IBl-ja-dBX"/>
+                <constraint firstItem="1EC-9W-zKq" firstAttribute="top" secondItem="M0L-dH-4YN" secondAttribute="bottom" constant="30" id="Jd3-5H-eM7"/>
+                <constraint firstItem="1EC-9W-zKq" firstAttribute="top" secondItem="M0L-dH-4YN" secondAttribute="bottom" constant="27" id="NVa-V5-Ezj"/>
+                <constraint firstItem="M0L-dH-4YN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="bnV-9U-N4P"/>
+                <constraint firstItem="1EC-9W-zKq" firstAttribute="centerX" secondItem="M0L-dH-4YN" secondAttribute="centerX" id="m7c-ih-xPt"/>
+                <constraint firstAttribute="trailing" secondItem="M0L-dH-4YN" secondAttribute="trailing" constant="8" id="tVe-3k-Jho"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7Zz-LV-n8L"/>
+                    <exclude reference="NVa-V5-Ezj"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="7Zz-LV-n8L"/>
+                    <include reference="NVa-V5-Ezj"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="containerView" destination="1EC-9W-zKq" id="Wg2-AG-81w"/>
+                <outlet property="titleView" destination="M0L-dH-4YN" id="trS-3w-xHz"/>
+            </connections>
+        </view>
+    </objects>
+</document>

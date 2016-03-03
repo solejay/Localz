@@ -6,13 +6,26 @@
 
 import UIKit
 import EDStarRating
+import THCalendarDatePicker
 
-class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,EDStarRatingProtocol {
+class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,EDStarRatingProtocol,THDatePickerDelegate {
 
   @IBOutlet weak var potentialButton: UIButton!
   @IBOutlet weak var filterButton: UIButton!
   @IBOutlet weak var guideTableView: UITableView!
+  var curFromDate : NSDate? = NSDate()
+  lazy var calendarPicker : THDatePickerViewController = {
+    let picker = THDatePickerViewController.datePicker()
+    picker.delegate = self
+    picker.date = self.curFromDate
+    picker.selectedBackgroundColor = UIColor(hex: "#E13F53")
+    picker.currentDateColor = UIColor.whiteColor()
+    picker.currentDateColorSelected = UIColor.whiteColor()
+    return picker
+  }()
+  var dateViewContainer:PickDateView!
   var guideList:[GuideObject] = []
+  var isSearchSelected:Bool! = false
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
@@ -22,6 +35,7 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
       let searchButton = UIButton(type: .System)
       searchButton.frame = CGRectMake(0, 0, 29, 29);
       searchButton.setImage(UIImage(named:"search-icon"), forState: UIControlState.Normal)
+      searchButton.addTarget(self, action: "showSearch:", forControlEvents: .TouchUpInside)
       searchButton.tintColor = UIColor.whiteColor()
       
       self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: searchButton)
@@ -35,6 +49,29 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
       self.filterButton.addTarget(self, action: "showFilterView", forControlEvents: .TouchUpInside)
       guideList = GuideObject.getGuide()
       
+      setupDatePickerView()
+    }
+  
+    func setupDatePickerView(){
+      
+      dateViewContainer = NSBundle.mainBundle().loadNibNamed("PickDateView", owner: nil, options: nil).first as! PickDateView
+      dateViewContainer.frame = self.view.bounds
+      dateViewContainer.backgroundColor = UIColor.whiteColor()
+      dateViewContainer.containerView.layer.borderColor = UIColor.darkGrayColor().CGColor
+      dateViewContainer.containerView.layer.borderWidth = 0.5
+  
+      
+      dateViewContainer.hidden = true
+      
+      calendarPicker.setDisableYearSwitch(true)
+      //calendarPicker.view.center = dateViewContainer.containerView.center
+      calendarPicker.view.frame = dateViewContainer.containerView.bounds
+      
+      dateViewContainer.containerView.addSubview(calendarPicker.view)
+      self.addChildViewController(calendarPicker)
+      calendarPicker.didMoveToParentViewController(self)
+      
+      self.view.addSubview(dateViewContainer)
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       return guideList.count
@@ -82,13 +119,36 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  func showSearch(button:UIButton){
+    
+    if(isSearchSelected == true){
+     dateViewContainer.hidden = true
+    }else{
+       dateViewContainer.hidden = false
+    }
+    isSearchSelected = !isSearchSelected
+  }
   
   func showFilterView(){
     let controller = self.storyboard?.instantiateViewControllerWithIdentifier("filterView") as! FilterViewController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }
+  func datePickerDonePressed(datePicker: THDatePickerViewController!) {
     
+   // dismissSemiModalView()
+  }
+  
+  func datePickerCancelPressed(datePicker: THDatePickerViewController!) {
+   // dismissSemiModalView()
+  }
+  
+  func datePicker(datePicker: THDatePickerViewController!, selectedDate: NSDate!) {
+    print("Date selected: \(selectedDate)")
+    //dateViewContainer.hidden = true
+   // isSearchSelected = !isSearchSelected
+
+  }
 
   
 

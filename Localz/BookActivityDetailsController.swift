@@ -187,9 +187,11 @@ class BookActivityDetailsController: UIViewController {
     }.first
     if(selectedEndTimeButton != .None){
       selectTransportView.hidden = false
+      scheduleTimeView.hidden = true
       setTimeLabel(button,end: selectedEndTimeButton)
     }else{
       selectTransportView.hidden = true
+      scheduleTimeView.hidden = false
     }
   }
   func endButtonSelected(button:UIButton)
@@ -210,9 +212,11 @@ class BookActivityDetailsController: UIViewController {
     }.first
     if(selectedStartTimeButton != .None){
       selectTransportView.hidden = false
+      scheduleTimeView.hidden = true
       setTimeLabel(selectedStartTimeButton,end: button)
     }else{
       selectTransportView.hidden = true
+      scheduleTimeView.hidden = false
     }
   }
   
@@ -241,7 +245,13 @@ class BookActivityDetailsController: UIViewController {
     selectTransportView.addLocationButton.layer.borderColor = UIColor(hex: "#2F2F2F").CGColor
     selectTransportView.addLocationButton.layer.borderWidth = 2
     selectTransportView.addLocationButton.layer.cornerRadius = 4
+    selectTransportView.addLocationButton.addTarget(self, action: "showLocationView", forControlEvents: .TouchUpInside)
     selectTransportView.addresLabel.hidden = false
+  }
+  func showLocationView(){
+    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("location") as! LocationViewController
+    self.navigationItem.title = ""
+    self.navigationController?.pushViewController(controller, animated: true)
   }
   
   //MARK: ChooseLanguageView

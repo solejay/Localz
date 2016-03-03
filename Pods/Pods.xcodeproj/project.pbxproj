@@ -7,81 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BEF2531896C7E3086696C844BBE8A8F /* LTNavigationBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 069476893ECCDE1568A5CC4429162B50 /* LTNavigationBar-dummy.m */; };
-		158B5E5F33C0918B67EBA04932119B77 /* SASlideMenuNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 725CF48233E73E6462EA14415FAACF29 /* SASlideMenuNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D2564607627645E7E176869451077D0 /* SASlideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DA054B69CF425D6D962AFF209CAB32 /* SASlideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20C6CB1587F7A2351F902864274C99D0 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8041E82C2882452F2BA5BDAF7B30F4 /* MenuItemView.swift */; };
-		2200ECBD1DF3825494CC02041B9DDF72 /* SASlideMenuRightMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C87FE750194D557D011F17CA1E82DB2E /* SASlideMenuRightMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29F4ABE576784AADD6F92EEE334BB9CD /* TTRangeSliderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9BEF8E9F1BB358D3515A5CA713F748 /* TTRangeSliderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C418D1357A379848CCC62EE0E49823A /* UINavigationBar+Awesome.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB2C433444AC9339754F27CB75A60FA /* UINavigationBar+Awesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E5D8493ED759C3E22FC1FF45359648B /* SASlideMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 606B92937E84522BE25FD29EB26A4BC9 /* SASlideMenuNavigationController.m */; };
-		3F9733317F5BED2DC042A3BC64DECBFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
-		4A5324338426012AF07AF153F8ADAC7C /* SASlideMenuDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE6985239B9F8D5160E0FEA683617EC /* SASlideMenuDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C6CAC010CBEE7ACDFD7D99CB456E6BE /* SASlideMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C221570A20F600AD59379FE9718B5D /* SASlideMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5205D523B5CF97782078B3DB65B5CCD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
-		60E773DBB5E91045BCAE4B19F50C1B6C /* PagingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C7E63DD1326E1C6C15C681961A76B6 /* PagingMenuController.swift */; };
-		6178CFB49C88732D0AD95F37889F7104 /* TTRangeSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = AE56F1766CDCE1CC4F57C4C5BEEAB698 /* TTRangeSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63435EBE0DB78BA1F54864E16DEFC7DD /* SASlideMenuPushSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6420AE82C659DA33B52C4CC7FF083B98 /* SASlideMenuPushSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BF34366F26C6AE9ABF4E822F9323FAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB254A0FF9C0E1ECCCC3CA36E6AC016 /* CoreGraphics.framework */; };
-		749E0B98898B53958230EBCCD9CCE223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
-		75B861BFA062922CE8A5E7BB32E68DFB /* SASlideMenuRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D3C0AE68D6133223351D1D4F783105 /* SASlideMenuRootViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77420859DA54D38712C0DC45EA6DE0A6 /* SASlideMenuRightMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A58D1C4B5125340A6F0CC1E3292763 /* SASlideMenuRightMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		780DCE67088BF8D98FA1E9D0CCE0A30C /* LTNavigationBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4EEABD202217CB10C77243EDA897B48 /* LTNavigationBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A707782C475595C59526A6793F19A5A /* SASlideMenuLeftMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = D9DC4D0AB33B2B5C090AA96502304602 /* SASlideMenuLeftMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B9060DB3FF267A11001381DC83A5AA4 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E372D1FA87D06EB4BE491C2F069F32BB /* TTRangeSlider.m */; };
-		7D9C7D94A47B2784E8153ED4A304339D /* EDStarRating-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF1A08498EC3C85C6C8DB78706A9A38 /* EDStarRating-dummy.m */; };
-		8E9FFC95E1178CB6ADD0B2332750CAF9 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
-		942CEAE6A3606F93B061343835278C83 /* SASlideMenuDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C58E1170B1B57751D37C0DF10683B64C /* SASlideMenuDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98187931A6C94B2D96391F4A2C52FA34 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64AB8C0A1E815C07C6F968F76F7E559 /* QuartzCore.framework */; };
-		9B1631A2032AF8391AB8264202C5B035 /* PagingMenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85152CA063204B4175297A1528AB2273 /* PagingMenuOptions.swift */; };
-		9CF57AA811C871A91775FA5D8BE1E5B0 /* SASlideMenuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B783F0E94E527621370DC1BB2FC1D04 /* SASlideMenuRootViewController.m */; };
-		A80A2978FAB8990DDE2FA942246139C3 /* EDStarRating.h in Headers */ = {isa = PBXBuildFile; fileRef = AC09A8FA58FA8631E47ECBC5F43B38B0 /* EDStarRating.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABDFE9850AE1EA0DFDFC61FC7BD68964 /* SASlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = AA017BDC774006B6670A21E2C47072B1 /* SASlideMenuContentSegue.m */; };
-		B41927D5344DEC7AC498C658C445FC24 /* SASlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D35920D59E4940B79D28AD8B770B5 /* SASlideMenuViewController.m */; };
-		BBBEAB12281605EDB60BF9DBC536F972 /* SASlideMenuRightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F0EA34F8AF44473C233DBC5B4BA4AF /* SASlideMenuRightMenuViewController.m */; };
-		BBDF246593E5AD067ACAB166708D75A0 /* PagingMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F9CF3F9E83AC58DD5E93967C3F4684 /* PagingMenuController-dummy.m */; };
-		C1FF70F72A7D55663739F0227C10C183 /* SASlideMenuContentSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 02660BE492F4C63259A5F6B4BA2119D1 /* SASlideMenuContentSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C20469BB081676AA399091122CC2C315 /* EDStarRating-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CBD4DC9FA4B12F84A41A936887739F /* EDStarRating-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3A1149C93CFF8524FB4C525968FBC47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
-		C779B773B21334576B01B03BBE7902B9 /* PagingMenuController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA9D833422B373F7A0E2F6CA8FCA9523 /* PagingMenuController.bundle */; };
-		CD2E7269D798C4EF73A0D92BBF39BB06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
-		D16570BED975400112EDC8BF0B3A2A6C /* PagingMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 462EA2CEB3B2145CC185E17D88F6251A /* PagingMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2CC71252BF038859757E71E1ED10DFB /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D65EFFC27A6BF681ACD3DDA7A94D81AA /* SASlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = AE722548F2D090D01CF586F564F12C97 /* SASlideMenuRightMenuSegue.m */; };
-		D8A3B03E127E9C8AD0FF5D5637014C2E /* SASlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9664644A00629331554683DAC984BC /* SASlideMenu-dummy.m */; };
-		D90AD45BDBD70CA40C9F1465EDF2AB01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */; };
-		E0AA0181E23BB703855E9C3680EE39E8 /* SASlideMenuPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B91276C131A4A6C8F53B07F9F86B5 /* SASlideMenuPushSegue.m */; };
-		E968FC1A7487DAEB4EC5AC5F92FF9AF9 /* TTRangeSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33FD00C183A7614BC13D383821D4DC99 /* TTRangeSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAAA943F110B3B8CC7C4192807B36562 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E244393C48E09D6D507DE9AB7F8D04 /* UINavigationBar+Awesome.m */; };
-		EB221D1B6D60609503B61B521C1ED971 /* TTRangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CB16479021E5557A8B0903A7EC0641 /* TTRangeSlider-dummy.m */; };
-		ECCC506A81FC11AF8DC296789C69829C /* SASlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FB7D86996543755D26DAB6D81537E8 /* SASlideMenuLeftMenuSegue.m */; };
-		F97CFE307D612C51D8B161BA63B8DC80 /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56A69F8231708DEB87E08245975706 /* EDStarRating.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FDDE4BC1014DBA6902550ED25248164C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006D4D7301C5B38D2C2EC09BD64DC81 /* MenuView.swift */; };
+		00B9F7B5DD3D7FFC24402B165D249975 /* SASlideMenuDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F174792C015773BD30663B736351C95A /* SASlideMenuDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06F885E496033D0AD6B1FB4B2B7899F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */; };
+		0A1C4CFBEBB16114340E8C7A0B123800 /* SASlideMenuRightMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5EC6BA4A7FA96A8CA1A61F289F66D5 /* SASlideMenuRightMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BEF2531896C7E3086696C844BBE8A8F /* LTNavigationBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7911B37429D07107FD9F773A46D8427 /* LTNavigationBar-dummy.m */; };
+		0CC065D950865F2E18D9A9726D253DFD /* UIViewController+KNSemiModal.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D3204D8B3E684162961AE0D41AB38E /* UIViewController+KNSemiModal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F144A5132D7E433188B0FE69F9F1CA9 /* SASlideMenuRightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167FFCBB450B6829522076DE856BC87E /* SASlideMenuRightMenuViewController.m */; };
+		0FD13CDF1D968BD391AAD830D5739C85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD320637C1439F3869EBB7790382633 /* QuartzCore.framework */; };
+		176AA16BE7A75A1E2DBF70F28100079F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */; };
+		18322A2EA1E51FDC1716B10DE4B119FB /* THCalendarDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 856B833964FEA672FB8611EDB623D705 /* THCalendarDatePicker-dummy.m */; };
+		1CEAA57F86CEA3820FF0461E697EB791 /* TTRangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EA4E39D8F8F1514CE472E2C60E2D15 /* TTRangeSlider-dummy.m */; };
+		1D421A841F72DFD9F35878B37D595504 /* NSDate+Difference.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B7005A9E7FC5BFFA9F7AA73F008D54C /* NSDate+Difference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C6CB1587F7A2351F902864274C99D0 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55532336D45C720D24B4E63333A634BB /* MenuItemView.swift */; };
+		2619D7115A6124AD4C4703F63423D7E6 /* SASlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E935881970DCAF1327F49E7EF02ED3 /* SASlideMenuViewController.m */; };
+		29D59AEF3ED8CBF3381F059B4AC13AE8 /* SASlideMenuPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9239836B7B548E2A1A47C31B53F1B13A /* SASlideMenuPushSegue.m */; };
+		2A55724088ADDC3FA58C2B9648FF5237 /* SASlideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 041E3EE28E8DCB0CAEA3F5368576D9F7 /* SASlideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BA75486A144C888A2AAAB64EE1108C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA1287034668EBCD3A71C6A02E4EACE /* Images.xcassets */; };
+		2C418D1357A379848CCC62EE0E49823A /* UINavigationBar+Awesome.h in Headers */ = {isa = PBXBuildFile; fileRef = C945F0A3D3966A7587EBC06342EA93AD /* UINavigationBar+Awesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FE9AB946BF29240B39E7788A3976A1 /* SASlideMenuDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E8632B8256DF8D0ABA79CBCF6F3143 /* SASlideMenuDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE76690F7800765D8AB646511F00CBD /* TTRangeSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 997145BA6F1ED0B1DD69E609141653D0 /* TTRangeSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B0379440EC571ACF8D20772879081B /* SASlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A608F434B7AEA43660F03E2D4B83C499 /* SASlideMenu-dummy.m */; };
+		43E438B8B5C006146B124AFE09C0619A /* SASlideMenuRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 577FA2CDCBFBDB4BCEC1126C109F37D9 /* SASlideMenuRootViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44C6D635AEE0719AEA8C939342F99083 /* SASlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 91223A4D3F00DA5C81015DDD216C8BA9 /* SASlideMenuRightMenuSegue.m */; };
+		48EDA2062BE129B1453AD9BBF112CC30 /* SASlideMenuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC098773B0522A71A6D88459A5FD9A4 /* SASlideMenuRootViewController.m */; };
+		50F3B1560051DDD6EB0B8D71C5F62F88 /* TTRangeSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 79E344B06F56AB454803A6BDE0340E5D /* TTRangeSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52C9DB2C0A3833DD4B3F2F2ACF5F6C9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */; };
+		5DD2DD5383D5CF8E77C72F66B95E7A61 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		60E773DBB5E91045BCAE4B19F50C1B6C /* PagingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC25636918CAAD473467ECDBF77513C /* PagingMenuController.swift */; };
+		6298F2522B6F1997AE78CF341B567EF0 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C78B082AB403142F675569D49B82D7D3 /* TTRangeSlider.m */; };
+		663FCBA606F1862562755A2625670E75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD320637C1439F3869EBB7790382633 /* QuartzCore.framework */; };
+		6BF34366F26C6AE9ABF4E822F9323FAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC62A9D248163482270AF34C6F8F2C5 /* CoreGraphics.framework */; };
+		734E6304D8C162FCE59D98A5903BCECE /* KNSemiModalViewController_hons82-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54F57C368A1E42229DC6938A38610D0B /* KNSemiModalViewController_hons82-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73F5275CE772AA7ACC60F0577C9090C0 /* THDatePickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CB49E8BCE460490F25127FECC0737489 /* THDatePickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		749E0B98898B53958230EBCCD9CCE223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */; };
+		780DCE67088BF8D98FA1E9D0CCE0A30C /* LTNavigationBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3F932242320E00E8FF4A990BB3910E /* LTNavigationBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D9C7D94A47B2784E8153ED4A304339D /* EDStarRating-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA7F534E3F02B2387986488D2FD7BD /* EDStarRating-dummy.m */; };
+		7DEE6F0E34C5586DA5FA73276AAEE78B /* KNSemiModalViewController_hons82-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A586DF7FC18B9792B9DD0C1C167DCF /* KNSemiModalViewController_hons82-dummy.m */; };
+		80D87A84DDC61EB264E5BCF52A033565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */; };
+		810FDB3A464812E15D663C67232F77E7 /* SASlideMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E5652C62B4CA6CCE6FFEC58DB1EB8408 /* SASlideMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8163A60362E461710D7B192CA81C9FB3 /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF2EF184EC6206D367C14DCC3D2576 /* UIViewController+KNSemiModal.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		87C23FB39A8DE87BD441D610FC71B163 /* SASlideMenuRightMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 260B56A15F797D47548C10898069E0FF /* SASlideMenuRightMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88567A5F5ECB09EEB84ACD6DDC0DD218 /* SASlideMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB3BFFAD8506CF95AB25DBD27300AF /* SASlideMenuNavigationController.m */; };
+		98187931A6C94B2D96391F4A2C52FA34 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD320637C1439F3869EBB7790382633 /* QuartzCore.framework */; };
+		9B1631A2032AF8391AB8264202C5B035 /* PagingMenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B498B95D23DC25792A6DAE413217E /* PagingMenuOptions.swift */; };
+		A4423C2E1A12C2091F1E9DD91AA43874 /* SASlideMenuLeftMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB52A6C60B4C981B74E1BC5601FDA4C /* SASlideMenuLeftMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A80A2978FAB8990DDE2FA942246139C3 /* EDStarRating.h in Headers */ = {isa = PBXBuildFile; fileRef = B630BAA655D6E659CA82F55DD1F01A31 /* EDStarRating.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC5A409027FF7DE9D6D8645D7A151402 /* THDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ABDDDE6D99C9E9D7D91B00D4F44F62C /* THDatePickerViewController.xib */; };
+		B48A6F4BD5A8539E42E90E7364DCE032 /* SASlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = F232A70EC551BF15F73122BADEF72D06 /* SASlideMenuLeftMenuSegue.m */; };
+		B976220429CAA33DCF28A9FA10484740 /* THDateDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 173FCF4AB0103F90ED3AD735F6EAD1C6 /* THDateDay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBDA6AA1D9A2293BE2C4ED647368332E /* NSDate+Difference.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B65324F966C4366A652161D07C92EE4 /* NSDate+Difference.m */; };
+		BBDF246593E5AD067ACAB166708D75A0 /* PagingMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F3DAC83FE05DE7CD368880A94209AF /* PagingMenuController-dummy.m */; };
+		C097F6ECDEAC1A6DE54F81584D4A42DF /* SASlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FDC02401B4674FE97D51A387757938 /* SASlideMenuContentSegue.m */; };
+		C20469BB081676AA399091122CC2C315 /* EDStarRating-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BFECBDAA5794EDABD1F6C11E91DBFF7 /* EDStarRating-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2E12DBE4625CA41E89C676B018FC3C6 /* SASlideMenuPushSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 309482E1828294B383A272F15F99A2EC /* SASlideMenuPushSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A1149C93CFF8524FB4C525968FBC47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */; };
+		C779B773B21334576B01B03BBE7902B9 /* PagingMenuController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D6ED895D69F8F8F72B2F50C3ACB0F9D /* PagingMenuController.bundle */; };
+		CD2E7269D798C4EF73A0D92BBF39BB06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */; };
+		D1540E0FF71D4C8816DC448204008590 /* KNSemiModalViewController_hons82.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC0FA42C35CF00CAC14B7EE929669C3 /* KNSemiModalViewController_hons82.framework */; };
+		D16570BED975400112EDC8BF0B3A2A6C /* PagingMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF734F74A9CA291575E9242E00B3F63 /* PagingMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D271469C95768AD195137B161C77B201 /* SASlideMenuContentSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = E5165E4364C73669384E20740DC688FE /* SASlideMenuContentSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D808A41E22F9EB682FC35415DF5BC8D6 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE9D6ADC064310F3165189737F543D1E /* THDateDay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F4B4C6451FED7C6783B03DA419CEA6 /* THDateDay.xib */; };
+		DFBB24489AACB838716D7324165ED888 /* THDateDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 401D52A0976AC2639BEDFC05962D0FE0 /* THDateDay.m */; };
+		E0732D3EA4051F89E0C2F736B4DB1496 /* TTRangeSliderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B7D53B1EAB5E05C373C75C0C2A1669C /* TTRangeSliderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1968A18539115BCB58A339B95567AB8 /* THDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9468C46A8E4AF967B891F8E46D12E00 /* THDatePickerViewController.m */; };
+		E506EC866855E9F2DDB4156125BACDA3 /* THCalendarDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 170B5BA9B2AB40702A07F5BC9C8E6B60 /* THCalendarDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E67C569235F27EFE475BE697B26E5531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */; };
+		EAAA943F110B3B8CC7C4192807B36562 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = A100AD006EF47F592A1C4F10FA05BC80 /* UINavigationBar+Awesome.m */; };
+		F97CFE307D612C51D8B161BA63B8DC80 /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3638E1F303EC7C62309648866B6A19 /* EDStarRating.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FD86802D96E1353BD14A668BA3E6A3B4 /* SASlideMenuNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = F957AA8B337F12774B0DA65CA9129F29 /* SASlideMenuNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDDE4BC1014DBA6902550ED25248164C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56474A2CF91F5D62ACCD1357EE00D2B6 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		10FBF9DBCA274415425FA20DC8579633 /* PBXContainerItemProxy */ = {
+		1446E220F9C54D9167DFE3B5147DE839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1892213B8242D18974553DCC80A3C3FB;
+			remoteInfo = KNSemiModalViewController_hons82;
+		};
+		27E67E349860346F7380AC84207960DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB28CB69D458579675D3D3E5C796FC89;
+			remoteInfo = THCalendarDatePicker;
+		};
+		451A937E54D1D457FF91535600E105E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 34389C94BE448DDFA8617707261D8260;
 			remoteInfo = EDStarRating;
 		};
-		2BB4CC0D49A023C2BEF3820CC804BD49 /* PBXContainerItemProxy */ = {
+		5433A1224C9E358457AD0E49A3C51DB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FABEFE59C2CD9C196FD2B92D8E5BC90E;
-			remoteInfo = LTNavigationBar;
+			remoteGlobalIDString = 50E57D3CB1670C39C6F12A4756C88ED5;
+			remoteInfo = SASlideMenu;
 		};
-		5A9D4C9429A27E8A2230434A61FE755A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6543C9744244C24C3E662A37C17758C9;
-			remoteInfo = TTRangeSlider;
-		};
-		9DEE46E8C8ADFECB49679868C5CE7148 /* PBXContainerItemProxy */ = {
+		B1F256E0494AD56827F576708F813B86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -95,101 +122,149 @@
 			remoteGlobalIDString = 23D4B5C9CC657B68134305BFEB076270;
 			remoteInfo = "PagingMenuController-PagingMenuController";
 		};
-		D487A94E206848506A3F2000D520CF67 /* PBXContainerItemProxy */ = {
+		CB59C8B7CB1EE432AEEA80A62BF4140A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9119437C29ACD09F0AAB35DED67A1840;
-			remoteInfo = SASlideMenu;
+			remoteGlobalIDString = 7538A258A56DDC55D714289F7856B24B;
+			remoteInfo = TTRangeSlider;
+		};
+		DD82F9AE9CC2B7F6BAA1C4FDDE050740 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FABEFE59C2CD9C196FD2B92D8E5BC90E;
+			remoteInfo = LTNavigationBar;
+		};
+		DF95AFEDAC71050D12291BF3C3EAB7C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1892213B8242D18974553DCC80A3C3FB;
+			remoteInfo = KNSemiModalViewController_hons82;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0037823C58DB32D194EECBFF9D5B4919 /* SASlideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SASlideMenu-prefix.pch"; sourceTree = "<group>"; };
-		0094918070809CDA2036976CA8487B07 /* EDStarRating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDStarRating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02660BE492F4C63259A5F6B4BA2119D1 /* SASlideMenuContentSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuContentSegue.h; path = SASlideMenu/SASlideMenu/SASlideMenuContentSegue.h; sourceTree = "<group>"; };
-		02D3C0AE68D6133223351D1D4F783105 /* SASlideMenuRootViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuRootViewController.h; path = SASlideMenu/SASlideMenu/SASlideMenuRootViewController.h; sourceTree = "<group>"; };
-		069476893ECCDE1568A5CC4429162B50 /* LTNavigationBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTNavigationBar-dummy.m"; sourceTree = "<group>"; };
-		0900A4A4818A9B43FB72E280531D1EB6 /* PagingMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagingMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		143241B240FCEF22FF6EF3450471B606 /* TTRangeSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTRangeSlider.xcconfig; sourceTree = "<group>"; };
-		1D7CF584CD577E3BE8FDB08C9B518F1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20F9CF3F9E83AC58DD5E93967C3F4684 /* PagingMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagingMenuController-dummy.m"; sourceTree = "<group>"; };
-		21CB16479021E5557A8B0903A7EC0641 /* TTRangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTRangeSlider-dummy.m"; sourceTree = "<group>"; };
+		01D9051C5D2B144BB6672D249B2ED58C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		041E3EE28E8DCB0CAEA3F5368576D9F7 /* SASlideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SASlideMenu-umbrella.h"; sourceTree = "<group>"; };
+		062A14D158DAE9922B98937C34287E02 /* EDStarRating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDStarRating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC62A9D248163482270AF34C6F8F2C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1299948EE4C59801FB858ABA8FD6BFAE /* SASlideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SASlideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E0CB83CFA9BB1142981681AF44B614 /* KNSemiModalViewController_hons82.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KNSemiModalViewController_hons82.modulemap; sourceTree = "<group>"; };
+		1312340BD2E37DA84A61C365A28E4643 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15AB3BFFAD8506CF95AB25DBD27300AF /* SASlideMenuNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuNavigationController.m; path = SASlideMenu/SASlideMenu/SASlideMenuNavigationController.m; sourceTree = "<group>"; };
+		167FFCBB450B6829522076DE856BC87E /* SASlideMenuRightMenuViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuRightMenuViewController.m; path = SASlideMenu/SASlideMenu/SASlideMenuRightMenuViewController.m; sourceTree = "<group>"; };
+		170B5BA9B2AB40702A07F5BC9C8E6B60 /* THCalendarDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "THCalendarDatePicker-umbrella.h"; sourceTree = "<group>"; };
+		173FCF4AB0103F90ED3AD735F6EAD1C6 /* THDateDay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THDateDay.h; path = THCalendarDatePicker/THDateDay.h; sourceTree = "<group>"; };
+		18DA7F534E3F02B2387986488D2FD7BD /* EDStarRating-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EDStarRating-dummy.m"; sourceTree = "<group>"; };
+		18F4B4C6451FED7C6783B03DA419CEA6 /* THDateDay.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = THDateDay.xib; path = THCalendarDatePicker/THDateDay.xib; sourceTree = "<group>"; };
+		1B7D53B1EAB5E05C373C75C0C2A1669C /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = Pod/Classes/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
+		1BFECBDAA5794EDABD1F6C11E91DBFF7 /* EDStarRating-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDStarRating-umbrella.h"; sourceTree = "<group>"; };
+		207B55908BB82F0D481A1CA3665680F4 /* PagingMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingMenuController.xcconfig; sourceTree = "<group>"; };
+		208DCCF4CB8DD3A5BEB7FF4507ACA812 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212920E22002294289751341E0207535 /* EDStarRating.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EDStarRating.xcconfig; sourceTree = "<group>"; };
+		23B6A5ED2897F0E0CFCD61AAC4508649 /* LTNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LTNavigationBar.modulemap; sourceTree = "<group>"; };
+		260B56A15F797D47548C10898069E0FF /* SASlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuRightMenuSegue.h; path = SASlideMenu/SASlideMenu/SASlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
 		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		2C56A69F8231708DEB87E08245975706 /* EDStarRating.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDStarRating.m; path = EDStarRating/EDStarRating.m; sourceTree = "<group>"; };
-		2FFE16CE0144F9647328959F841A321F /* PagingMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingMenuController.xcconfig; sourceTree = "<group>"; };
-		30EF84C568A0D1B239010DA5557610DB /* SASlideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SASlideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		33FD00C183A7614BC13D383821D4DC99 /* TTRangeSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTRangeSlider-umbrella.h"; sourceTree = "<group>"; };
-		357B91276C131A4A6C8F53B07F9F86B5 /* SASlideMenuPushSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuPushSegue.m; path = SASlideMenu/SASlideMenu/SASlideMenuPushSegue.m; sourceTree = "<group>"; };
-		36230A5B83EE0960608036A79FBF2183 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37A58D1C4B5125340A6F0CC1E3292763 /* SASlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuRightMenuSegue.h; path = SASlideMenu/SASlideMenu/SASlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
-		37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4006D4D7301C5B38D2C2EC09BD64DC81 /* MenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = Pod/Classes/MenuView.swift; sourceTree = "<group>"; };
-		462EA2CEB3B2145CC185E17D88F6251A /* PagingMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-umbrella.h"; sourceTree = "<group>"; };
-		48B136BD4D3ED15195D40A347A8A2E33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A938AAB96297DDC21227C7AE91F3711 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		4AE6985239B9F8D5160E0FEA683617EC /* SASlideMenuDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuDelegate.h; path = SASlideMenu/SASlideMenu/SASlideMenuDelegate.h; sourceTree = "<group>"; };
-		4E9BEF8E9F1BB358D3515A5CA713F748 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = Pod/Classes/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
-		5B783F0E94E527621370DC1BB2FC1D04 /* SASlideMenuRootViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuRootViewController.m; path = SASlideMenu/SASlideMenu/SASlideMenuRootViewController.m; sourceTree = "<group>"; };
-		5C4F899200FEB80EDB9035FB75C2FBF7 /* LTNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		606B92937E84522BE25FD29EB26A4BC9 /* SASlideMenuNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuNavigationController.m; path = SASlideMenu/SASlideMenu/SASlideMenuNavigationController.m; sourceTree = "<group>"; };
-		62F3A2DB0502F419B74C3FB96516FBF5 /* SASlideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SASlideMenu.modulemap; sourceTree = "<group>"; };
-		6420AE82C659DA33B52C4CC7FF083B98 /* SASlideMenuPushSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuPushSegue.h; path = SASlideMenu/SASlideMenu/SASlideMenuPushSegue.h; sourceTree = "<group>"; };
-		68C7E63DD1326E1C6C15C681961A76B6 /* PagingMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuController.swift; path = Pod/Classes/PagingMenuController.swift; sourceTree = "<group>"; };
-		6994D37EE9CDC9E11C958740B8E6EE4C /* TTRangeSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTRangeSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D8041E82C2882452F2BA5BDAF7B30F4 /* MenuItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = Pod/Classes/MenuItemView.swift; sourceTree = "<group>"; };
-		7157E5E126F8696BC4B88597E62CA913 /* TTRangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTRangeSlider-prefix.pch"; sourceTree = "<group>"; };
-		725CF48233E73E6462EA14415FAACF29 /* SASlideMenuNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuNavigationController.h; path = SASlideMenu/SASlideMenu/SASlideMenuNavigationController.h; sourceTree = "<group>"; };
+		2E6B79D41FA32FD77C4C4BB63DE46518 /* SASlideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SASlideMenu-prefix.pch"; sourceTree = "<group>"; };
+		309482E1828294B383A272F15F99A2EC /* SASlideMenuPushSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuPushSegue.h; path = SASlideMenu/SASlideMenu/SASlideMenuPushSegue.h; sourceTree = "<group>"; };
+		331D00CEB4930900FF05484D16C6CC7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB52A6C60B4C981B74E1BC5601FDA4C /* SASlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuLeftMenuSegue.h; path = SASlideMenu/SASlideMenu/SASlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		3C2849585ED0A2A33EA6C2FA20ECF9DA /* LTNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD320637C1439F3869EBB7790382633 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3D389D6F407E850771E8933A245BD840 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E17516C7E4FE2B6AD05FA710DA73BCC /* THCalendarDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THCalendarDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		401D52A0976AC2639BEDFC05962D0FE0 /* THDateDay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THDateDay.m; path = THCalendarDatePicker/THDateDay.m; sourceTree = "<group>"; };
+		427595A0A97976ED33FF6A01671E9302 /* THCalendarDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "THCalendarDatePicker-prefix.pch"; sourceTree = "<group>"; };
+		4ABDDDE6D99C9E9D7D91B00D4F44F62C /* THDatePickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = THDatePickerViewController.xib; path = THCalendarDatePicker/THDatePickerViewController.xib; sourceTree = "<group>"; };
+		4BABD8138B30813A676BF557FA0575EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3F932242320E00E8FF4A990BB3910E /* LTNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTNavigationBar-umbrella.h"; sourceTree = "<group>"; };
+		4CFF2EF184EC6206D367C14DCC3D2576 /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KNSemiModal.m"; path = "Source/UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
+		4D6ED895D69F8F8F72B2F50C3ACB0F9D /* PagingMenuController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagingMenuController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D3204D8B3E684162961AE0D41AB38E /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KNSemiModal.h"; path = "Source/UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
+		54F57C368A1E42229DC6938A38610D0B /* KNSemiModalViewController_hons82-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KNSemiModalViewController_hons82-umbrella.h"; sourceTree = "<group>"; };
+		55532336D45C720D24B4E63333A634BB /* MenuItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = Pod/Classes/MenuItemView.swift; sourceTree = "<group>"; };
+		56474A2CF91F5D62ACCD1357EE00D2B6 /* MenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = Pod/Classes/MenuView.swift; sourceTree = "<group>"; };
+		577FA2CDCBFBDB4BCEC1126C109F37D9 /* SASlideMenuRootViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuRootViewController.h; path = SASlideMenu/SASlideMenu/SASlideMenuRootViewController.h; sourceTree = "<group>"; };
+		59E36F51C4B28A58328C5C08B669FD2F /* THCalendarDatePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = THCalendarDatePicker.xcconfig; sourceTree = "<group>"; };
+		5C5EC6BA4A7FA96A8CA1A61F289F66D5 /* SASlideMenuRightMenuViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuRightMenuViewController.h; path = SASlideMenu/SASlideMenu/SASlideMenuRightMenuViewController.h; sourceTree = "<group>"; };
+		5D6241A49246FD9623A53AA8DBEB04C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F20BA7569F336127A0C856CBDD0B4D6 /* TTRangeSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTRangeSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2E68D5A9AE61B038F5D88BC0F2A5F5 /* SASlideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SASlideMenu.xcconfig; sourceTree = "<group>"; };
+		5FC0FA42C35CF00CAC14B7EE929669C3 /* KNSemiModalViewController_hons82.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KNSemiModalViewController_hons82.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		634D03E2E378522F0870F1ECA581225B /* PagingMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagingMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		684B498B95D23DC25792A6DAE413217E /* PagingMenuOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuOptions.swift; path = Pod/Classes/PagingMenuOptions.swift; sourceTree = "<group>"; };
+		6B7005A9E7FC5BFFA9F7AA73F008D54C /* NSDate+Difference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Difference.h"; path = "THCalendarDatePicker/NSDate+Difference.h"; sourceTree = "<group>"; };
+		70E8632B8256DF8D0ABA79CBCF6F3143 /* SASlideMenuDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuDataSource.h; path = SASlideMenu/SASlideMenu/SASlideMenuDataSource.h; sourceTree = "<group>"; };
+		781C0A7CCA68BA2153676D808B5BC125 /* TTRangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTRangeSlider-prefix.pch"; sourceTree = "<group>"; };
+		78B705049097A8CCDA03C327F97DB069 /* TTRangeSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TTRangeSlider.modulemap; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		7B7E5A814322710709C533B201D31894 /* EDStarRating.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EDStarRating.xcconfig; sourceTree = "<group>"; };
-		8315F939C0C9BA56897C335E8B58C79E /* LTNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTNavigationBar-prefix.pch"; sourceTree = "<group>"; };
-		84339D9CE32D8B138B49BCA538C4637D /* PagingMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-prefix.pch"; sourceTree = "<group>"; };
-		85152CA063204B4175297A1528AB2273 /* PagingMenuOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuOptions.swift; path = Pod/Classes/PagingMenuOptions.swift; sourceTree = "<group>"; };
-		858B1855A742FFD1FEF2F09A381343F4 /* LTNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LTNavigationBar.modulemap; sourceTree = "<group>"; };
-		85DA054B69CF425D6D962AFF209CAB32 /* SASlideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SASlideMenu-umbrella.h"; sourceTree = "<group>"; };
-		867C01908C949E6F30821D649EDC5DE6 /* EDStarRating.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EDStarRating.modulemap; sourceTree = "<group>"; };
+		79E344B06F56AB454803A6BDE0340E5D /* TTRangeSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = Pod/Classes/TTRangeSlider.h; sourceTree = "<group>"; };
+		7B65324F966C4366A652161D07C92EE4 /* NSDate+Difference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Difference.m"; path = "THCalendarDatePicker/NSDate+Difference.m"; sourceTree = "<group>"; };
+		7CA1287034668EBCD3A71C6A02E4EACE /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = THCalendarDatePicker/Images.xcassets; sourceTree = "<group>"; };
+		7FEE1E03AC6281542224A82953E1C1DA /* PagingMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-prefix.pch"; sourceTree = "<group>"; };
+		856B833964FEA672FB8611EDB623D705 /* THCalendarDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "THCalendarDatePicker-dummy.m"; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		87B8B972F60E562B50BEFEA6A3F5D28F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E935881970DCAF1327F49E7EF02ED3 /* SASlideMenuViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuViewController.m; path = SASlideMenu/SASlideMenu/SASlideMenuViewController.m; sourceTree = "<group>"; };
 		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		950D35920D59E4940B79D28AD8B770B5 /* SASlideMenuViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuViewController.m; path = SASlideMenu/SASlideMenu/SASlideMenuViewController.m; sourceTree = "<group>"; };
-		95FCFF802CE48A1927C26F1DC50A0F71 /* EDStarRating-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDStarRating-prefix.pch"; sourceTree = "<group>"; };
+		905964365F32FD3DA778E7F84BEC8C94 /* KNSemiModalViewController_hons82.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KNSemiModalViewController_hons82.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91223A4D3F00DA5C81015DDD216C8BA9 /* SASlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuRightMenuSegue.m; path = SASlideMenu/SASlideMenu/SASlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
+		9239836B7B548E2A1A47C31B53F1B13A /* SASlideMenuPushSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuPushSegue.m; path = SASlideMenu/SASlideMenu/SASlideMenuPushSegue.m; sourceTree = "<group>"; };
+		951DB1A8E9E49443C4D327C8C26F5E13 /* PagingMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PagingMenuController.modulemap; sourceTree = "<group>"; };
 		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		98E244393C48E09D6D507DE9AB7F8D04 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Awesome.m"; path = "LTNavigationBar/UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
-		9AB254A0FF9C0E1ECCCC3CA36E6AC016 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		AA017BDC774006B6670A21E2C47072B1 /* SASlideMenuContentSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuContentSegue.m; path = SASlideMenu/SASlideMenu/SASlideMenuContentSegue.m; sourceTree = "<group>"; };
-		AAF1A08498EC3C85C6C8DB78706A9A38 /* EDStarRating-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EDStarRating-dummy.m"; sourceTree = "<group>"; };
-		AC09A8FA58FA8631E47ECBC5F43B38B0 /* EDStarRating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDStarRating.h; path = EDStarRating/EDStarRating.h; sourceTree = "<group>"; };
-		AD9664644A00629331554683DAC984BC /* SASlideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SASlideMenu-dummy.m"; sourceTree = "<group>"; };
-		ADB2C433444AC9339754F27CB75A60FA /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Awesome.h"; path = "LTNavigationBar/UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
-		AE56F1766CDCE1CC4F57C4C5BEEAB698 /* TTRangeSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = Pod/Classes/TTRangeSlider.h; sourceTree = "<group>"; };
-		AE722548F2D090D01CF586F564F12C97 /* SASlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuRightMenuSegue.m; path = SASlideMenu/SASlideMenu/SASlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
-		B5FB7D86996543755D26DAB6D81537E8 /* SASlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuLeftMenuSegue.m; path = SASlideMenu/SASlideMenu/SASlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
-		B7C221570A20F600AD59379FE9718B5D /* SASlideMenuViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuViewController.h; path = SASlideMenu/SASlideMenu/SASlideMenuViewController.h; sourceTree = "<group>"; };
+		997145BA6F1ED0B1DD69E609141653D0 /* TTRangeSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTRangeSlider-umbrella.h"; sourceTree = "<group>"; };
+		9AF734F74A9CA291575E9242E00B3F63 /* PagingMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-umbrella.h"; sourceTree = "<group>"; };
+		9DD699371ABAD9615CCB7801166EBFBC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0332E3F1CE9C3FC8F8D0E5465CED485 /* KNSemiModalViewController_hons82-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KNSemiModalViewController_hons82-prefix.pch"; sourceTree = "<group>"; };
+		A100AD006EF47F592A1C4F10FA05BC80 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Awesome.m"; path = "LTNavigationBar/UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		A1EA4E39D8F8F1514CE472E2C60E2D15 /* TTRangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTRangeSlider-dummy.m"; sourceTree = "<group>"; };
+		A608F434B7AEA43660F03E2D4B83C499 /* SASlideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SASlideMenu-dummy.m"; sourceTree = "<group>"; };
+		A9468C46A8E4AF967B891F8E46D12E00 /* THDatePickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THDatePickerViewController.m; path = THCalendarDatePicker/THDatePickerViewController.m; sourceTree = "<group>"; };
+		AD707BF2649783A4B42990A6BACAFC26 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		B5F6F0275031FBEAB1B176ECB428552A /* EDStarRating.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EDStarRating.modulemap; sourceTree = "<group>"; };
+		B630BAA655D6E659CA82F55DD1F01A31 /* EDStarRating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDStarRating.h; path = EDStarRating/EDStarRating.h; sourceTree = "<group>"; };
+		B7911B37429D07107FD9F773A46D8427 /* LTNavigationBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTNavigationBar-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BCA56D5BCAD787450D347A15821B674F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
-		BE4541647C19BF8EB26252CEE86AB81A /* LTNavigationBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTNavigationBar.xcconfig; sourceTree = "<group>"; };
-		C58E1170B1B57751D37C0DF10683B64C /* SASlideMenuDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuDataSource.h; path = SASlideMenu/SASlideMenu/SASlideMenuDataSource.h; sourceTree = "<group>"; };
-		C87FE750194D557D011F17CA1E82DB2E /* SASlideMenuRightMenuViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuRightMenuViewController.h; path = SASlideMenu/SASlideMenu/SASlideMenuRightMenuViewController.h; sourceTree = "<group>"; };
+		BC7000668E267F72A3475BDE631805B5 /* KNSemiModalViewController_hons82.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KNSemiModalViewController_hons82.xcconfig; sourceTree = "<group>"; };
+		BD618C6F4C3747475E884D2ADBF61F93 /* EDStarRating-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDStarRating-prefix.pch"; sourceTree = "<group>"; };
+		C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C5E68B06271ACFDD933266BE87140122 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6F3DAC83FE05DE7CD368880A94209AF /* PagingMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagingMenuController-dummy.m"; sourceTree = "<group>"; };
+		C78B082AB403142F675569D49B82D7D3 /* TTRangeSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = Pod/Classes/TTRangeSlider.m; sourceTree = "<group>"; };
+		C945F0A3D3966A7587EBC06342EA93AD /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Awesome.h"; path = "LTNavigationBar/UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		CB49E8BCE460490F25127FECC0737489 /* THDatePickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THDatePickerViewController.h; path = THCalendarDatePicker/THDatePickerViewController.h; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		CEC25636918CAAD473467ECDBF77513C /* PagingMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuController.swift; path = Pod/Classes/PagingMenuController.swift; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D2CBD4DC9FA4B12F84A41A936887739F /* EDStarRating-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDStarRating-umbrella.h"; sourceTree = "<group>"; };
-		D4F0EA34F8AF44473C233DBC5B4BA4AF /* SASlideMenuRightMenuViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuRightMenuViewController.m; path = SASlideMenu/SASlideMenu/SASlideMenuRightMenuViewController.m; sourceTree = "<group>"; };
-		D64AB8C0A1E815C07C6F968F76F7E559 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		D9DC4D0AB33B2B5C090AA96502304602 /* SASlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuLeftMenuSegue.h; path = SASlideMenu/SASlideMenu/SASlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		D0A586DF7FC18B9792B9DD0C1C167DCF /* KNSemiModalViewController_hons82-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KNSemiModalViewController_hons82-dummy.m"; sourceTree = "<group>"; };
 		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DF6645F790A9D844B2CC390284B5C512 /* SASlideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SASlideMenu.xcconfig; sourceTree = "<group>"; };
-		E372D1FA87D06EB4BE491C2F069F32BB /* TTRangeSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = Pod/Classes/TTRangeSlider.m; sourceTree = "<group>"; };
-		E4619BDAFB77AF4F7E4022A3AD705907 /* TTRangeSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TTRangeSlider.modulemap; sourceTree = "<group>"; };
-		E4EEABD202217CB10C77243EDA897B48 /* LTNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTNavigationBar-umbrella.h"; sourceTree = "<group>"; };
+		DAC098773B0522A71A6D88459A5FD9A4 /* SASlideMenuRootViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuRootViewController.m; path = SASlideMenu/SASlideMenu/SASlideMenuRootViewController.m; sourceTree = "<group>"; };
+		DBD8DBB38B374907BECF8E4E4DC58BAC /* THCalendarDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = THCalendarDatePicker.modulemap; sourceTree = "<group>"; };
+		DCB18DF12C699DDEE8B0E34516B2C541 /* LTNavigationBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTNavigationBar.xcconfig; sourceTree = "<group>"; };
+		E505402582387A711622BA0533F80435 /* TTRangeSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTRangeSlider.xcconfig; sourceTree = "<group>"; };
+		E5165E4364C73669384E20740DC688FE /* SASlideMenuContentSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuContentSegue.h; path = SASlideMenu/SASlideMenu/SASlideMenuContentSegue.h; sourceTree = "<group>"; };
+		E5652C62B4CA6CCE6FFEC58DB1EB8408 /* SASlideMenuViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuViewController.h; path = SASlideMenu/SASlideMenu/SASlideMenuViewController.h; sourceTree = "<group>"; };
+		E7E943F31D999E519FB64B263FD78A68 /* LTNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTNavigationBar-prefix.pch"; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E7FDC02401B4674FE97D51A387757938 /* SASlideMenuContentSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuContentSegue.m; path = SASlideMenu/SASlideMenu/SASlideMenuContentSegue.m; sourceTree = "<group>"; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA9D833422B373F7A0E2F6CA8FCA9523 /* PagingMenuController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagingMenuController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEE60B91298164C836214D151CF71767 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1A5B0A245987306AA97FBE00212081E /* PagingMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PagingMenuController.modulemap; sourceTree = "<group>"; };
-		F1EAC6A12A472F734E06E3B1F153D4BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E91452B88CE9E0A59504AD6FF4D7A8DB /* SASlideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SASlideMenu.modulemap; sourceTree = "<group>"; };
+		F174792C015773BD30663B736351C95A /* SASlideMenuDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuDelegate.h; path = SASlideMenu/SASlideMenu/SASlideMenuDelegate.h; sourceTree = "<group>"; };
+		F232A70EC551BF15F73122BADEF72D06 /* SASlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuLeftMenuSegue.m; path = SASlideMenu/SASlideMenu/SASlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
+		F957AA8B337F12774B0DA65CA9129F29 /* SASlideMenuNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SASlideMenuNavigationController.h; path = SASlideMenu/SASlideMenu/SASlideMenuNavigationController.h; sourceTree = "<group>"; };
+		FC3638E1F303EC7C62309648866B6A19 /* EDStarRating.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDStarRating.m; path = EDStarRating/EDStarRating.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0681F68D365C3C5C046C6238D2123A72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F885E496033D0AD6B1FB4B2B7899F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		330B38651DA93DFD8E93BF65791E233F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,11 +273,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A9DA2008925F11C73253C561FE8206F /* Frameworks */ = {
+		4DBFA22D0795C1EB89025F91F0A7CB6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D90AD45BDBD70CA40C9F1465EDF2AB01 /* Foundation.framework in Frameworks */,
+				E67C569235F27EFE475BE697B26E5531 /* Foundation.framework in Frameworks */,
+				D1540E0FF71D4C8816DC448204008590 /* KNSemiModalViewController_hons82.framework in Frameworks */,
+				0FD13CDF1D968BD391AAD830D5739C85 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,14 +287,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		73FF14D5E0708BF13FD22EACDE8B8007 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5205D523B5CF97782078B3DB65B5CCD8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,11 +298,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BBBB6E157F4E255F9F387DA2DB4CB35 /* Frameworks */ = {
+		A8C3B032E58E4EB1358747C10DC1493B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9733317F5BED2DC042A3BC64DECBFE /* Foundation.framework in Frameworks */,
+				80D87A84DDC61EB264E5BCF52A033565 /* Foundation.framework in Frameworks */,
+				663FCBA606F1862562755A2625670E75 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFF52AACD955505D62DB083471F2147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176AA16BE7A75A1E2DBF70F28100079F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63D458B0236BAF04115A0EE0CF170A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C9DB2C0A3833DD4B3F2F2ACF5F6C9F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,133 +336,152 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		102848CD9D4AD02592014B985C3A7AF5 /* SASlideMenu */ = {
+		13EA92B3E2A10599766982EE3AE210A1 /* LTNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				02660BE492F4C63259A5F6B4BA2119D1 /* SASlideMenuContentSegue.h */,
-				AA017BDC774006B6670A21E2C47072B1 /* SASlideMenuContentSegue.m */,
-				C58E1170B1B57751D37C0DF10683B64C /* SASlideMenuDataSource.h */,
-				4AE6985239B9F8D5160E0FEA683617EC /* SASlideMenuDelegate.h */,
-				D9DC4D0AB33B2B5C090AA96502304602 /* SASlideMenuLeftMenuSegue.h */,
-				B5FB7D86996543755D26DAB6D81537E8 /* SASlideMenuLeftMenuSegue.m */,
-				725CF48233E73E6462EA14415FAACF29 /* SASlideMenuNavigationController.h */,
-				606B92937E84522BE25FD29EB26A4BC9 /* SASlideMenuNavigationController.m */,
-				6420AE82C659DA33B52C4CC7FF083B98 /* SASlideMenuPushSegue.h */,
-				357B91276C131A4A6C8F53B07F9F86B5 /* SASlideMenuPushSegue.m */,
-				37A58D1C4B5125340A6F0CC1E3292763 /* SASlideMenuRightMenuSegue.h */,
-				AE722548F2D090D01CF586F564F12C97 /* SASlideMenuRightMenuSegue.m */,
-				C87FE750194D557D011F17CA1E82DB2E /* SASlideMenuRightMenuViewController.h */,
-				D4F0EA34F8AF44473C233DBC5B4BA4AF /* SASlideMenuRightMenuViewController.m */,
-				02D3C0AE68D6133223351D1D4F783105 /* SASlideMenuRootViewController.h */,
-				5B783F0E94E527621370DC1BB2FC1D04 /* SASlideMenuRootViewController.m */,
-				B7C221570A20F600AD59379FE9718B5D /* SASlideMenuViewController.h */,
-				950D35920D59E4940B79D28AD8B770B5 /* SASlideMenuViewController.m */,
-				F34F4DBBF8FD6C463D47D46A4804795C /* Support Files */,
+				C945F0A3D3966A7587EBC06342EA93AD /* UINavigationBar+Awesome.h */,
+				A100AD006EF47F592A1C4F10FA05BC80 /* UINavigationBar+Awesome.m */,
+				3D1EDE2B81155FA6A6DE8B2CDA0FB6F1 /* Support Files */,
+			);
+			path = LTNavigationBar;
+			sourceTree = "<group>";
+		};
+		272AA03D681EA06238BD1C78C51669D4 /* SASlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E5165E4364C73669384E20740DC688FE /* SASlideMenuContentSegue.h */,
+				E7FDC02401B4674FE97D51A387757938 /* SASlideMenuContentSegue.m */,
+				70E8632B8256DF8D0ABA79CBCF6F3143 /* SASlideMenuDataSource.h */,
+				F174792C015773BD30663B736351C95A /* SASlideMenuDelegate.h */,
+				3AB52A6C60B4C981B74E1BC5601FDA4C /* SASlideMenuLeftMenuSegue.h */,
+				F232A70EC551BF15F73122BADEF72D06 /* SASlideMenuLeftMenuSegue.m */,
+				F957AA8B337F12774B0DA65CA9129F29 /* SASlideMenuNavigationController.h */,
+				15AB3BFFAD8506CF95AB25DBD27300AF /* SASlideMenuNavigationController.m */,
+				309482E1828294B383A272F15F99A2EC /* SASlideMenuPushSegue.h */,
+				9239836B7B548E2A1A47C31B53F1B13A /* SASlideMenuPushSegue.m */,
+				260B56A15F797D47548C10898069E0FF /* SASlideMenuRightMenuSegue.h */,
+				91223A4D3F00DA5C81015DDD216C8BA9 /* SASlideMenuRightMenuSegue.m */,
+				5C5EC6BA4A7FA96A8CA1A61F289F66D5 /* SASlideMenuRightMenuViewController.h */,
+				167FFCBB450B6829522076DE856BC87E /* SASlideMenuRightMenuViewController.m */,
+				577FA2CDCBFBDB4BCEC1126C109F37D9 /* SASlideMenuRootViewController.h */,
+				DAC098773B0522A71A6D88459A5FD9A4 /* SASlideMenuRootViewController.m */,
+				E5652C62B4CA6CCE6FFEC58DB1EB8408 /* SASlideMenuViewController.h */,
+				87E935881970DCAF1327F49E7EF02ED3 /* SASlideMenuViewController.m */,
+				9AD350EF6A44C4F9DC474B6AD5C5166D /* Support Files */,
 			);
 			path = SASlideMenu;
 			sourceTree = "<group>";
 		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+		288AD8A0F3B9E3511F88547B7995B1AE /* TTRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
-				D89D42E51D160380C262AB055B889685 /* iOS */,
+				79E344B06F56AB454803A6BDE0340E5D /* TTRangeSlider.h */,
+				C78B082AB403142F675569D49B82D7D3 /* TTRangeSlider.m */,
+				1B7D53B1EAB5E05C373C75C0C2A1669C /* TTRangeSliderDelegate.h */,
+				3E227D11C44BA5DFA74D68F5155BB02C /* Support Files */,
 			);
-			name = Frameworks;
+			path = TTRangeSlider;
 			sourceTree = "<group>";
 		};
-		1681F9FAD84137874E385841791313B7 /* Crashlytics */ = {
+		315AFB4A8D02B00A3F38E1B9C5CA79FA /* KNSemiModalViewController_hons82 */ = {
 			isa = PBXGroup;
 			children = (
-				3734C1CB0F41CC46B66DC325ABC8E118 /* Frameworks */,
+				50D3204D8B3E684162961AE0D41AB38E /* UIViewController+KNSemiModal.h */,
+				4CFF2EF184EC6206D367C14DCC3D2576 /* UIViewController+KNSemiModal.m */,
+				F93037D7FDA139DF72F27977489F7FCF /* Support Files */,
 			);
-			path = Crashlytics;
+			path = KNSemiModalViewController_hons82;
 			sourceTree = "<group>";
 		};
-		205667FB7EBE48799AABE1867329F514 /* Products */ = {
+		3D1EDE2B81155FA6A6DE8B2CDA0FB6F1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0094918070809CDA2036976CA8487B07 /* EDStarRating.framework */,
-				5C4F899200FEB80EDB9035FB75C2FBF7 /* LTNavigationBar.framework */,
-				EA9D833422B373F7A0E2F6CA8FCA9523 /* PagingMenuController.bundle */,
-				0900A4A4818A9B43FB72E280531D1EB6 /* PagingMenuController.framework */,
-				36230A5B83EE0960608036A79FBF2183 /* Pods.framework */,
-				30EF84C568A0D1B239010DA5557610DB /* SASlideMenu.framework */,
-				6994D37EE9CDC9E11C958740B8E6EE4C /* TTRangeSlider.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2199DE7860A32CB32B47048BF0DEF5D0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F1EAC6A12A472F734E06E3B1F153D4BE /* Info.plist */,
-				858B1855A742FFD1FEF2F09A381343F4 /* LTNavigationBar.modulemap */,
-				BE4541647C19BF8EB26252CEE86AB81A /* LTNavigationBar.xcconfig */,
-				069476893ECCDE1568A5CC4429162B50 /* LTNavigationBar-dummy.m */,
-				8315F939C0C9BA56897C335E8B58C79E /* LTNavigationBar-prefix.pch */,
-				E4EEABD202217CB10C77243EDA897B48 /* LTNavigationBar-umbrella.h */,
+				3D389D6F407E850771E8933A245BD840 /* Info.plist */,
+				23B6A5ED2897F0E0CFCD61AAC4508649 /* LTNavigationBar.modulemap */,
+				DCB18DF12C699DDEE8B0E34516B2C541 /* LTNavigationBar.xcconfig */,
+				B7911B37429D07107FD9F773A46D8427 /* LTNavigationBar-dummy.m */,
+				E7E943F31D999E519FB64B263FD78A68 /* LTNavigationBar-prefix.pch */,
+				4C3F932242320E00E8FF4A990BB3910E /* LTNavigationBar-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LTNavigationBar";
 			sourceTree = "<group>";
 		};
-		239286D066C3C1B906DC798E59DF8262 /* Support Files */ = {
+		3DB34F2993D48097008172E222035980 /* THCalendarDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				EEE60B91298164C836214D151CF71767 /* Info.plist */,
-				E4619BDAFB77AF4F7E4022A3AD705907 /* TTRangeSlider.modulemap */,
-				143241B240FCEF22FF6EF3450471B606 /* TTRangeSlider.xcconfig */,
-				21CB16479021E5557A8B0903A7EC0641 /* TTRangeSlider-dummy.m */,
-				7157E5E126F8696BC4B88597E62CA913 /* TTRangeSlider-prefix.pch */,
-				33FD00C183A7614BC13D383821D4DC99 /* TTRangeSlider-umbrella.h */,
+				6B7005A9E7FC5BFFA9F7AA73F008D54C /* NSDate+Difference.h */,
+				7B65324F966C4366A652161D07C92EE4 /* NSDate+Difference.m */,
+				173FCF4AB0103F90ED3AD735F6EAD1C6 /* THDateDay.h */,
+				401D52A0976AC2639BEDFC05962D0FE0 /* THDateDay.m */,
+				CB49E8BCE460490F25127FECC0737489 /* THDatePickerViewController.h */,
+				A9468C46A8E4AF967B891F8E46D12E00 /* THDatePickerViewController.m */,
+				3F5B6705CA2527F6E5906642B3A04CF2 /* Resources */,
+				82278875D8381D09B01DEB9B5395F8D8 /* Support Files */,
+			);
+			path = THCalendarDatePicker;
+			sourceTree = "<group>";
+		};
+		3E227D11C44BA5DFA74D68F5155BB02C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1312340BD2E37DA84A61C365A28E4643 /* Info.plist */,
+				78B705049097A8CCDA03C327F97DB069 /* TTRangeSlider.modulemap */,
+				E505402582387A711622BA0533F80435 /* TTRangeSlider.xcconfig */,
+				A1EA4E39D8F8F1514CE472E2C60E2D15 /* TTRangeSlider-dummy.m */,
+				781C0A7CCA68BA2153676D808B5BC125 /* TTRangeSlider-prefix.pch */,
+				997145BA6F1ED0B1DD69E609141653D0 /* TTRangeSlider-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TTRangeSlider";
 			sourceTree = "<group>";
 		};
-		2A74E6218C79118FB765CF547BBAC0BE /* Fabric */ = {
+		3F5B6705CA2527F6E5906642B3A04CF2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				34DF865876FF1353C6700813858AF0C4 /* Frameworks */,
+				7CA1287034668EBCD3A71C6A02E4EACE /* Images.xcassets */,
+				18F4B4C6451FED7C6783B03DA419CEA6 /* THDateDay.xib */,
+				4ABDDDE6D99C9E9D7D91B00D4F44F62C /* THDatePickerViewController.xib */,
 			);
-			path = Fabric;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		31BEAE27550C9744F35F033830CD2D18 /* LTNavigationBar */ = {
+		401986B898E9766BFAA89062E9E65F54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ADB2C433444AC9339754F27CB75A60FA /* UINavigationBar+Awesome.h */,
-				98E244393C48E09D6D507DE9AB7F8D04 /* UINavigationBar+Awesome.m */,
-				2199DE7860A32CB32B47048BF0DEF5D0 /* Support Files */,
-			);
-			path = LTNavigationBar;
-			sourceTree = "<group>";
-		};
-		34DF865876FF1353C6700813858AF0C4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4A938AAB96297DDC21227C7AE91F3711 /* Fabric.framework */,
+				01D9051C5D2B144BB6672D249B2ED58C /* Crashlytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3734C1CB0F41CC46B66DC325ABC8E118 /* Frameworks */ = {
+		5C7A80D903A084790AF6B562F6CFB47C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BCA56D5BCAD787450D347A15821B674F /* Crashlytics.framework */,
+				5D6241A49246FD9623A53AA8DBEB04C4 /* Info.plist */,
+				951DB1A8E9E49443C4D327C8C26F5E13 /* PagingMenuController.modulemap */,
+				207B55908BB82F0D481A1CA3665680F4 /* PagingMenuController.xcconfig */,
+				C6F3DAC83FE05DE7CD368880A94209AF /* PagingMenuController-dummy.m */,
+				7FEE1E03AC6281542224A82953E1C1DA /* PagingMenuController-prefix.pch */,
+				9AF734F74A9CA291575E9242E00B3F63 /* PagingMenuController-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/PagingMenuController";
 			sourceTree = "<group>";
 		};
-		4716C347C7133C16EB991FD1A95CEA31 /* TTRangeSlider */ = {
+		70519C523AC3CB891B10AB468D975D9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE56F1766CDCE1CC4F57C4C5BEEAB698 /* TTRangeSlider.h */,
-				E372D1FA87D06EB4BE491C2F069F32BB /* TTRangeSlider.m */,
-				4E9BEF8E9F1BB358D3515A5CA713F748 /* TTRangeSliderDelegate.h */,
-				239286D066C3C1B906DC798E59DF8262 /* Support Files */,
+				062A14D158DAE9922B98937C34287E02 /* EDStarRating.framework */,
+				905964365F32FD3DA778E7F84BEC8C94 /* KNSemiModalViewController_hons82.framework */,
+				3C2849585ED0A2A33EA6C2FA20ECF9DA /* LTNavigationBar.framework */,
+				4D6ED895D69F8F8F72B2F50C3ACB0F9D /* PagingMenuController.bundle */,
+				634D03E2E378522F0870F1ECA581225B /* PagingMenuController.framework */,
+				9DD699371ABAD9615CCB7801166EBFBC /* Pods.framework */,
+				1299948EE4C59801FB858ABA8FD6BFAE /* SASlideMenu.framework */,
+				3E17516C7E4FE2B6AD05FA710DA73BCC /* THCalendarDatePicker.framework */,
+				5F20BA7569F336127A0C856CBDD0B4D6 /* TTRangeSlider.framework */,
 			);
-			path = TTRangeSlider;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -397,27 +502,90 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
+		77D91E1E3C494821B5751397A3629A40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FC0FA42C35CF00CAC14B7EE929669C3 /* KNSemiModalViewController_hons82.framework */,
+				CDEAB0F1D7D2C15EC5D4698998AD6420 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				DEF136C71C8D9E7C3DDE76F303FB1F8F /* Pods */,
-				205667FB7EBE48799AABE1867329F514 /* Products */,
+				77D91E1E3C494821B5751397A3629A40 /* Frameworks */,
+				D47CAEFDD4C99492F07D82CBD1FFA9B5 /* Pods */,
+				70519C523AC3CB891B10AB468D975D9B /* Products */,
 				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A4720D8790BCE53CE48F0638040E6A02 /* PagingMenuController */ = {
+		82278875D8381D09B01DEB9B5395F8D8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6D8041E82C2882452F2BA5BDAF7B30F4 /* MenuItemView.swift */,
-				4006D4D7301C5B38D2C2EC09BD64DC81 /* MenuView.swift */,
-				68C7E63DD1326E1C6C15C681961A76B6 /* PagingMenuController.swift */,
-				85152CA063204B4175297A1528AB2273 /* PagingMenuOptions.swift */,
-				EB17C9BCD4FD820B2399F04EFA7AA2A8 /* Support Files */,
+				C5E68B06271ACFDD933266BE87140122 /* Info.plist */,
+				DBD8DBB38B374907BECF8E4E4DC58BAC /* THCalendarDatePicker.modulemap */,
+				59E36F51C4B28A58328C5C08B669FD2F /* THCalendarDatePicker.xcconfig */,
+				856B833964FEA672FB8611EDB623D705 /* THCalendarDatePicker-dummy.m */,
+				427595A0A97976ED33FF6A01671E9302 /* THCalendarDatePicker-prefix.pch */,
+				170B5BA9B2AB40702A07F5BC9C8E6B60 /* THCalendarDatePicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/THCalendarDatePicker";
+			sourceTree = "<group>";
+		};
+		9AD350EF6A44C4F9DC474B6AD5C5166D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				331D00CEB4930900FF05484D16C6CC7D /* Info.plist */,
+				E91452B88CE9E0A59504AD6FF4D7A8DB /* SASlideMenu.modulemap */,
+				5F2E68D5A9AE61B038F5D88BC0F2A5F5 /* SASlideMenu.xcconfig */,
+				A608F434B7AEA43660F03E2D4B83C499 /* SASlideMenu-dummy.m */,
+				2E6B79D41FA32FD77C4C4BB63DE46518 /* SASlideMenu-prefix.pch */,
+				041E3EE28E8DCB0CAEA3F5368576D9F7 /* SASlideMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SASlideMenu";
+			sourceTree = "<group>";
+		};
+		A38E0EDE3CB9A95DFCFF794DE6C36FBA /* EDStarRating */ = {
+			isa = PBXGroup;
+			children = (
+				B630BAA655D6E659CA82F55DD1F01A31 /* EDStarRating.h */,
+				FC3638E1F303EC7C62309648866B6A19 /* EDStarRating.m */,
+				D3ED53D35E157EA7B79326F18A7161B2 /* Support Files */,
+			);
+			path = EDStarRating;
+			sourceTree = "<group>";
+		};
+		A3C112D6B10FD63FBF6F6272ED06DEA5 /* PagingMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				55532336D45C720D24B4E63333A634BB /* MenuItemView.swift */,
+				56474A2CF91F5D62ACCD1357EE00D2B6 /* MenuView.swift */,
+				CEC25636918CAAD473467ECDBF77513C /* PagingMenuController.swift */,
+				684B498B95D23DC25792A6DAE413217E /* PagingMenuOptions.swift */,
+				5C7A80D903A084790AF6B562F6CFB47C /* Support Files */,
 			);
 			path = PagingMenuController;
+			sourceTree = "<group>";
+		};
+		B69BB79FAE4540DA053B4B723D4962F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD707BF2649783A4B42990A6BACAFC26 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7B314FFF300365F4578002771D13386 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				401986B898E9766BFAA89062E9E65F54 /* Frameworks */,
+			);
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
 		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
@@ -428,100 +596,94 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D5C7C03B6D3E8BEC152EE83399A1CB14 /* EDStarRating */ = {
+		CDEAB0F1D7D2C15EC5D4698998AD6420 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AC09A8FA58FA8631E47ECBC5F43B38B0 /* EDStarRating.h */,
-				2C56A69F8231708DEB87E08245975706 /* EDStarRating.m */,
-				E3CB5ECE1730776DB2E46F5181EC5218 /* Support Files */,
-			);
-			path = EDStarRating;
-			sourceTree = "<group>";
-		};
-		D89D42E51D160380C262AB055B889685 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9AB254A0FF9C0E1ECCCC3CA36E6AC016 /* CoreGraphics.framework */,
-				37ECA5F82C19F792E4F5146A01C56514 /* Foundation.framework */,
-				D64AB8C0A1E815C07C6F968F76F7E559 /* QuartzCore.framework */,
+				0CC62A9D248163482270AF34C6F8F2C5 /* CoreGraphics.framework */,
+				C274BB51D1A4276893BBAD70502D769B /* Foundation.framework */,
+				3CD320637C1439F3869EBB7790382633 /* QuartzCore.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DEF136C71C8D9E7C3DDE76F303FB1F8F /* Pods */ = {
+		D3ED53D35E157EA7B79326F18A7161B2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1681F9FAD84137874E385841791313B7 /* Crashlytics */,
-				D5C7C03B6D3E8BEC152EE83399A1CB14 /* EDStarRating */,
-				2A74E6218C79118FB765CF547BBAC0BE /* Fabric */,
-				31BEAE27550C9744F35F033830CD2D18 /* LTNavigationBar */,
-				A4720D8790BCE53CE48F0638040E6A02 /* PagingMenuController */,
-				102848CD9D4AD02592014B985C3A7AF5 /* SASlideMenu */,
-				4716C347C7133C16EB991FD1A95CEA31 /* TTRangeSlider */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E3CB5ECE1730776DB2E46F5181EC5218 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				867C01908C949E6F30821D649EDC5DE6 /* EDStarRating.modulemap */,
-				7B7E5A814322710709C533B201D31894 /* EDStarRating.xcconfig */,
-				AAF1A08498EC3C85C6C8DB78706A9A38 /* EDStarRating-dummy.m */,
-				95FCFF802CE48A1927C26F1DC50A0F71 /* EDStarRating-prefix.pch */,
-				D2CBD4DC9FA4B12F84A41A936887739F /* EDStarRating-umbrella.h */,
-				87B8B972F60E562B50BEFEA6A3F5D28F /* Info.plist */,
+				B5F6F0275031FBEAB1B176ECB428552A /* EDStarRating.modulemap */,
+				212920E22002294289751341E0207535 /* EDStarRating.xcconfig */,
+				18DA7F534E3F02B2387986488D2FD7BD /* EDStarRating-dummy.m */,
+				BD618C6F4C3747475E884D2ADBF61F93 /* EDStarRating-prefix.pch */,
+				1BFECBDAA5794EDABD1F6C11E91DBFF7 /* EDStarRating-umbrella.h */,
+				208DCCF4CB8DD3A5BEB7FF4507ACA812 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/EDStarRating";
 			sourceTree = "<group>";
 		};
-		EB17C9BCD4FD820B2399F04EFA7AA2A8 /* Support Files */ = {
+		D47CAEFDD4C99492F07D82CBD1FFA9B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				48B136BD4D3ED15195D40A347A8A2E33 /* Info.plist */,
-				F1A5B0A245987306AA97FBE00212081E /* PagingMenuController.modulemap */,
-				2FFE16CE0144F9647328959F841A321F /* PagingMenuController.xcconfig */,
-				20F9CF3F9E83AC58DD5E93967C3F4684 /* PagingMenuController-dummy.m */,
-				84339D9CE32D8B138B49BCA538C4637D /* PagingMenuController-prefix.pch */,
-				462EA2CEB3B2145CC185E17D88F6251A /* PagingMenuController-umbrella.h */,
+				B7B314FFF300365F4578002771D13386 /* Crashlytics */,
+				A38E0EDE3CB9A95DFCFF794DE6C36FBA /* EDStarRating */,
+				D8CB0807C79EB1183FD71C5BEFDBAEC7 /* Fabric */,
+				315AFB4A8D02B00A3F38E1B9C5CA79FA /* KNSemiModalViewController_hons82 */,
+				13EA92B3E2A10599766982EE3AE210A1 /* LTNavigationBar */,
+				A3C112D6B10FD63FBF6F6272ED06DEA5 /* PagingMenuController */,
+				272AA03D681EA06238BD1C78C51669D4 /* SASlideMenu */,
+				3DB34F2993D48097008172E222035980 /* THCalendarDatePicker */,
+				288AD8A0F3B9E3511F88547B7995B1AE /* TTRangeSlider */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PagingMenuController";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		F34F4DBBF8FD6C463D47D46A4804795C /* Support Files */ = {
+		D8CB0807C79EB1183FD71C5BEFDBAEC7 /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				1D7CF584CD577E3BE8FDB08C9B518F1C /* Info.plist */,
-				62F3A2DB0502F419B74C3FB96516FBF5 /* SASlideMenu.modulemap */,
-				DF6645F790A9D844B2CC390284B5C512 /* SASlideMenu.xcconfig */,
-				AD9664644A00629331554683DAC984BC /* SASlideMenu-dummy.m */,
-				0037823C58DB32D194EECBFF9D5B4919 /* SASlideMenu-prefix.pch */,
-				85DA054B69CF425D6D962AFF209CAB32 /* SASlideMenu-umbrella.h */,
+				B69BB79FAE4540DA053B4B723D4962F6 /* Frameworks */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		F93037D7FDA139DF72F27977489F7FCF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BABD8138B30813A676BF557FA0575EF /* Info.plist */,
+				12E0CB83CFA9BB1142981681AF44B614 /* KNSemiModalViewController_hons82.modulemap */,
+				BC7000668E267F72A3475BDE631805B5 /* KNSemiModalViewController_hons82.xcconfig */,
+				D0A586DF7FC18B9792B9DD0C1C167DCF /* KNSemiModalViewController_hons82-dummy.m */,
+				A0332E3F1CE9C3FC8F8D0E5465CED485 /* KNSemiModalViewController_hons82-prefix.pch */,
+				54F57C368A1E42229DC6938A38610D0B /* KNSemiModalViewController_hons82-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SASlideMenu";
+			path = "../Target Support Files/KNSemiModalViewController_hons82";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C1E4723FC4BD1E1B7B9F1C6CCCAC089 /* Headers */ = {
+		02D3CDC7D076296EE4756D8CEC2B0312 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D2564607627645E7E176869451077D0 /* SASlideMenu-umbrella.h in Headers */,
-				C1FF70F72A7D55663739F0227C10C183 /* SASlideMenuContentSegue.h in Headers */,
-				942CEAE6A3606F93B061343835278C83 /* SASlideMenuDataSource.h in Headers */,
-				4A5324338426012AF07AF153F8ADAC7C /* SASlideMenuDelegate.h in Headers */,
-				7A707782C475595C59526A6793F19A5A /* SASlideMenuLeftMenuSegue.h in Headers */,
-				158B5E5F33C0918B67EBA04932119B77 /* SASlideMenuNavigationController.h in Headers */,
-				63435EBE0DB78BA1F54864E16DEFC7DD /* SASlideMenuPushSegue.h in Headers */,
-				77420859DA54D38712C0DC45EA6DE0A6 /* SASlideMenuRightMenuSegue.h in Headers */,
-				2200ECBD1DF3825494CC02041B9DDF72 /* SASlideMenuRightMenuViewController.h in Headers */,
-				75B861BFA062922CE8A5E7BB32E68DFB /* SASlideMenuRootViewController.h in Headers */,
-				4C6CAC010CBEE7ACDFD7D99CB456E6BE /* SASlideMenuViewController.h in Headers */,
+				D808A41E22F9EB682FC35415DF5BC8D6 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246CC2FD2D843BF88DEEAB13F35A7A66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A55724088ADDC3FA58C2B9648FF5237 /* SASlideMenu-umbrella.h in Headers */,
+				D271469C95768AD195137B161C77B201 /* SASlideMenuContentSegue.h in Headers */,
+				36FE9AB946BF29240B39E7788A3976A1 /* SASlideMenuDataSource.h in Headers */,
+				00B9F7B5DD3D7FFC24402B165D249975 /* SASlideMenuDelegate.h in Headers */,
+				A4423C2E1A12C2091F1E9DD91AA43874 /* SASlideMenuLeftMenuSegue.h in Headers */,
+				FD86802D96E1353BD14A668BA3E6A3B4 /* SASlideMenuNavigationController.h in Headers */,
+				C2E12DBE4625CA41E89C676B018FC3C6 /* SASlideMenuPushSegue.h in Headers */,
+				87C23FB39A8DE87BD441D610FC71B163 /* SASlideMenuRightMenuSegue.h in Headers */,
+				0A1C4CFBEBB16114340E8C7A0B123800 /* SASlideMenuRightMenuViewController.h in Headers */,
+				43E438B8B5C006146B124AFE09C0619A /* SASlideMenuRootViewController.h in Headers */,
+				810FDB3A464812E15D663C67232F77E7 /* SASlideMenuViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,21 +695,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ADA5A69D6CA599057B747865B7AE5C5 /* Headers */ = {
+		4C0E611FFBA4DE5F1360938CE047F943 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2CC71252BF038859757E71E1ED10DFB /* Pods-umbrella.h in Headers */,
+				1D421A841F72DFD9F35878B37D595504 /* NSDate+Difference.h in Headers */,
+				E506EC866855E9F2DDB4156125BACDA3 /* THCalendarDatePicker-umbrella.h in Headers */,
+				B976220429CAA33DCF28A9FA10484740 /* THDateDay.h in Headers */,
+				73F5275CE772AA7ACC60F0577C9090C0 /* THDatePickerViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A924131A988CD562787337147208682 /* Headers */ = {
+		87D0C3B8BA1ED4A0018B88FB46097FE3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E968FC1A7487DAEB4EC5AC5F92FF9AF9 /* TTRangeSlider-umbrella.h in Headers */,
-				6178CFB49C88732D0AD95F37889F7104 /* TTRangeSlider.h in Headers */,
-				29F4ABE576784AADD6F92EEE334BB9CD /* TTRangeSliderDelegate.h in Headers */,
+				734E6304D8C162FCE59D98A5903BCECE /* KNSemiModalViewController_hons82-umbrella.h in Headers */,
+				0CC065D950865F2E18D9A9726D253DFD /* UIViewController+KNSemiModal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,29 +733,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F64DC7A50A9009715B2C8E8AA3644926 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE76690F7800765D8AB646511F00CBD /* TTRangeSlider-umbrella.h in Headers */,
+				50F3B1560051DDD6EB0B8D71C5F62F88 /* TTRangeSlider.h in Headers */,
+				E0732D3EA4051F89E0C2F736B4DB1496 /* TTRangeSliderDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1711E41460BBAFD3AA7183939ADF649C /* Pods */ = {
+		12047A3AD1C6C5BC336DDF139BF5C23F /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB14FFF05A4357BDBA9F5CE441171805 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 3C40962BF81C21763E2EF29A30598738 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				D66A489E40441358444E491483E30D34 /* Sources */,
-				5A9DA2008925F11C73253C561FE8206F /* Frameworks */,
-				3ADA5A69D6CA599057B747865B7AE5C5 /* Headers */,
+				FE1B2A88CBAD4FF32D2F6AC0844782C2 /* Sources */,
+				CEFF52AACD955505D62DB083471F2147 /* Frameworks */,
+				02D3CDC7D076296EE4756D8CEC2B0312 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				557F426DA793AAEC85189F214298F840 /* PBXTargetDependency */,
-				380BE1B6F03767AD914A08849925887B /* PBXTargetDependency */,
-				790BFFBBCC8C8698BE416608F485427A /* PBXTargetDependency */,
-				4726332E74F5561DCBE9ECAED489FCC6 /* PBXTargetDependency */,
-				D590C35E0E8BFAE6554B4CCF2EFF6249 /* PBXTargetDependency */,
+				416DD0A8E2C47D675A535B7CF2392423 /* PBXTargetDependency */,
+				29EFB80FBF60D8BB594F932DF3934588 /* PBXTargetDependency */,
+				0823878894627683606EA0DF2A3DA541 /* PBXTargetDependency */,
+				ABCCF8C7A924FFE43D755B56EC4FB410 /* PBXTargetDependency */,
+				3E2AB80888C446CA2ACFEAE89A8F8064 /* PBXTargetDependency */,
+				0A41DE77AE9C5AA7DFBCA8C4AB4EB742 /* PBXTargetDependency */,
+				36C98C9BC268D0567591F353132D645B /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 36230A5B83EE0960608036A79FBF2183 /* Pods.framework */;
+			productReference = 9DD699371ABAD9615CCB7801166EBFBC /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1892213B8242D18974553DCC80A3C3FB /* KNSemiModalViewController_hons82 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E611F6A4DF6B2F2E5650DF46233DA7 /* Build configuration list for PBXNativeTarget "KNSemiModalViewController_hons82" */;
+			buildPhases = (
+				768897713C5D76B87C19A9296CE57183 /* Sources */,
+				A8C3B032E58E4EB1358747C10DC1493B /* Frameworks */,
+				87D0C3B8BA1ED4A0018B88FB46097FE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KNSemiModalViewController_hons82;
+			productName = KNSemiModalViewController_hons82;
+			productReference = 905964365F32FD3DA778E7F84BEC8C94 /* KNSemiModalViewController_hons82.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		23D4B5C9CC657B68134305BFEB076270 /* PagingMenuController-PagingMenuController */ = {
@@ -608,7 +801,7 @@
 			);
 			name = "PagingMenuController-PagingMenuController";
 			productName = "PagingMenuController-PagingMenuController";
-			productReference = EA9D833422B373F7A0E2F6CA8FCA9523 /* PagingMenuController.bundle */;
+			productReference = 4D6ED895D69F8F8F72B2F50C3ACB0F9D /* PagingMenuController.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		34389C94BE448DDFA8617707261D8260 /* EDStarRating */ = {
@@ -625,7 +818,24 @@
 			);
 			name = EDStarRating;
 			productName = EDStarRating;
-			productReference = 0094918070809CDA2036976CA8487B07 /* EDStarRating.framework */;
+			productReference = 062A14D158DAE9922B98937C34287E02 /* EDStarRating.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50E57D3CB1670C39C6F12A4756C88ED5 /* SASlideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0B4B0A79118EF9D24F507616995943 /* Build configuration list for PBXNativeTarget "SASlideMenu" */;
+			buildPhases = (
+				1F83375F261399801770CBC82F203113 /* Sources */,
+				0681F68D365C3C5C046C6238D2123A72 /* Frameworks */,
+				246CC2FD2D843BF88DEEAB13F35A7A66 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SASlideMenu;
+			productName = SASlideMenu;
+			productReference = 1299948EE4C59801FB858ABA8FD6BFAE /* SASlideMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5BBB34170986C897E8931C1768FD6EE3 /* PagingMenuController */ = {
@@ -644,16 +854,16 @@
 			);
 			name = PagingMenuController;
 			productName = PagingMenuController;
-			productReference = 0900A4A4818A9B43FB72E280531D1EB6 /* PagingMenuController.framework */;
+			productReference = 634D03E2E378522F0870F1ECA581225B /* PagingMenuController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6543C9744244C24C3E662A37C17758C9 /* TTRangeSlider */ = {
+		7538A258A56DDC55D714289F7856B24B /* TTRangeSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A43FE6C27116C3084FB7287E29542173 /* Build configuration list for PBXNativeTarget "TTRangeSlider" */;
+			buildConfigurationList = 886183F2AC367F535EBD90EE8216B90E /* Build configuration list for PBXNativeTarget "TTRangeSlider" */;
 			buildPhases = (
-				03011901B3AC462ABB8297445B07F49D /* Sources */,
-				8BBBB6E157F4E255F9F387DA2DB4CB35 /* Frameworks */,
-				6A924131A988CD562787337147208682 /* Headers */,
+				61734117620A398C2FB7117508E8F51B /* Sources */,
+				F63D458B0236BAF04115A0EE0CF170A0 /* Frameworks */,
+				F64DC7A50A9009715B2C8E8AA3644926 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -661,24 +871,26 @@
 			);
 			name = TTRangeSlider;
 			productName = TTRangeSlider;
-			productReference = 6994D37EE9CDC9E11C958740B8E6EE4C /* TTRangeSlider.framework */;
+			productReference = 5F20BA7569F336127A0C856CBDD0B4D6 /* TTRangeSlider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9119437C29ACD09F0AAB35DED67A1840 /* SASlideMenu */ = {
+		DB28CB69D458579675D3D3E5C796FC89 /* THCalendarDatePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1097358D2252C6F7A00A1402E53A5EA /* Build configuration list for PBXNativeTarget "SASlideMenu" */;
+			buildConfigurationList = BEF6DABC0DB7B820DDE619DBC80560E4 /* Build configuration list for PBXNativeTarget "THCalendarDatePicker" */;
 			buildPhases = (
-				DCC71B5C9804609E1D9A49400B42C8CF /* Sources */,
-				73FF14D5E0708BF13FD22EACDE8B8007 /* Frameworks */,
-				0C1E4723FC4BD1E1B7B9F1C6CCCAC089 /* Headers */,
+				0BED38F49049F9326F726EEC241713A9 /* Sources */,
+				4DBFA22D0795C1EB89025F91F0A7CB6D /* Frameworks */,
+				4C0E611FFBA4DE5F1360938CE047F943 /* Headers */,
+				D0F54611ADA45247A0EC5190BB168A28 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EB457A81A2E083F1A7BBFF9722C61A52 /* PBXTargetDependency */,
 			);
-			name = SASlideMenu;
-			productName = SASlideMenu;
-			productReference = 30EF84C568A0D1B239010DA5557610DB /* SASlideMenu.framework */;
+			name = THCalendarDatePicker;
+			productName = THCalendarDatePicker;
+			productReference = 3E17516C7E4FE2B6AD05FA710DA73BCC /* THCalendarDatePicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FABEFE59C2CD9C196FD2B92D8E5BC90E /* LTNavigationBar */ = {
@@ -695,7 +907,7 @@
 			);
 			name = LTNavigationBar;
 			productName = LTNavigationBar;
-			productReference = 5C4F899200FEB80EDB9035FB75C2FBF7 /* LTNavigationBar.framework */;
+			productReference = 3C2849585ED0A2A33EA6C2FA20ECF9DA /* LTNavigationBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -715,17 +927,19 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 205667FB7EBE48799AABE1867329F514 /* Products */;
+			productRefGroup = 70519C523AC3CB891B10AB468D975D9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				34389C94BE448DDFA8617707261D8260 /* EDStarRating */,
+				1892213B8242D18974553DCC80A3C3FB /* KNSemiModalViewController_hons82 */,
 				FABEFE59C2CD9C196FD2B92D8E5BC90E /* LTNavigationBar */,
 				5BBB34170986C897E8931C1768FD6EE3 /* PagingMenuController */,
 				23D4B5C9CC657B68134305BFEB076270 /* PagingMenuController-PagingMenuController */,
-				1711E41460BBAFD3AA7183939ADF649C /* Pods */,
-				9119437C29ACD09F0AAB35DED67A1840 /* SASlideMenu */,
-				6543C9744244C24C3E662A37C17758C9 /* TTRangeSlider */,
+				12047A3AD1C6C5BC336DDF139BF5C23F /* Pods */,
+				50E57D3CB1670C39C6F12A4756C88ED5 /* SASlideMenu */,
+				DB28CB69D458579675D3D3E5C796FC89 /* THCalendarDatePicker */,
+				7538A258A56DDC55D714289F7856B24B /* TTRangeSlider */,
 			);
 		};
 /* End PBXProject section */
@@ -746,15 +960,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0F54611ADA45247A0EC5190BB168A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA75486A144C888A2AAAB64EE1108C6 /* Images.xcassets in Resources */,
+				DE9D6ADC064310F3165189737F543D1E /* THDateDay.xib in Resources */,
+				AC5A409027FF7DE9D6D8645D7A151402 /* THDatePickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		03011901B3AC462ABB8297445B07F49D /* Sources */ = {
+		0BED38F49049F9326F726EEC241713A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB221D1B6D60609503B61B521C1ED971 /* TTRangeSlider-dummy.m in Sources */,
-				7B9060DB3FF267A11001381DC83A5AA4 /* TTRangeSlider.m in Sources */,
+				BBDA6AA1D9A2293BE2C4ED647368332E /* NSDate+Difference.m in Sources */,
+				18322A2EA1E51FDC1716B10DE4B119FB /* THCalendarDatePicker-dummy.m in Sources */,
+				DFBB24489AACB838716D7324165ED888 /* THDateDay.m in Sources */,
+				E1968A18539115BCB58A339B95567AB8 /* THDatePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,6 +996,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F83375F261399801770CBC82F203113 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B0379440EC571ACF8D20772879081B /* SASlideMenu-dummy.m in Sources */,
+				C097F6ECDEAC1A6DE54F81584D4A42DF /* SASlideMenuContentSegue.m in Sources */,
+				B48A6F4BD5A8539E42E90E7364DCE032 /* SASlideMenuLeftMenuSegue.m in Sources */,
+				88567A5F5ECB09EEB84ACD6DDC0DD218 /* SASlideMenuNavigationController.m in Sources */,
+				29D59AEF3ED8CBF3381F059B4AC13AE8 /* SASlideMenuPushSegue.m in Sources */,
+				44C6D635AEE0719AEA8C939342F99083 /* SASlideMenuRightMenuSegue.m in Sources */,
+				0F144A5132D7E433188B0FE69F9F1CA9 /* SASlideMenuRightMenuViewController.m in Sources */,
+				48EDA2062BE129B1453AD9BBF112CC30 /* SASlideMenuRootViewController.m in Sources */,
+				2619D7115A6124AD4C4703F63423D7E6 /* SASlideMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BE5631798D555F49BC89C5088280571 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -779,11 +1021,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D66A489E40441358444E491483E30D34 /* Sources */ = {
+		61734117620A398C2FB7117508E8F51B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E9FFC95E1178CB6ADD0B2332750CAF9 /* Pods-dummy.m in Sources */,
+				1CEAA57F86CEA3820FF0461E697EB791 /* TTRangeSlider-dummy.m in Sources */,
+				6298F2522B6F1997AE78CF341B567EF0 /* TTRangeSlider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768897713C5D76B87C19A9296CE57183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEE6F0E34C5586DA5FA73276AAEE78B /* KNSemiModalViewController_hons82-dummy.m in Sources */,
+				8163A60362E461710D7B192CA81C9FB3 /* UIViewController+KNSemiModal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,22 +1048,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCC71B5C9804609E1D9A49400B42C8CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8A3B03E127E9C8AD0FF5D5637014C2E /* SASlideMenu-dummy.m in Sources */,
-				ABDFE9850AE1EA0DFDFC61FC7BD68964 /* SASlideMenuContentSegue.m in Sources */,
-				ECCC506A81FC11AF8DC296789C69829C /* SASlideMenuLeftMenuSegue.m in Sources */,
-				2E5D8493ED759C3E22FC1FF45359648B /* SASlideMenuNavigationController.m in Sources */,
-				E0AA0181E23BB703855E9C3680EE39E8 /* SASlideMenuPushSegue.m in Sources */,
-				D65EFFC27A6BF681ACD3DDA7A94D81AA /* SASlideMenuRightMenuSegue.m in Sources */,
-				BBBEAB12281605EDB60BF9DBC536F972 /* SASlideMenuRightMenuViewController.m in Sources */,
-				9CF57AA811C871A91775FA5D8BE1E5B0 /* SASlideMenuRootViewController.m in Sources */,
-				B41927D5344DEC7AC498C658C445FC24 /* SASlideMenuViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E0D2B7119A93D705C8F6AC9686F94D7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -819,32 +1055,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE1B2A88CBAD4FF32D2F6AC0844782C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD2DD5383D5CF8E77C72F66B95E7A61 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		380BE1B6F03767AD914A08849925887B /* PBXTargetDependency */ = {
+		0823878894627683606EA0DF2A3DA541 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LTNavigationBar;
 			target = FABEFE59C2CD9C196FD2B92D8E5BC90E /* LTNavigationBar */;
-			targetProxy = 2BB4CC0D49A023C2BEF3820CC804BD49 /* PBXContainerItemProxy */;
+			targetProxy = DD82F9AE9CC2B7F6BAA1C4FDDE050740 /* PBXContainerItemProxy */;
 		};
-		4726332E74F5561DCBE9ECAED489FCC6 /* PBXTargetDependency */ = {
+		0A41DE77AE9C5AA7DFBCA8C4AB4EB742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = THCalendarDatePicker;
+			target = DB28CB69D458579675D3D3E5C796FC89 /* THCalendarDatePicker */;
+			targetProxy = 27E67E349860346F7380AC84207960DD /* PBXContainerItemProxy */;
+		};
+		29EFB80FBF60D8BB594F932DF3934588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KNSemiModalViewController_hons82;
+			target = 1892213B8242D18974553DCC80A3C3FB /* KNSemiModalViewController_hons82 */;
+			targetProxy = DF95AFEDAC71050D12291BF3C3EAB7C9 /* PBXContainerItemProxy */;
+		};
+		36C98C9BC268D0567591F353132D645B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTRangeSlider;
+			target = 7538A258A56DDC55D714289F7856B24B /* TTRangeSlider */;
+			targetProxy = CB59C8B7CB1EE432AEEA80A62BF4140A /* PBXContainerItemProxy */;
+		};
+		3E2AB80888C446CA2ACFEAE89A8F8064 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SASlideMenu;
-			target = 9119437C29ACD09F0AAB35DED67A1840 /* SASlideMenu */;
-			targetProxy = D487A94E206848506A3F2000D520CF67 /* PBXContainerItemProxy */;
+			target = 50E57D3CB1670C39C6F12A4756C88ED5 /* SASlideMenu */;
+			targetProxy = 5433A1224C9E358457AD0E49A3C51DB5 /* PBXContainerItemProxy */;
 		};
-		557F426DA793AAEC85189F214298F840 /* PBXTargetDependency */ = {
+		416DD0A8E2C47D675A535B7CF2392423 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EDStarRating;
 			target = 34389C94BE448DDFA8617707261D8260 /* EDStarRating */;
-			targetProxy = 10FBF9DBCA274415425FA20DC8579633 /* PBXContainerItemProxy */;
-		};
-		790BFFBBCC8C8698BE416608F485427A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PagingMenuController;
-			target = 5BBB34170986C897E8931C1768FD6EE3 /* PagingMenuController */;
-			targetProxy = 9DEE46E8C8ADFECB49679868C5CE7148 /* PBXContainerItemProxy */;
+			targetProxy = 451A937E54D1D457FF91535600E105E5 /* PBXContainerItemProxy */;
 		};
 		8D8215EA973F4E069EADBB19DEF0A139 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -852,18 +1108,24 @@
 			target = 23D4B5C9CC657B68134305BFEB076270 /* PagingMenuController-PagingMenuController */;
 			targetProxy = CA01C61090C872868348E3ADEB605877 /* PBXContainerItemProxy */;
 		};
-		D590C35E0E8BFAE6554B4CCF2EFF6249 /* PBXTargetDependency */ = {
+		ABCCF8C7A924FFE43D755B56EC4FB410 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TTRangeSlider;
-			target = 6543C9744244C24C3E662A37C17758C9 /* TTRangeSlider */;
-			targetProxy = 5A9D4C9429A27E8A2230434A61FE755A /* PBXContainerItemProxy */;
+			name = PagingMenuController;
+			target = 5BBB34170986C897E8931C1768FD6EE3 /* PagingMenuController */;
+			targetProxy = B1F256E0494AD56827F576708F813B86 /* PBXContainerItemProxy */;
+		};
+		EB457A81A2E083F1A7BBFF9722C61A52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KNSemiModalViewController_hons82;
+			target = 1892213B8242D18974553DCC80A3C3FB /* KNSemiModalViewController_hons82 */;
+			targetProxy = 1446E220F9C54D9167DFE3B5147DE839 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		11FA1D2E77A7F2DBB4B38D1B660AD733 /* Release */ = {
+		135B5EB47B2B3E88F9546D9D5AB8D584 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF6645F790A9D844B2CC390284B5C512 /* SASlideMenu.xcconfig */;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -872,14 +1134,45 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SASlideMenu/SASlideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SASlideMenu/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SASlideMenu/SASlideMenu.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17A30424C220FF679A55DC6645AC39DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC7000668E267F72A3475BDE631805B5 /* KNSemiModalViewController_hons82.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KNSemiModalViewController_hons82/KNSemiModalViewController_hons82-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KNSemiModalViewController_hons82/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KNSemiModalViewController_hons82/KNSemiModalViewController_hons82.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SASlideMenu;
+				PRODUCT_NAME = KNSemiModalViewController_hons82;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -890,7 +1183,7 @@
 		};
 		2F4EE13330D4DC99BA3A98EF41D02D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FFE16CE0144F9647328959F841A321F /* PagingMenuController.xcconfig */;
+			baseConfigurationReference = 207B55908BB82F0D481A1CA3665680F4 /* PagingMenuController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -916,9 +1209,36 @@
 			};
 			name = Debug;
 		};
+		36FBB47093976278BFA59EF72B68C40A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E505402582387A711622BA0533F80435 /* TTRangeSlider.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTRangeSlider/TTRangeSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTRangeSlider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTRangeSlider/TTRangeSlider.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TTRangeSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5949CC7999877C9D5862756ADDFA09BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE4541647C19BF8EB26252CEE86AB81A /* LTNavigationBar.xcconfig */;
+			baseConfigurationReference = DCB18DF12C699DDEE8B0E34516B2C541 /* LTNavigationBar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -945,7 +1265,7 @@
 		};
 		5BC5A300DCB881E1457C05DE1556531C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FFE16CE0144F9647328959F841A321F /* PagingMenuController.xcconfig */;
+			baseConfigurationReference = 207B55908BB82F0D481A1CA3665680F4 /* PagingMenuController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = PagingMenuController;
@@ -955,9 +1275,9 @@
 			};
 			name = Debug;
 		};
-		623BCAD182B35D6294AF0FC874046397 /* Debug */ = {
+		682426DB37149D29EA6AEB4B34CB3BFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 143241B240FCEF22FF6EF3450471B606 /* TTRangeSlider.xcconfig */;
+			baseConfigurationReference = BC7000668E267F72A3475BDE631805B5 /* KNSemiModalViewController_hons82.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -966,14 +1286,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TTRangeSlider/TTRangeSlider-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TTRangeSlider/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KNSemiModalViewController_hons82/KNSemiModalViewController_hons82-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KNSemiModalViewController_hons82/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TTRangeSlider/TTRangeSlider.modulemap";
+				MODULEMAP_FILE = "Target Support Files/KNSemiModalViewController_hons82/KNSemiModalViewController_hons82.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TTRangeSlider;
+				PRODUCT_NAME = KNSemiModalViewController_hons82;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -984,7 +1304,7 @@
 		};
 		6B7E37E01DF866FD25D154EC285EC4FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B7E5A814322710709C533B201D31894 /* EDStarRating.xcconfig */;
+			baseConfigurationReference = 212920E22002294289751341E0207535 /* EDStarRating.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1009,9 +1329,36 @@
 			};
 			name = Release;
 		};
+		74A83053AC378F9598D01CA160C7C0B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2E68D5A9AE61B038F5D88BC0F2A5F5 /* SASlideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SASlideMenu/SASlideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SASlideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SASlideMenu/SASlideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SASlideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7E6B0024B7BCA48866859E82882769A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FFE16CE0144F9647328959F841A321F /* PagingMenuController.xcconfig */;
+			baseConfigurationReference = 207B55908BB82F0D481A1CA3665680F4 /* PagingMenuController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1036,9 +1383,9 @@
 			};
 			name = Release;
 		};
-		A38EA3F0BF67759E6D437414341AE102 /* Release */ = {
+		8C6AAE65E21BBBC4F6DBC32D5B7BCBC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			baseConfigurationReference = 5F2E68D5A9AE61B038F5D88BC0F2A5F5 /* SASlideMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1047,17 +1394,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SASlideMenu/SASlideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SASlideMenu/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SASlideMenu/SASlideMenu.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_NAME = SASlideMenu;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1105,9 +1449,9 @@
 			};
 			name = Debug;
 		};
-		AD482C5419D62AC6F66F9E959841BD2E /* Debug */ = {
+		A7B30A7CBA14BD0C7E6AD736AC0490AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 59E36F51C4B28A58328C5C08B669FD2F /* THCalendarDatePicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1116,56 +1460,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/THCalendarDatePicker/THCalendarDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/THCalendarDatePicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AEFC055C2C734092C098BBD6049B1BAF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF6645F790A9D844B2CC390284B5C512 /* SASlideMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SASlideMenu/SASlideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SASlideMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SASlideMenu/SASlideMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SASlideMenu;
+				MODULEMAP_FILE = "Target Support Files/THCalendarDatePicker/THCalendarDatePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = THCalendarDatePicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		CA7A142B712CF17BB5702F1F7DC9EAFB /* Release */ = {
+		BBE82D4CA29D4A013671719B8D820422 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 143241B240FCEF22FF6EF3450471B606 /* TTRangeSlider.xcconfig */;
+			baseConfigurationReference = E505402582387A711622BA0533F80435 /* TTRangeSlider.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1180,8 +1493,38 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TTRangeSlider/TTRangeSlider.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = TTRangeSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA01A2DF17650E114E37B45C7011AEA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1192,7 +1535,7 @@
 		};
 		D0C64231C76761BDC356074639F30A82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FFE16CE0144F9647328959F841A321F /* PagingMenuController.xcconfig */;
+			baseConfigurationReference = 207B55908BB82F0D481A1CA3665680F4 /* PagingMenuController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = PagingMenuController;
@@ -1204,7 +1547,7 @@
 		};
 		D48B10D7D2623DE31D7C70F2D560F000 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE4541647C19BF8EB26252CEE86AB81A /* LTNavigationBar.xcconfig */;
+			baseConfigurationReference = DCB18DF12C699DDEE8B0E34516B2C541 /* LTNavigationBar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1231,7 +1574,7 @@
 		};
 		E45947D92ADC63E2E5EAC27F9D0B856C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B7E5A814322710709C533B201D31894 /* EDStarRating.xcconfig */;
+			baseConfigurationReference = 212920E22002294289751341E0207535 /* EDStarRating.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1248,6 +1591,33 @@
 				MODULEMAP_FILE = "Target Support Files/EDStarRating/EDStarRating.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = EDStarRating;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F45B9B7902DA0302946D6CFE683C52F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E36F51C4B28A58328C5C08B669FD2F /* THCalendarDatePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/THCalendarDatePicker/THCalendarDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/THCalendarDatePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/THCalendarDatePicker/THCalendarDatePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = THCalendarDatePicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1311,29 +1681,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3C0B4B0A79118EF9D24F507616995943 /* Build configuration list for PBXNativeTarget "SASlideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74A83053AC378F9598D01CA160C7C0B9 /* Debug */,
+				8C6AAE65E21BBBC4F6DBC32D5B7BCBC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C40962BF81C21763E2EF29A30598738 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				135B5EB47B2B3E88F9546D9D5AB8D584 /* Debug */,
+				CA01A2DF17650E114E37B45C7011AEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E611F6A4DF6B2F2E5650DF46233DA7 /* Build configuration list for PBXNativeTarget "KNSemiModalViewController_hons82" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682426DB37149D29EA6AEB4B34CB3BFD /* Debug */,
+				17A30424C220FF679A55DC6645AC39DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		886183F2AC367F535EBD90EE8216B90E /* Build configuration list for PBXNativeTarget "TTRangeSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE82D4CA29D4A013671719B8D820422 /* Debug */,
+				36FBB47093976278BFA59EF72B68C40A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		949A666D2C685282B38055E67B70A6D5 /* Build configuration list for PBXNativeTarget "EDStarRating" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E45947D92ADC63E2E5EAC27F9D0B856C /* Debug */,
 				6B7E37E01DF866FD25D154EC285EC4FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1097358D2252C6F7A00A1402E53A5EA /* Build configuration list for PBXNativeTarget "SASlideMenu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEFC055C2C734092C098BBD6049B1BAF /* Debug */,
-				11FA1D2E77A7F2DBB4B38D1B660AD733 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A43FE6C27116C3084FB7287E29542173 /* Build configuration list for PBXNativeTarget "TTRangeSlider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				623BCAD182B35D6294AF0FC874046397 /* Debug */,
-				CA7A142B712CF17BB5702F1F7DC9EAFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1347,11 +1735,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB14FFF05A4357BDBA9F5CE441171805 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		BEF6DABC0DB7B820DDE619DBC80560E4 /* Build configuration list for PBXNativeTarget "THCalendarDatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD482C5419D62AC6F66F9E959841BD2E /* Debug */,
-				A38EA3F0BF67759E6D437414341AE102 /* Release */,
+				F45B9B7902DA0302946D6CFE683C52F4 /* Debug */,
+				A7B30A7CBA14BD0C7E6AD736AC0490AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
