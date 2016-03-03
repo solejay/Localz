@@ -3464,7 +3464,7 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum Tour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkM-mV-eGw">
-                                                <rect key="frame" x="8" y="162" width="93.5" height="21"/>
+                                                <rect key="frame" x="16" y="162" width="93.5" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="cok-So-Q7X"/>
                                                 </constraints>
@@ -3473,61 +3473,61 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4b-gh-QCs">
-                                                <rect key="frame" x="8" y="200" width="102" height="18"/>
+                                                <rect key="frame" x="16" y="200" width="102" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FN392D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2t-Td-Irk">
-                                                <rect key="frame" x="8" y="222" width="57.5" height="18"/>
+                                                <rect key="frame" x="16" y="222" width="57.5" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsB-8u-0G2">
-                                                <rect key="frame" x="8" y="258" width="35" height="18"/>
+                                                <rect key="frame" x="16" y="258" width="35" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$18hr / $60 est. total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4X-y6-pAm">
-                                                <rect key="frame" x="8" y="282" width="145" height="18"/>
+                                                <rect key="frame" x="16" y="282" width="145" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzt-NW-EIa">
-                                                <rect key="frame" x="8" y="319" width="32.5" height="18"/>
+                                                <rect key="frame" x="16" y="319" width="32.5" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 9th,2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jv4-C2-uXO">
-                                                <rect key="frame" x="8" y="343" width="98.5" height="18"/>
+                                                <rect key="frame" x="16" y="343" width="98.5" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0p-Cx-m1z">
-                                                <rect key="frame" x="8" y="372" width="34" height="18"/>
+                                                <rect key="frame" x="16" y="372" width="34" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3PM - 6PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyw-nH-xbb">
-                                                <rect key="frame" x="8" y="396" width="78" height="18"/>
+                                                <rect key="frame" x="16" y="396" width="78" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup/Dropoff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIA-04-d82">
-                                                <rect key="frame" x="8" y="427" width="104" height="18"/>
+                                                <rect key="frame" x="16" y="427" width="104" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123 Cathedral Street, Baltimore, MD 21210" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYm-Aq-iqL">
-                                                <rect key="frame" x="8" y="450" width="291" height="18"/>
+                                                <rect key="frame" x="16" y="450" width="291" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -3541,13 +3541,13 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                                 <state key="normal" image="help-icon"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYU-zq-8BV">
-                                                <rect key="frame" x="8" y="484" width="68" height="18"/>
+                                                <rect key="frame" x="16" y="484" width="68" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIQ-ZG-xiA">
-                                                <rect key="frame" x="8" y="508" width="49.5" height="18"/>
+                                                <rect key="frame" x="16" y="508" width="49.5" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -3569,7 +3569,7 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09a-mz-9Mv">
-                                                <rect key="frame" x="319" y="569" width="130" height="30"/>
+                                                <rect key="frame" x="313" y="569" width="130" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="FXv-QY-dLO"/>
                                                     <constraint firstAttribute="height" constant="30" id="KJo-yU-qjs"/>
@@ -3579,13 +3579,13 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgd-6t-2dv">
-                                                <rect key="frame" x="172" y="569" width="111" height="30"/>
+                                                <rect key="frame" x="177" y="569" width="111" height="30"/>
                                                 <state key="normal" title="Add to Calendar">
                                                     <color key="titleColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIF-NC-v3U">
-                                                <rect key="frame" x="9" y="633" width="583" height="54"/>
+                                                <rect key="frame" x="16" y="633" width="568" height="54"/>
                                                 <string key="text">Your guide has been contacted via the Localz app and email, we’ve also sent you an email confirmation. For questions, itinerary adjustments, or cancellations, you can contact your guide using the button below or through your settings. Have fun!</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -3613,7 +3613,7 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                             <constraint firstItem="NUi-8m-Lm9" firstAttribute="top" secondItem="mRM-Uv-hBf" secondAttribute="top" constant="17" id="Of0-0Z-ZNW"/>
                                             <constraint firstItem="LIA-04-d82" firstAttribute="top" secondItem="wyw-nH-xbb" secondAttribute="bottom" constant="13" id="Uh5-6V-Qt9"/>
                                             <constraint firstItem="fX8-7f-KwK" firstAttribute="top" secondItem="NUi-8m-Lm9" secondAttribute="bottom" constant="15" id="VB7-Hl-MfS"/>
-                                            <constraint firstItem="MIF-NC-v3U" firstAttribute="leading" secondItem="mRM-Uv-hBf" secondAttribute="leading" constant="9" id="ViH-jm-rNf"/>
+                                            <constraint firstItem="MIF-NC-v3U" firstAttribute="leading" secondItem="mRM-Uv-hBf" secondAttribute="leading" constant="16" id="ViH-jm-rNf"/>
                                             <constraint firstItem="QuC-2T-jeB" firstAttribute="top" secondItem="fX8-7f-KwK" secondAttribute="bottom" constant="8.5" id="X5I-vR-ysb"/>
                                             <constraint firstItem="ZYm-Aq-iqL" firstAttribute="top" secondItem="LIA-04-d82" secondAttribute="bottom" constant="5" id="XXr-dZ-VRp"/>
                                             <constraint firstItem="0XH-OM-ufC" firstAttribute="centerY" secondItem="j4X-y6-pAm" secondAttribute="centerY" id="YtT-RE-NH6"/>
@@ -3623,8 +3623,8 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                             <constraint firstItem="cYU-zq-8BV" firstAttribute="top" secondItem="ZYm-Aq-iqL" secondAttribute="bottom" constant="16" id="d11-Cv-de4"/>
                                             <constraint firstItem="QkM-mV-eGw" firstAttribute="top" secondItem="QuC-2T-jeB" secondAttribute="bottom" constant="19.5" id="dBh-je-Ky1"/>
                                             <constraint firstItem="xzt-NW-EIa" firstAttribute="leading" secondItem="j4X-y6-pAm" secondAttribute="leading" id="dQf-0f-x7D"/>
-                                            <constraint firstItem="0XH-OM-ufC" firstAttribute="leading" secondItem="j4X-y6-pAm" secondAttribute="trailing" constant="18" id="fpE-rp-76m"/>
-                                            <constraint firstAttribute="trailing" secondItem="MIF-NC-v3U" secondAttribute="trailing" constant="8" id="h20-BF-WGl"/>
+                                            <constraint firstItem="0XH-OM-ufC" firstAttribute="leading" secondItem="j4X-y6-pAm" secondAttribute="trailing" constant="10" id="fpE-rp-76m"/>
+                                            <constraint firstAttribute="trailing" secondItem="MIF-NC-v3U" secondAttribute="trailing" constant="16" id="h20-BF-WGl"/>
                                             <constraint firstItem="09a-mz-9Mv" firstAttribute="leading" secondItem="mgd-6t-2dv" secondAttribute="trailing" constant="38" id="hYU-Hl-XLu"/>
                                             <constraint firstItem="09a-mz-9Mv" firstAttribute="top" secondItem="PUF-an-Ney" secondAttribute="bottom" constant="5" id="iFv-B5-SEP"/>
                                             <constraint firstItem="Jv4-C2-uXO" firstAttribute="top" secondItem="xzt-NW-EIa" secondAttribute="bottom" constant="6" id="leh-wz-hhI"/>
@@ -3637,7 +3637,7 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                             <constraint firstItem="V2t-Td-Irk" firstAttribute="top" secondItem="p4b-gh-QCs" secondAttribute="bottom" constant="4" id="vb4-wX-L9v"/>
                                             <constraint firstItem="mgd-6t-2dv" firstAttribute="leading" secondItem="mRM-Uv-hBf" secondAttribute="leading" constant="172" id="wfC-YY-hXn"/>
                                             <constraint firstItem="jIQ-ZG-xiA" firstAttribute="leading" secondItem="cYU-zq-8BV" secondAttribute="leading" id="x9m-eK-pqx"/>
-                                            <constraint firstItem="QkM-mV-eGw" firstAttribute="leading" secondItem="mRM-Uv-hBf" secondAttribute="leading" constant="8" id="yaF-9u-BPo"/>
+                                            <constraint firstItem="QkM-mV-eGw" firstAttribute="leading" secondItem="mRM-Uv-hBf" secondAttribute="leading" constant="16" id="yaF-9u-BPo"/>
                                             <constraint firstItem="v0p-Cx-m1z" firstAttribute="leading" secondItem="Jv4-C2-uXO" secondAttribute="leading" id="zpK-6w-GBe"/>
                                             <constraint firstItem="s94-gK-yd6" firstAttribute="top" secondItem="mgd-6t-2dv" secondAttribute="bottom" constant="8" id="zxh-u8-VuY"/>
                                         </constraints>
@@ -3663,11 +3663,11 @@ If you want a guide who will take you around the ins and outs of the city and pr
                                     <constraint firstItem="mRM-Uv-hBf" firstAttribute="top" secondItem="sv1-xA-DbU" secondAttribute="top" id="7Nn-bo-aTO"/>
                                     <constraint firstItem="mRM-Uv-hBf" firstAttribute="leading" secondItem="sv1-xA-DbU" secondAttribute="leading" id="7hS-Y9-4dc"/>
                                     <constraint firstAttribute="trailing" secondItem="mRM-Uv-hBf" secondAttribute="trailing" id="JnW-HO-KQ3"/>
-                                    <constraint firstItem="09a-mz-9Mv" firstAttribute="leading" secondItem="esU-zb-iJk" secondAttribute="trailing" constant="18" id="Q5C-UT-HMm"/>
+                                    <constraint firstItem="09a-mz-9Mv" firstAttribute="leading" secondItem="esU-zb-iJk" secondAttribute="trailing" constant="12" id="Q5C-UT-HMm"/>
                                     <constraint firstItem="esU-zb-iJk" firstAttribute="centerX" secondItem="sv1-xA-DbU" secondAttribute="centerX" id="gCP-GP-Vhk"/>
                                     <constraint firstItem="mRM-Uv-hBf" firstAttribute="centerX" secondItem="sv1-xA-DbU" secondAttribute="centerX" id="j3O-Nq-CpR"/>
                                     <constraint firstItem="mRM-Uv-hBf" firstAttribute="centerY" secondItem="sv1-xA-DbU" secondAttribute="centerY" id="qFR-7e-ik5"/>
-                                    <constraint firstItem="esU-zb-iJk" firstAttribute="leading" secondItem="mgd-6t-2dv" secondAttribute="trailing" constant="17" id="rFo-Cs-He9"/>
+                                    <constraint firstItem="esU-zb-iJk" firstAttribute="leading" secondItem="mgd-6t-2dv" secondAttribute="trailing" constant="12" id="rFo-Cs-He9"/>
                                     <constraint firstItem="esU-zb-iJk" firstAttribute="top" secondItem="PUF-an-Ney" secondAttribute="bottom" constant="10" id="uHf-xN-DmY"/>
                                     <constraint firstAttribute="bottom" secondItem="mRM-Uv-hBf" secondAttribute="bottom" id="uQ7-wY-vRd"/>
                                 </constraints>

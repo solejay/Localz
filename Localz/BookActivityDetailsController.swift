@@ -239,6 +239,8 @@ class BookActivityDetailsController: UIViewController {
   //MARK: SelectTransportView
   func noTransportButtonPressed(){
     chooseLanguage.hidden = false
+    selectTransportView.hidden = true
+    
   }
   func transportButtonPressed(){
     selectTransportView.addLocationButton.hidden = false
