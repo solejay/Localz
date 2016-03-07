@@ -11,6 +11,9 @@
             <string>GothamBold</string>
             <string>GothamBold</string>
             <string>GothamBold</string>
+            <string>GothamBold</string>
+            <string>GothamBold</string>
+            <string>GothamBold</string>
         </mutableArray>
         <mutableArray key="GOTHAM-LIGHT.TTF">
             <string>GothamLight</string>
@@ -49,8 +52,15 @@
             <string>GothamMedium</string>
             <string>GothamMedium</string>
             <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
         </mutableArray>
         <mutableArray key="Gotham Book.ttf">
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
+            <string>GothamBook</string>
             <string>GothamBook</string>
             <string>GothamBook</string>
             <string>GothamBook</string>
@@ -1514,23 +1524,77 @@ TO LOG OUT</string>
             </objects>
             <point key="canvasLocation" x="2188" y="6278"/>
         </scene>
-        <!--View Controller-->
+        <!--Pending Request Accepted Controller-->
         <scene sceneID="ttb-4p-pfN">
             <objects>
-                <viewController id="s29-z2-beR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pendingAccepted" id="s29-z2-beR" customClass="PendingRequestAcceptedController" customModule="Localz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VOv-J7-hZB"/>
                         <viewControllerLayoutGuide type="bottom" id="2oe-PM-33q"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DX9-D5-arV">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="DX9-D5-arV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8w-go-IZr">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9AA-YQ-aLL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
+                                <state key="normal" title="CONTACT EXPLORER NOW!">
+                                    <color key="titleColor" red="0.98484848479999998" green="0.98484848479999998" blue="0.98484848479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAA-j7-LZh">
+                                <rect key="frame" x="247" y="78" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LuX-K2-utZ"/>
+                                    <constraint firstAttribute="width" constant="107" id="W7b-mW-xz3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This activity has been added to your calendar." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWO-eT-SZH">
+                                <rect key="frame" x="196" y="107" width="208" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="Mm5-Gc-Ig9"/>
+                                    <constraint firstAttribute="height" constant="59" id="fqY-p1-kZD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done-icon" translatesAutoresizingMaskIntoConstraints="NO" id="jrh-CF-baY">
+                                <rect key="frame" x="250" y="187" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ONK-w2-ZLW"/>
+                                    <constraint firstAttribute="width" constant="100" id="lPe-hf-0kQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jrh-CF-baY" firstAttribute="top" secondItem="iWO-eT-SZH" secondAttribute="bottom" constant="21" id="0cs-vS-u1H"/>
+                            <constraint firstItem="JAA-j7-LZh" firstAttribute="centerX" secondItem="DX9-D5-arV" secondAttribute="centerX" id="2Jv-bq-Q5K"/>
+                            <constraint firstItem="jrh-CF-baY" firstAttribute="centerX" secondItem="DX9-D5-arV" secondAttribute="centerX" id="6AF-Mc-gUu"/>
+                            <constraint firstAttribute="trailing" secondItem="I8w-go-IZr" secondAttribute="trailing" id="Bo4-C1-GyL"/>
+                            <constraint firstItem="JAA-j7-LZh" firstAttribute="top" secondItem="VOv-J7-hZB" secondAttribute="bottom" constant="58" id="Dqn-wO-lJH"/>
+                            <constraint firstItem="I8w-go-IZr" firstAttribute="leading" secondItem="DX9-D5-arV" secondAttribute="leading" id="OvK-Fa-4gC"/>
+                            <constraint firstItem="iWO-eT-SZH" firstAttribute="centerX" secondItem="DX9-D5-arV" secondAttribute="centerX" id="aY2-rM-NEz"/>
+                            <constraint firstItem="2oe-PM-33q" firstAttribute="top" secondItem="I8w-go-IZr" secondAttribute="bottom" id="do5-RZ-9gs"/>
+                            <constraint firstItem="iWO-eT-SZH" firstAttribute="top" secondItem="JAA-j7-LZh" secondAttribute="bottom" constant="8" id="wXc-Ag-E5S"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contactExplorerButton" destination="I8w-go-IZr" id="4KO-Kv-8v5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqK-ob-PJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3310" y="5487"/>
+            <point key="canvasLocation" x="3334" y="5467"/>
         </scene>
         <!--Photo Detail View Controller-->
         <scene sceneID="ZIf-8E-1ge">
@@ -4428,6 +4492,10 @@ If you want a guide who will take you around the ins and outs of the city and pr
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="900"/>
+                    <connections>
+                        <outlet property="acceptButton" destination="szh-FW-Xcc" id="gNM-gL-fcl"/>
+                        <outlet property="declineButton" destination="LHG-rh-9Zi" id="JAr-x1-hif"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztB-OZ-sVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4578,6 +4646,144 @@ If you want a guide who will take you around the ins and outs of the city and pr
             </objects>
             <point key="canvasLocation" x="4989" y="4548"/>
         </scene>
+        <!--Pending Finish View Controller-->
+        <scene sceneID="sGK-uX-Wvc">
+            <objects>
+                <viewController storyboardIdentifier="pendingFinish" id="H2n-K8-jea" customClass="PendingFinishViewController" customModule="Localz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pmw-f5-aPZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sg0-6x-3cx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ebS-LF-tRk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUD-E7-Gmn">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NkJ-Gy-Ss8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
+                                <state key="normal" title="FINISH">
+                                    <color key="titleColor" red="0.98484848479999998" green="0.98484848479999998" blue="0.98484848479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP8-10-aZg">
+                                <rect key="frame" x="247" y="186" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="9qj-vi-0EH"/>
+                                    <constraint firstAttribute="height" constant="21" id="RnC-JB-ZXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey, these things happen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf7-pW-sER">
+                                <rect key="frame" x="196" y="215" width="208" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="ATv-OX-F7y"/>
+                                    <constraint firstAttribute="height" constant="36" id="DDZ-51-1ad"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hf7-pW-sER" firstAttribute="top" secondItem="pP8-10-aZg" secondAttribute="bottom" constant="8" id="0ho-BF-hdh"/>
+                            <constraint firstItem="dUD-E7-Gmn" firstAttribute="leading" secondItem="ebS-LF-tRk" secondAttribute="leading" id="9iA-1F-CUr"/>
+                            <constraint firstAttribute="trailing" secondItem="dUD-E7-Gmn" secondAttribute="trailing" id="BJJ-pY-gjA"/>
+                            <constraint firstItem="Hf7-pW-sER" firstAttribute="centerX" secondItem="ebS-LF-tRk" secondAttribute="centerX" id="GiX-z0-8Mq"/>
+                            <constraint firstItem="pP8-10-aZg" firstAttribute="top" secondItem="pmw-f5-aPZ" secondAttribute="bottom" constant="166" id="Ylh-Er-Ob4"/>
+                            <constraint firstItem="pP8-10-aZg" firstAttribute="centerX" secondItem="ebS-LF-tRk" secondAttribute="centerX" id="tih-rr-172"/>
+                            <constraint firstItem="sg0-6x-3cx" firstAttribute="top" secondItem="dUD-E7-Gmn" secondAttribute="bottom" id="wx0-TN-QwN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="finishButton" destination="dUD-E7-Gmn" id="u1a-MA-Gh7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afd-1f-zFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4895" y="5433"/>
+        </scene>
+        <!--Pendingrequest Declined Controller-->
+        <scene sceneID="cif-7O-GQi">
+            <objects>
+                <viewController storyboardIdentifier="pendingDeclined" id="WQJ-N2-iMm" customClass="PendingrequestDeclinedController" customModule="Localz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RVc-5b-cq8"/>
+                        <viewControllerLayoutGuide type="bottom" id="bgX-Bb-4A5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sEd-aS-Xxs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuR-9L-9jW">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.2470588235" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="soz-Kc-IBa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="15"/>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" red="0.98484848479999998" green="0.98484848479999998" blue="0.98484848479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bummer!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6v-2j-bE7">
+                                <rect key="frame" x="247" y="104" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0u0-da-2Ik"/>
+                                    <constraint firstAttribute="width" constant="107" id="GCF-M7-Wge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us know why you can’t fulfill this request" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rg-vT-BfH">
+                                <rect key="frame" x="196" y="133" width="208" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="One-dv-PcU"/>
+                                    <constraint firstAttribute="width" constant="208" id="efx-W6-Fc7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Unavailable during date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ssd-ej-ZPN">
+                                <rect key="frame" x="20" y="223" width="565" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="t7i-w8-yys"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ssd-ej-ZPN" secondAttribute="trailing" constant="15" id="0ac-pg-wz3"/>
+                            <constraint firstAttribute="trailing" secondItem="kuR-9L-9jW" secondAttribute="trailing" id="2du-4J-7bG"/>
+                            <constraint firstItem="b6v-2j-bE7" firstAttribute="top" secondItem="RVc-5b-cq8" secondAttribute="bottom" constant="84" id="3fx-ho-SAv"/>
+                            <constraint firstItem="Ssd-ej-ZPN" firstAttribute="leading" secondItem="sEd-aS-Xxs" secondAttribute="leading" constant="20" id="BJe-mK-7e8"/>
+                            <constraint firstItem="Ssd-ej-ZPN" firstAttribute="top" secondItem="5Rg-vT-BfH" secondAttribute="bottom" constant="31" id="BXL-0a-Tjo"/>
+                            <constraint firstItem="5Rg-vT-BfH" firstAttribute="top" secondItem="b6v-2j-bE7" secondAttribute="bottom" constant="8" id="H2e-FK-P0e"/>
+                            <constraint firstItem="bgX-Bb-4A5" firstAttribute="top" secondItem="kuR-9L-9jW" secondAttribute="bottom" id="Ptu-mG-CbO"/>
+                            <constraint firstItem="kuR-9L-9jW" firstAttribute="leading" secondItem="sEd-aS-Xxs" secondAttribute="leading" id="ehi-7V-dsc"/>
+                            <constraint firstItem="b6v-2j-bE7" firstAttribute="centerX" secondItem="sEd-aS-Xxs" secondAttribute="centerX" id="jmn-Pp-JZW"/>
+                            <constraint firstItem="5Rg-vT-BfH" firstAttribute="centerX" secondItem="sEd-aS-Xxs" secondAttribute="centerX" id="rhM-XP-Jik"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sendButton" destination="kuR-9L-9jW" id="fiw-nW-2Y3"/>
+                        <outlet property="theTextField" destination="Ssd-ej-ZPN" id="7tw-k4-Aql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hDF-IV-Wux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4054" y="5461"/>
+        </scene>
         <!--Paging Menu Controller-->
         <scene sceneID="USp-8N-jIv">
             <objects>
@@ -4603,6 +4809,7 @@ If you want a guide who will take you around the ins and outs of the city and pr
         <image name="HasCar" width="25" height="21"/>
         <image name="america" width="25" height="25"/>
         <image name="calendar-icon" width="28" height="31"/>
+        <image name="done-icon" width="100" height="100"/>
         <image name="facebook-icon" width="11" height="20"/>
         <image name="filter-icon" width="20" height="12"/>
         <image name="foxCourt" width="105" height="105"/>

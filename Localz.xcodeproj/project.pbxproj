@@ -61,6 +61,9 @@
 		8E749A8F1C6F71F700B4FF81 /* GOTHAM-LIGHT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A8A1C6F71F700B4FF81 /* GOTHAM-LIGHT.TTF */; };
 		8E749A901C6F71F700B4FF81 /* GOTHAM-MEDIUM.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8E749A8B1C6F71F700B4FF81 /* GOTHAM-MEDIUM.TTF */; };
 		8E7947511C884AEA00C41101 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7947501C884AEA00C41101 /* LocationViewController.swift */; };
+		8E96C9AB1C8E0E3900CEB743 /* PendingRequestAcceptedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C9AA1C8E0E3900CEB743 /* PendingRequestAcceptedController.swift */; };
+		8E96C9AD1C8E123500CEB743 /* PendingrequestDeclinedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C9AC1C8E123500CEB743 /* PendingrequestDeclinedController.swift */; };
+		8E96C9AF1C8E124E00CEB743 /* PendingFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C9AE1C8E124E00CEB743 /* PendingFinishViewController.swift */; };
 		8E9BB5071C74EDE6007B8D7F /* CancelActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9BB5061C74EDE6007B8D7F /* CancelActivitiesView.swift */; };
 		8E9BB5091C74EE0A007B8D7F /* CancelActivitiesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9BB5081C74EE0A007B8D7F /* CancelActivitiesView.xib */; };
 		8E9BB50B1C74F5F1007B8D7F /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9BB50A1C74F5F1007B8D7F /* HistoryDetailViewController.swift */; };
@@ -159,6 +162,9 @@
 		8E749A8A1C6F71F700B4FF81 /* GOTHAM-LIGHT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-LIGHT.TTF"; sourceTree = "<group>"; };
 		8E749A8B1C6F71F700B4FF81 /* GOTHAM-MEDIUM.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GOTHAM-MEDIUM.TTF"; sourceTree = "<group>"; };
 		8E7947501C884AEA00C41101 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		8E96C9AA1C8E0E3900CEB743 /* PendingRequestAcceptedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingRequestAcceptedController.swift; sourceTree = "<group>"; };
+		8E96C9AC1C8E123500CEB743 /* PendingrequestDeclinedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingrequestDeclinedController.swift; sourceTree = "<group>"; };
+		8E96C9AE1C8E124E00CEB743 /* PendingFinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingFinishViewController.swift; sourceTree = "<group>"; };
 		8E9BB5061C74EDE6007B8D7F /* CancelActivitiesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelActivitiesView.swift; sourceTree = "<group>"; };
 		8E9BB5081C74EE0A007B8D7F /* CancelActivitiesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelActivitiesView.xib; sourceTree = "<group>"; };
 		8E9BB50A1C74F5F1007B8D7F /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
@@ -446,6 +452,9 @@
 			children = (
 				8EBB497F1C8CC7EF00C8FF1A /* PendingRequestController.swift */,
 				8EBB49831C8CD57900C8FF1A /* PendingRequestDetailController.swift */,
+				8E96C9AA1C8E0E3900CEB743 /* PendingRequestAcceptedController.swift */,
+				8E96C9AC1C8E123500CEB743 /* PendingrequestDeclinedController.swift */,
+				8E96C9AE1C8E124E00CEB743 /* PendingFinishViewController.swift */,
 			);
 			name = PendingRequest;
 			sourceTree = "<group>";
@@ -729,11 +738,13 @@
 				8E1DF82A1C6F91F5009E40A0 /* GuideViewCell.swift in Sources */,
 				8E671DEB1C73C5CA0020F2C8 /* HistoryViewController.swift in Sources */,
 				8E4F68041C6F2FDC00BF9EEB /* ViewController.swift in Sources */,
+				8E96C9AD1C8E123500CEB743 /* PendingrequestDeclinedController.swift in Sources */,
 				8E4F68021C6F2FDC00BF9EEB /* AppDelegate.swift in Sources */,
 				8E4F68351C6F458700BF9EEB /* ChooseModeViewController.swift in Sources */,
 				8E671DE41C73C0B80020F2C8 /* UpComingCell.swift in Sources */,
 				8E6F08231C859F8400528ED6 /* HistoryGuideModeViewController.swift in Sources */,
 				8E4F68331C6F3C6100BF9EEB /* SignInViewController.swift in Sources */,
+				8E96C9AF1C8E124E00CEB743 /* PendingFinishViewController.swift in Sources */,
 				8E9BB5071C74EDE6007B8D7F /* CancelActivitiesView.swift in Sources */,
 				8EBB49821C8CC94100C8FF1A /* PendingRequestCell.swift in Sources */,
 				8E9BB50D1C74F62D007B8D7F /* LogoutView.swift in Sources */,
@@ -755,6 +766,7 @@
 				8E6F082B1C85BFBC00528ED6 /* PhotoCollectionViewController.swift in Sources */,
 				8E5BAE711C799C6A00A1B173 /* ConfirmDetailsViewController.swift in Sources */,
 				8E6B79531C79EA5D00B79EAA /* GuideObject.swift in Sources */,
+				8E96C9AB1C8E0E3900CEB743 /* PendingRequestAcceptedController.swift in Sources */,
 				8E00EE6F1C77BC3600C460D2 /* BookGuideViewController.swift in Sources */,
 				8E56F92B1C7675D800332EEA /* PaymentsViewController.swift in Sources */,
 				8E6F082F1C85D90700528ED6 /* PhotoDetailViewController.swift in Sources */,

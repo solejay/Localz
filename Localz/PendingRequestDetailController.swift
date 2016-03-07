@@ -8,10 +8,16 @@ import UIKit
 
 class PendingRequestDetailController: UIViewController {
 
+  @IBOutlet weak var declineButton: UIButton!
+  @IBOutlet weak var acceptButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.configureView()
+    }
+    func configureView(){
+      acceptButton.addTarget(self, action: "acceptButtonPressed", forControlEvents: .TouchUpInside)
+      declineButton.addTarget(self, action: "declinedButtonPressed", forControlEvents: .TouchUpInside)
     }
     override func viewWillAppear(animated: Bool) {
       super.viewWillAppear(animated)
@@ -23,16 +29,17 @@ class PendingRequestDetailController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+  
+  func acceptButtonPressed(){
+      let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pendingAccepted") as! PendingRequestAcceptedController
+          self.navigationItem.title = ""
+          self.navigationController?.pushViewController(controller, animated: true)
+  }
+  func declinedButtonPressed(){
+    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pendingDeclined") as! PendingrequestDeclinedController
+    self.navigationItem.title = ""
+    self.navigationController?.pushViewController(controller, animated: true)
+  }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }
