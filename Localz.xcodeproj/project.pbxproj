@@ -67,6 +67,9 @@
 		8E9BB50D1C74F62D007B8D7F /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9BB50C1C74F62D007B8D7F /* LogoutView.swift */; };
 		8E9BB50F1C74F63F007B8D7F /* LogoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9BB50E1C74F63F007B8D7F /* LogoutView.xib */; };
 		8EA9F7141C767D1700E41079 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9F7131C767D1700E41079 /* DescriptionViewController.swift */; };
+		8EBB49801C8CC7EF00C8FF1A /* PendingRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB497F1C8CC7EF00C8FF1A /* PendingRequestController.swift */; };
+		8EBB49821C8CC94100C8FF1A /* PendingRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB49811C8CC94100C8FF1A /* PendingRequestCell.swift */; };
+		8EBB49841C8CD57900C8FF1A /* PendingRequestDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB49831C8CD57900C8FF1A /* PendingRequestDetailController.swift */; };
 		8EC997D11C71F41600B4941A /* FindGuideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC997D01C71F41600B4941A /* FindGuideDetailViewController.swift */; };
 		8ED7C8261C72510F00D95A28 /* TourDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7C8251C72510F00D95A28 /* TourDetailsViewController.swift */; };
 		8EE449831C70995F00BA10D3 /* SideBarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE449821C70995F00BA10D3 /* SideBarHeader.swift */; };
@@ -162,6 +165,9 @@
 		8E9BB50C1C74F62D007B8D7F /* LogoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 		8E9BB50E1C74F63F007B8D7F /* LogoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogoutView.xib; sourceTree = "<group>"; };
 		8EA9F7131C767D1700E41079 /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		8EBB497F1C8CC7EF00C8FF1A /* PendingRequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingRequestController.swift; sourceTree = "<group>"; };
+		8EBB49811C8CC94100C8FF1A /* PendingRequestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingRequestCell.swift; sourceTree = "<group>"; };
+		8EBB49831C8CD57900C8FF1A /* PendingRequestDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingRequestDetailController.swift; sourceTree = "<group>"; };
 		8EC997D01C71F41600B4941A /* FindGuideDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGuideDetailViewController.swift; sourceTree = "<group>"; };
 		8ED7C8251C72510F00D95A28 /* TourDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourDetailsViewController.swift; sourceTree = "<group>"; };
 		8EE449821C70995F00BA10D3 /* SideBarHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarHeader.swift; sourceTree = "<group>"; };
@@ -230,6 +236,7 @@
 				8E671DE51C73C0CB0020F2C8 /* UpcomingCell.xib */,
 				8E6F08241C85AC9200528ED6 /* PaymentHistoryCell.swift */,
 				8E6F082C1C85C13000528ED6 /* PhotoCollectionViewCell.swift */,
+				8EBB49811C8CC94100C8FF1A /* PendingRequestCell.swift */,
 			);
 			name = CustomCells;
 			sourceTree = "<group>";
@@ -295,6 +302,7 @@
 		8E4F682F1C6F386700BF9EEB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8EBB497E1C8CC7A500C8FF1A /* PendingRequest */,
 				8E6F08291C85BF9C00528ED6 /* Photos */,
 				8E6F08261C85ADE000528ED6 /* Payment */,
 				8E6F081F1C85635100528ED6 /* Logout */,
@@ -431,6 +439,15 @@
 				8E026D7D1C88565B00724A45 /* PickDateView.xib */,
 			);
 			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		8EBB497E1C8CC7A500C8FF1A /* PendingRequest */ = {
+			isa = PBXGroup;
+			children = (
+				8EBB497F1C8CC7EF00C8FF1A /* PendingRequestController.swift */,
+				8EBB49831C8CD57900C8FF1A /* PendingRequestDetailController.swift */,
+			);
+			name = PendingRequest;
 			sourceTree = "<group>";
 		};
 		A88248CDC2BDFCAE89786D8C /* Pods */ = {
@@ -718,11 +735,14 @@
 				8E6F08231C859F8400528ED6 /* HistoryGuideModeViewController.swift in Sources */,
 				8E4F68331C6F3C6100BF9EEB /* SignInViewController.swift in Sources */,
 				8E9BB5071C74EDE6007B8D7F /* CancelActivitiesView.swift in Sources */,
+				8EBB49821C8CC94100C8FF1A /* PendingRequestCell.swift in Sources */,
 				8E9BB50D1C74F62D007B8D7F /* LogoutView.swift in Sources */,
 				8E1DF8251C6F7D3A009E40A0 /* LeftViewController.swift in Sources */,
+				8EBB49801C8CC7EF00C8FF1A /* PendingRequestController.swift in Sources */,
 				8E00EE7B1C78BE9000C460D2 /* ChooseLanguage.swift in Sources */,
 				8EE449831C70995F00BA10D3 /* SideBarHeader.swift in Sources */,
 				8EC997D11C71F41600B4941A /* FindGuideDetailViewController.swift in Sources */,
+				8EBB49841C8CD57900C8FF1A /* PendingRequestDetailController.swift in Sources */,
 				8E7947511C884AEA00C41101 /* LocationViewController.swift in Sources */,
 				8E6F08211C85636300528ED6 /* LogoutViewController.swift in Sources */,
 				8E5BAE751C79CD0900A1B173 /* ImagePreview.swift in Sources */,
