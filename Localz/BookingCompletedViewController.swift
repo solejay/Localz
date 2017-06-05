@@ -23,9 +23,9 @@ class BookingCompletedViewController: UIViewController {
       else if(self.view.bounds.size.height == 568){
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 300, right: 0)
       }
-      guidePhotoView.layer.cornerRadius  = CGRectGetWidth(guidePhotoView.bounds) / 2
+      guidePhotoView.layer.cornerRadius  = guidePhotoView.bounds.width / 2
       guidePhotoView.layer.borderWidth = 2
-      guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+      guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").cgColor
     }
   
     override func didReceiveMemoryWarning() {

@@ -47,10 +47,7 @@
             return;
         }
         NSString* segueId = [self.slideMenuDataSource segueIdForIndexPath:indexPath];
-      if ([self shouldPerformSegueWithIdentifier:segueId sender:self]) {
         [self performSegueWithIdentifier:segueId sender:self];
-      }
-      
         self.currentContentIndexPath = indexPath;
     }
 }

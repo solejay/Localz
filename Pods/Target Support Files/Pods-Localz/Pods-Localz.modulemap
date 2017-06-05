@@ -1,0 +1,6 @@
+framework module Pods_Localz {
+  umbrella header "Pods-Localz-umbrella.h"
+
+  export *
+  module * { export * }
+}

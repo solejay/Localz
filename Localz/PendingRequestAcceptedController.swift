@@ -15,7 +15,7 @@ class PendingRequestAcceptedController: UIViewController {
         // Do any additional setup after loading the view.
     }
   
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "PENDING REQUESTS"
   }

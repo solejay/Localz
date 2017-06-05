@@ -15,14 +15,14 @@ class UpcomingDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        theScrollView.contentInset = UIEdgeInsets(top: CGRectGetHeight((self.navigationController?.navigationBar.frame)!) + 20, left: 0, bottom: 120, right: 0)
+        theScrollView.contentInset = UIEdgeInsets(top: (self.navigationController?.navigationBar.frame)!.height + 20, left: 0, bottom: 120, right: 0)
       
-      cancelActivityView = NSBundle.mainBundle().loadNibNamed("CancelActivitiesView", owner: nil, options: nil).first as! CancelActivitiesView  
+      cancelActivityView = Bundle.main.loadNibNamed("CancelActivitiesView", owner: nil, options: nil)?.first as! CancelActivitiesView  
       cancelActivityView.frame = self.view.bounds
-      cancelActivityView.hidden = true
-      cancelActivityView.takeBackButton.addTarget(self, action: "takeBackButtonPressed", forControlEvents: .TouchUpInside)
-       cancelActivityView.dontCancelButton.addTarget(self, action: "dontCancelButtonPressed", forControlEvents: .TouchUpInside)
-      cancelButton.addTarget(self, action: "cancelButtonTapped", forControlEvents: .TouchUpInside)
+      cancelActivityView.isHidden = true
+      cancelActivityView.takeBackButton.addTarget(self, action: #selector(UpcomingDetailController.takeBackButtonPressed), for: .touchUpInside)
+       cancelActivityView.dontCancelButton.addTarget(self, action: #selector(UpcomingDetailController.dontCancelButtonPressed), for: .touchUpInside)
+      cancelButton.addTarget(self, action: #selector(UpcomingDetailController.cancelButtonTapped), for: .touchUpInside)
       self.view.addSubview(cancelActivityView)
       
     }
@@ -32,7 +32,7 @@ class UpcomingDetailController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(animated)
       self.title = "UPCOMING ACTIVITIES"
     }
@@ -45,19 +45,19 @@ class UpcomingDetailController: UIViewController {
 
 extension UpcomingDetailController{
   func  cancelButtonTapped(){
-    cancelActivityView.hidden  = false
-    self.navigationController?.navigationBarHidden = true
-    UIApplication.sharedApplication().statusBarHidden = true
+    cancelActivityView.isHidden  = false
+    self.navigationController?.isNavigationBarHidden = true
+    UIApplication.shared.isStatusBarHidden = true
   }
   func takeBackButtonPressed(){
-    cancelActivityView.hidden  = true
-    self.navigationController?.navigationBarHidden = false
-    UIApplication.sharedApplication().statusBarHidden = false
-    self.navigationController?.popToRootViewControllerAnimated(true)
+    cancelActivityView.isHidden  = true
+    self.navigationController?.isNavigationBarHidden = false
+    UIApplication.shared.isStatusBarHidden = false
+    self.navigationController?.popToRootViewController(animated: true)
   }
   func dontCancelButtonPressed(){
-    cancelActivityView.hidden = true
-    self.navigationController?.navigationBarHidden = false
-    UIApplication.sharedApplication().statusBarHidden = false
+    cancelActivityView.isHidden = true
+    self.navigationController?.isNavigationBarHidden = false
+    UIApplication.shared.isStatusBarHidden = false
   }
 }

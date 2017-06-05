@@ -16,10 +16,10 @@ class PendingRequestDetailController: UIViewController {
         self.configureView()
     }
     func configureView(){
-      acceptButton.addTarget(self, action: "acceptButtonPressed", forControlEvents: .TouchUpInside)
-      declineButton.addTarget(self, action: "declinedButtonPressed", forControlEvents: .TouchUpInside)
+      acceptButton.addTarget(self, action: #selector(PendingRequestDetailController.acceptButtonPressed), for: .touchUpInside)
+      declineButton.addTarget(self, action: #selector(PendingRequestDetailController.declinedButtonPressed), for: .touchUpInside)
     }
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(animated)
       self.title = "PENDING REQUESTS"
     }
@@ -31,12 +31,12 @@ class PendingRequestDetailController: UIViewController {
     }
   
   func acceptButtonPressed(){
-      let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pendingAccepted") as! PendingRequestAcceptedController
+      let controller = self.storyboard?.instantiateViewController(withIdentifier: "pendingAccepted") as! PendingRequestAcceptedController
           self.navigationItem.title = ""
           self.navigationController?.pushViewController(controller, animated: true)
   }
   func declinedButtonPressed(){
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pendingDeclined") as! PendingrequestDeclinedController
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "pendingDeclined") as! PendingrequestDeclinedController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }

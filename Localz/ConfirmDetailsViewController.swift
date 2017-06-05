@@ -18,21 +18,21 @@ class ConfirmDetailsViewController: UIViewController {
       configureView()
     }
   func configureView(){
-    let closeButton = UIButton(frame: CGRectMake(0, 0, 44, 44))
-    closeButton.setImage(UIImage(named: "closeButton"), forState: .Normal)
-    closeButton.tintColor = UIColor.whiteColor()
-    closeButton.addTarget(self, action: "closeButtonTapped", forControlEvents: .TouchUpInside)
+    let closeButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+    closeButton.setImage(UIImage(named: "closeButton"), for: UIControlState())
+    closeButton.tintColor = UIColor.white
+    closeButton.addTarget(self, action: #selector(ConfirmDetailsViewController.closeButtonTapped), for: .touchUpInside)
     self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: closeButton)
     
-    cancelActivityView = NSBundle.mainBundle().loadNibNamed("CancelActivitiesView", owner: nil, options: nil).first as! CancelActivitiesView
+    cancelActivityView = Bundle.main.loadNibNamed("CancelActivitiesView", owner: nil, options: nil)?.first as! CancelActivitiesView
     cancelActivityView.frame = self.view.bounds
     cancelActivityView.cancelDetailsHeight.constant = 0
-    cancelActivityView.hidden = true
-    cancelActivityView.takeBackButton.addTarget(self, action: "takeBackButtonPressed", forControlEvents: .TouchUpInside)
-    cancelActivityView.dontCancelButton.addTarget(self, action: "dontCancelButtonPressed", forControlEvents: .TouchUpInside)
+    cancelActivityView.isHidden = true
+    cancelActivityView.takeBackButton.addTarget(self, action: #selector(ConfirmDetailsViewController.takeBackButtonPressed), for: .touchUpInside)
+    cancelActivityView.dontCancelButton.addTarget(self, action: #selector(ConfirmDetailsViewController.dontCancelButtonPressed), for: .touchUpInside)
     self.view.addSubview(cancelActivityView)
     
-    completeButton.addTarget(self, action: "completeButtonPressed", forControlEvents: .TouchUpInside)
+    completeButton.addTarget(self, action: #selector(ConfirmDetailsViewController.completeButtonPressed), for: .touchUpInside)
     ratingView.rating = 3.5
     ratingView.starImage = UIImage(named:"star.png")
     ratingView.starHighlightedImage =  UIImage(named:"starhighlighted.png");
@@ -42,9 +42,9 @@ class ConfirmDetailsViewController: UIViewController {
     ratingView.editable = false;
     ratingView.displayMode = UInt(EDStarRatingDisplayHalf)
     
-    guidePhotoView.layer.cornerRadius  = CGRectGetWidth(guidePhotoView.bounds) / 2
+    guidePhotoView.layer.cornerRadius  = guidePhotoView.bounds.width / 2
     guidePhotoView.layer.borderWidth = 2
-    guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+    guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").cgColor
   }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -52,29 +52,29 @@ class ConfirmDetailsViewController: UIViewController {
     }
     
 
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "CONFIRM DETAILS"
   }
   func closeButtonTapped(){
-    cancelActivityView.hidden = false
-    self.navigationController?.navigationBarHidden = true
-    UIApplication.sharedApplication().statusBarHidden = true
+    cancelActivityView.isHidden = false
+    self.navigationController?.isNavigationBarHidden = true
+    UIApplication.shared.isStatusBarHidden = true
     
   }
   func takeBackButtonPressed(){
-    cancelActivityView.hidden = true
-    self.navigationController?.navigationBarHidden = false
-    UIApplication.sharedApplication().statusBarHidden = false
-    self.navigationController?.popToRootViewControllerAnimated(true)
+    cancelActivityView.isHidden = true
+    self.navigationController?.isNavigationBarHidden = false
+    UIApplication.shared.isStatusBarHidden = false
+    self.navigationController?.popToRootViewController(animated: true)
   }
   func dontCancelButtonPressed(){
-    cancelActivityView.hidden = true
-    self.navigationController?.navigationBarHidden = false
-    UIApplication.sharedApplication().statusBarHidden = false
+    cancelActivityView.isHidden = true
+    self.navigationController?.isNavigationBarHidden = false
+    UIApplication.shared.isStatusBarHidden = false
   }
   func completeButtonPressed(){
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("bookingCompleted") as! BookingCompletedViewController
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "bookingCompleted") as! BookingCompletedViewController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }

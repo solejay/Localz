@@ -5,7 +5,7 @@
 //
 
 import UIKit
-import PagingMenuController
+
 
 class SettingsViewController: UIViewController,PagingMenuControllerDelegate {
 
@@ -16,10 +16,10 @@ class SettingsViewController: UIViewController,PagingMenuControllerDelegate {
     }
     func configureView(){
       
-      let profileController = self.storyboard?.instantiateViewControllerWithIdentifier("profileSettings") as! ProfileSettingViewController
+      let profileController = self.storyboard?.instantiateViewController(withIdentifier: "profileSettings") as! ProfileSettingViewController
       profileController.title = "PROFILE"
       
-      let paymentsController = self.storyboard?.instantiateViewControllerWithIdentifier("payments") as! PaymentsViewController  
+      let paymentsController = self.storyboard?.instantiateViewController(withIdentifier: "payments") as! PaymentsViewController  
       paymentsController.title = "PAYMENTS"
       let viewControllers = [profileController,paymentsController]
       
@@ -27,12 +27,12 @@ class SettingsViewController: UIViewController,PagingMenuControllerDelegate {
       options.menuHeight = 44
       options.backgroundColor = UIColor(hex: "#2F2F2F")
       options.selectedBackgroundColor = UIColor(hex: "#2F2F2F")
-      options.selectedTextColor = UIColor.whiteColor()
-      options.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+      options.selectedTextColor = UIColor.white
+      options.textColor = UIColor.white.withAlphaComponent(0.3)
       options.font = UIFont(name: "Gotham Book", size: 13)!
       options.selectedFont = UIFont(name: "Gotham Book", size: 13)!
-      options.menuDisplayMode = .SegmentedControl
-      options.menuItemMode = .Underline(height: 3, color: UIColor.whiteColor(), horizontalPadding: 30, verticalPadding: 3)
+      options.menuDisplayMode = .segmentedControl
+      options.menuItemMode = .underline(height: 3, color: UIColor.white, horizontalPadding: 30, verticalPadding: 3)
       
       
       //Configure Page Controller
@@ -41,7 +41,7 @@ class SettingsViewController: UIViewController,PagingMenuControllerDelegate {
       pagingMenuController.setup(viewControllers: viewControllers, options: options)
     }
   
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "SETTINGS"
   }
@@ -52,10 +52,10 @@ class SettingsViewController: UIViewController,PagingMenuControllerDelegate {
     }
     
 
-  func willMoveToMenuPage(page: Int) {
+  func willMoveToMenuPage(_ page: Int) {
   }
   
-  func didMoveToMenuPage(page: Int) {
+  func didMoveToMenuPage(_ page: Int) {
   }
 
 

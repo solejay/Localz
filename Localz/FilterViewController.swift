@@ -27,7 +27,7 @@ class FilterViewController: UIViewController,TTRangeSliderDelegate {
         self.configureView()
     }
   
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "FILTERS"
   }
@@ -45,36 +45,36 @@ class FilterViewController: UIViewController,TTRangeSliderDelegate {
       self.slider.maxValue = 100;
       self.slider.selectedMinimum = 10;
       self.slider.selectedMaximum = 60;
-      self.slider.handleImage = UIImage(named: "sliderHandle")
-      self.slider.selectedHandleDiameterMultiplier = 1
-      self.slider.tintColorBetweenHandles = UIColor(hex: "#E13F53")
-      self.slider.lineHeight = 10
+//      self.slider.handleImage = UIImage(named: "sliderHandle")
+//      self.slider.selectedHandleDiameterMultiplier = 1
+//      self.slider.tintColorBetweenHandles = UIColor(hex: "#E13F53")
+//      self.slider.lineHeight = 10
       self.slider.minLabelColour  = UIColor(hex: "#E13F53")
       self.slider.maxLabelColour  = UIColor(hex: "#E13F53")
-      let customFormatter = NSNumberFormatter()
+      let customFormatter = NumberFormatter()
       //customFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
       customFormatter.positivePrefix = "$";
       self.slider.numberFormatterOverride = customFormatter;
 
       
-      self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cancel", style:.Plain, target: self, action: "cancel")
+      self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cancel", style:.plain, target: self, action: #selector(FilterViewController.cancel))
       
       let layer = CALayer()
-      layer.frame = CGRectMake(0, CGRectGetHeight(catergoryTextField.bounds) - 1, CGRectGetWidth(catergoryTextField.bounds), 0.5)
-      layer.backgroundColor = UIColor.darkGrayColor().CGColor
+      layer.frame = CGRect(x: 0, y: catergoryTextField.bounds.height - 1, width: catergoryTextField.bounds.width, height: 0.5)
+      layer.backgroundColor = UIColor.darkGray.cgColor
       catergoryTextField.layer.addSublayer(layer)
       
       let languageLayer = CALayer()
-      languageLayer.frame = CGRectMake(0, CGRectGetHeight(languagesTextField.bounds) - 1, CGRectGetWidth(languagesTextField.bounds), 0.5)
-      languageLayer.backgroundColor = UIColor.darkGrayColor().CGColor
+      languageLayer.frame = CGRect(x: 0, y: languagesTextField.bounds.height - 1, width: languagesTextField.bounds.width, height: 0.5)
+      languageLayer.backgroundColor = UIColor.darkGray.cgColor
       languagesTextField.layer.addSublayer(languageLayer)
       
     }
-  func rangeSlider(sender: TTRangeSlider!, didChangeSelectedMinimumValue selectedMinimum: Float, andMaximumValue selectedMaximum: Float) {
+  func rangeSlider(_ sender: TTRangeSlider!, didChangeSelectedMinimumValue selectedMinimum: Float, andMaximumValue selectedMaximum: Float) {
     
   }
   func cancel(){
-    self.navigationController?.popViewControllerAnimated(true)
+    self.navigationController?.popViewController(animated: true)
   }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

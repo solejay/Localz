@@ -1,26 +1,34 @@
 PODS:
-  - Crashlytics (3.7.0):
+  - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
   - EDStarRating (1.1)
   - Fabric (1.6.6)
+  - KNSemiModalViewController_hons82 (0.4.4)
   - LTNavigationBar (2.1.1)
-  - PagingMenuController (0.7.9)
   - SASlideMenu (2.0.3)
+  - THCalendarDatePicker (1.2.5):
+    - KNSemiModalViewController_hons82 (~> 0.4.3)
+  - TTRangeSlider (1.0.1)
 
 DEPENDENCIES:
   - Crashlytics
   - EDStarRating
   - Fabric
   - LTNavigationBar
-  - PagingMenuController
   - SASlideMenu
+  - THCalendarDatePicker
+  - TTRangeSlider
 
 SPEC CHECKSUMS:
-  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   EDStarRating: a41a6440a945020745d0e9ff8ada7d1afa952114
   Fabric: 1abc1e59f11fa39ede6f690ef7309d8563e3ec59
+  KNSemiModalViewController_hons82: 22aead5ef5d8ca749bc1babb43fa7d6f14b030a3
   LTNavigationBar: b1c15fdcc32453d84f8b9fc774fff611c184dfbb
-  PagingMenuController: 619ab0852545e0619fcfa8672f10f39f8d10de1f
   SASlideMenu: 15bd9e7752cd43ba30dac136a60b7e73483c35b3
+  THCalendarDatePicker: 65c63c1814d1a27defc89f4b72ec7a1d01d5503d
+  TTRangeSlider: 121c570050281a3e599fd7dc0735bd61bd291438
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: de22aeb1d45a0fb3a0f796de26fafc951a8bd9ba
+
+COCOAPODS: 1.0.1

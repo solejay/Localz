@@ -19,29 +19,29 @@ class UpcomingViewController: UIViewController ,UITableViewDataSource,UITableVie
         
         upcomingTableView.delegate = self
         upcomingTableView.dataSource = self
-        upcomingTableView.registerNib(UINib(nibName: "UpcomingCell", bundle: nil), forCellReuseIdentifier: "upcomingCell")
+        upcomingTableView.register(UINib(nibName: "UpcomingCell", bundle: nil), forCellReuseIdentifier: "upcomingCell")
       
-        upcomingTableView.tableFooterView = UIView(frame: CGRectZero)
+        upcomingTableView.tableFooterView = UIView(frame: CGRect.zero)
         upcomingTableView.estimatedRowHeight = 44
         upcomingTableView.rowHeight = UITableViewAutomaticDimension
     }
     
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "UPCOMING ACTIVITIES"
   }
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 1
   }
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = upcomingTableView.dequeueReusableCellWithIdentifier("upcomingCell") as! UpComingCell
-    cell.guidePhotoView.layer.cornerRadius  = CGRectGetWidth(cell.guidePhotoView.bounds) / 2
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = upcomingTableView.dequeueReusableCell(withIdentifier: "upcomingCell") as! UpComingCell
+    cell.guidePhotoView.layer.cornerRadius  = cell.guidePhotoView.bounds.width / 2
     cell.guidePhotoView.layer.borderWidth = 2
-    cell.guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+    cell.guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").cgColor
     return cell
   }
-  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("upcomingDetail") as!UpcomingDetailController
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "upcomingDetail") as!UpcomingDetailController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }

@@ -15,10 +15,10 @@ class DescriptionViewController: UIViewController {
         self.configureView()
     }
   func configureView(){
-    let rightButton = UIButton(type: .System)
-    rightButton.setTitle("Save", forState: .Normal)
+    let rightButton = UIButton(type: .system)
+    rightButton.setTitle("Save", for: UIControlState())
     rightButton.tintColor = UIColor(hex: "#E13F53")
-    rightButton.frame = CGRectMake(0, 0, 50, 44)
+    rightButton.frame = CGRect(x: 0, y: 0, width: 50, height: 44)
     
     self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButton)
     
@@ -27,12 +27,12 @@ class DescriptionViewController: UIViewController {
     
   
   }
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.navigationController?.navigationBar.topItem?.title = ""
     self.title = "EDIT DESCRIPTION"
   }
-  override func viewDidAppear(animated: Bool) {
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     self.descriptionTextView.becomeFirstResponder()
   }

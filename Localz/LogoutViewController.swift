@@ -16,8 +16,8 @@ class LogoutViewController: UIViewController {
       configureView()
     }
   func configureView(){
-    yesButton.addTarget(self, action: "yesButtonPressed", forControlEvents: .TouchUpInside)
-    noButton.addTarget(self, action: "noButtonPressed", forControlEvents: .TouchUpInside)
+    yesButton.addTarget(self, action: #selector(LogoutViewController.yesButtonPressed), for: .touchUpInside)
+    noButton.addTarget(self, action: #selector(LogoutViewController.noButtonPressed), for: .touchUpInside)
   }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -26,11 +26,11 @@ class LogoutViewController: UIViewController {
     
 
   func noButtonPressed(){
-    self.dismissViewControllerAnimated(false, completion: nil)
+    self.dismiss(animated: false, completion: nil)
   }
   func yesButtonPressed(){
-    NSUserDefaults.standardUserDefaults().removeObjectForKey("mode")
-    let rootController = self.storyboard?.instantiateViewControllerWithIdentifier("viewController") as! ViewController
+    UserDefaults.standard.removeObject(forKey: "mode")
+    let rootController = self.storyboard?.instantiateViewController(withIdentifier: "viewController") as! ViewController
     self.view.window?.rootViewController = rootController
   }
 }

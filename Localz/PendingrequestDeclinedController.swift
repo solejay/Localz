@@ -14,21 +14,21 @@ class PendingrequestDeclinedController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
         self.configureView()
     }
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "PENDING REQUESTS"
   }
   func configureView(){
-    sendButton.addTarget(self, action: "sendButtonPressed", forControlEvents: .TouchUpInside)
+    sendButton.addTarget(self, action: #selector(PendingrequestDeclinedController.sendButtonPressed), for: .touchUpInside)
     
     let layer = CALayer()
-    layer.frame = CGRectMake(0, CGRectGetHeight(theTextField.bounds) - 1, CGRectGetWidth(theTextField.bounds), 0.5)
-    layer.backgroundColor = UIColor.blackColor().CGColor
+    layer.frame = CGRect(x: 0, y: theTextField.bounds.height - 1, width: theTextField.bounds.width, height: 0.5)
+    layer.backgroundColor = UIColor.black.cgColor
     theTextField.layer.addSublayer(layer)
     theTextField.delegate = self
   }
   
-  func textFieldShouldReturn(textField: UITextField) -> Bool {
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()  
     return true
   }
@@ -39,7 +39,7 @@ class PendingrequestDeclinedController: UIViewController,UITextFieldDelegate {
     
 
   func sendButtonPressed(){
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pendingFinish") as! PendingFinishViewController
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "pendingFinish") as! PendingFinishViewController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }

@@ -5,7 +5,7 @@
 //
 
 import UIKit
-import PagingMenuController
+
 
 class HistoryGuideModeViewController: UIViewController,PagingMenuControllerDelegate {
 
@@ -15,10 +15,10 @@ class HistoryGuideModeViewController: UIViewController,PagingMenuControllerDeleg
     }
   func configureView(){
     
-    let historyController = self.storyboard?.instantiateViewControllerWithIdentifier("history") as! HistoryViewController
+    let historyController = self.storyboard?.instantiateViewController(withIdentifier: "history") as! HistoryViewController
     historyController.title = "HISTORY"
     
-    let paymentsController = self.storyboard?.instantiateViewControllerWithIdentifier("paymentHistory") as! PaymentHistoryViewController
+    let paymentsController = self.storyboard?.instantiateViewController(withIdentifier: "paymentHistory") as! PaymentHistoryViewController
     paymentsController.title = "PAYMENTS"
     let viewControllers = [historyController,paymentsController]
     
@@ -26,12 +26,12 @@ class HistoryGuideModeViewController: UIViewController,PagingMenuControllerDeleg
     options.menuHeight = 44
     options.backgroundColor = UIColor(hex: "#2F2F2F")
     options.selectedBackgroundColor = UIColor(hex: "#2F2F2F")
-    options.selectedTextColor = UIColor.whiteColor()
-    options.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+    options.selectedTextColor = UIColor.white
+    options.textColor = UIColor.white.withAlphaComponent(0.3)
     options.font = UIFont(name: "Gotham Book", size: 13)!
     options.selectedFont = UIFont(name: "Gotham Book", size: 13)!
-    options.menuDisplayMode = .SegmentedControl
-    options.menuItemMode = .Underline(height: 3, color: UIColor.whiteColor(), horizontalPadding: 30, verticalPadding: 3)
+    options.menuDisplayMode = .segmentedControl
+    options.menuItemMode = .underline(height: 3, color: UIColor.white, horizontalPadding: 30, verticalPadding: 3)
     
     
     //Configure Page Controller
@@ -39,7 +39,7 @@ class HistoryGuideModeViewController: UIViewController,PagingMenuControllerDeleg
     pagingMenuController.delegate = self
     pagingMenuController.setup(viewControllers: viewControllers, options: options)
   }
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "HISTORY"
   }

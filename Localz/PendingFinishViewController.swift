@@ -14,20 +14,20 @@ class PendingFinishViewController: UIViewController {
        self.configureView()
     }
     func configureView(){
-      finishButton.addTarget(self, action: "finishButtonPressed", forControlEvents: .TouchUpInside)
+      finishButton.addTarget(self, action: #selector(PendingFinishViewController.finishButtonPressed), for: .touchUpInside)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "PENDING REQUESTS"
   }
 
   func finishButtonPressed(){
     
-    self.navigationController?.popToRootViewControllerAnimated(true)
+    self.navigationController?.popToRootViewController(animated: true)
   }
 
 }

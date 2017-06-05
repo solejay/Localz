@@ -27,40 +27,40 @@ class BookActivityDetailsController: UIViewController {
     }
   
   func configureView(){
-    let closeButton = UIButton(frame: CGRectMake(0, 0, 44, 44))
-    closeButton.setImage(UIImage(named: "closeButton"), forState: .Normal)
-    closeButton.tintColor = UIColor.whiteColor()
-    closeButton.addTarget(self, action: "closeButtonTapped", forControlEvents: .TouchUpInside)
+    let closeButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+    closeButton.setImage(UIImage(named: "closeButton"), for: UIControlState())
+    closeButton.tintColor = UIColor.white
+    closeButton.addTarget(self, action: #selector(BookActivityDetailsController.closeButtonTapped), for: .touchUpInside)
       self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: closeButton)
     
-    cancelActivityView = NSBundle.mainBundle().loadNibNamed("CancelActivitiesView", owner: nil, options: nil).first as! CancelActivitiesView
+    cancelActivityView = Bundle.main.loadNibNamed("CancelActivitiesView", owner: nil, options: nil)?.first as! CancelActivitiesView
     cancelActivityView.frame = self.view.bounds
     cancelActivityView.cancelDetailsHeight.constant = 0
-    cancelActivityView.hidden = true
-    closeButton.addTarget(self, action: "closeButtonTapped", forControlEvents: .TouchUpInside)
-    cancelActivityView.takeBackButton.addTarget(self, action: "takeBackButtonPressed", forControlEvents: .TouchUpInside)
-    cancelActivityView.dontCancelButton.addTarget(self, action: "dontCancelButtonPressed", forControlEvents: .TouchUpInside)
+    cancelActivityView.isHidden = true
+    closeButton.addTarget(self, action: #selector(BookActivityDetailsController.closeButtonTapped), for: .touchUpInside)
+    cancelActivityView.takeBackButton.addTarget(self, action: #selector(BookActivityDetailsController.takeBackButtonPressed), for: .touchUpInside)
+    cancelActivityView.dontCancelButton.addTarget(self, action: #selector(BookActivityDetailsController.dontCancelButtonPressed), for: .touchUpInside)
     self.view.addSubview(cancelActivityView)
     
     
-    scheduleTimeView = NSBundle.mainBundle().loadNibNamed("ScheduleTimeView", owner: nil, options: nil).first as! ScheduleTimeView
+    scheduleTimeView = Bundle.main.loadNibNamed("ScheduleTimeView", owner: nil, options: nil)?.first as! ScheduleTimeView
     scheduleTimeView.frame = containerView.bounds
     self.buttonConstraintsForStart()
     self.buttonConstraintsForEnd()
     
     containerView.addSubview(scheduleTimeView)
     
-    selectTransportView = NSBundle.mainBundle().loadNibNamed("SelectTransportView", owner: nil, options: nil).first as! SelectTransportView
+    selectTransportView = Bundle.main.loadNibNamed("SelectTransportView", owner: nil, options: nil)?.first as! SelectTransportView
     selectTransportView.frame = containerView.bounds
-    selectTransportView.hidden = true
-    selectTransportView.noButton.addTarget(self, action: "noTransportButtonPressed", forControlEvents: .TouchUpInside)
-    selectTransportView.pickUpButton.addTarget(self, action: "transportButtonPressed", forControlEvents: .TouchUpInside)
+    selectTransportView.isHidden = true
+    selectTransportView.noButton.addTarget(self, action: #selector(BookActivityDetailsController.noTransportButtonPressed), for: .touchUpInside)
+    selectTransportView.pickUpButton.addTarget(self, action: #selector(BookActivityDetailsController.transportButtonPressed), for: .touchUpInside)
     containerView.addSubview(selectTransportView)
     
-     chooseLanguage = NSBundle.mainBundle().loadNibNamed("ChooseLanguage", owner: nil, options: nil).first as! ChooseLanguage
-    chooseLanguage.hidden = true
-    chooseLanguage.button1.addTarget(self, action: "buttonTapped", forControlEvents: .TouchUpInside)
-    chooseLanguage.button2.addTarget(self, action: "buttonTapped", forControlEvents: .TouchUpInside)
+     chooseLanguage = Bundle.main.loadNibNamed("ChooseLanguage", owner: nil, options: nil)?.first as! ChooseLanguage
+    chooseLanguage.isHidden = true
+    chooseLanguage.button1.addTarget(self, action: #selector(BookActivityDetailsController.buttonTapped), for: .touchUpInside)
+    chooseLanguage.button2.addTarget(self, action: #selector(BookActivityDetailsController.buttonTapped), for: .touchUpInside)
 
     chooseLanguage.frame = containerView.bounds
     containerView.addSubview(chooseLanguage)
@@ -82,11 +82,11 @@ class BookActivityDetailsController: UIViewController {
     let views = ["button1":button1,"button2":button2,"button3":button3,"button4":button4,
       "button5":button5,"button6":button6,"button7":button7,"button8":button8,
       "button9":button9,"button10":button10]
-    let verticalConstraits = NSLayoutConstraint.constraintsWithVisualFormat("V:|-edgeMargin-[button1(==height)]|", options: .AlignAllCenterX, metrics: metrics, views: views)
-    NSLayoutConstraint.activateConstraints(verticalConstraits)
+    let verticalConstraits = NSLayoutConstraint.constraints(withVisualFormat: "V:|-edgeMargin-[button1(==height)]|", options: .alignAllCenterX, metrics: metrics, views: views)
+    NSLayoutConstraint.activate(verticalConstraits)
     
-    let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-edgeMargin-[button1(==width)]-betweenMargin-[button2(==width)]-betweenMargin-[button3(==width)]-betweenMargin-[button4(==width)]-betweenMargin-[button5(==width)]-betweenMargin-[button6(==width)]-betweenMargin-[button7(==width)]-betweenMargin-[button8(==width)]-betweenMargin-[button9(==width)]-betweenMargin-[button10(==width)]-edgeMargin-|", options: [.AlignAllTop , .AlignAllBottom], metrics: metrics, views: views)
-    NSLayoutConstraint.activateConstraints(horizontalConstraints)
+    let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-edgeMargin-[button1(==width)]-betweenMargin-[button2(==width)]-betweenMargin-[button3(==width)]-betweenMargin-[button4(==width)]-betweenMargin-[button5(==width)]-betweenMargin-[button6(==width)]-betweenMargin-[button7(==width)]-betweenMargin-[button8(==width)]-betweenMargin-[button9(==width)]-betweenMargin-[button10(==width)]-edgeMargin-|", options: [.alignAllTop , .alignAllBottom], metrics: metrics, views: views)
+    NSLayoutConstraint.activate(horizontalConstraints)
   }
   func buttonConstraintsForEnd(){
     
@@ -103,11 +103,11 @@ class BookActivityDetailsController: UIViewController {
     let views = ["button3":button3,"button4":button4,
       "button5":button5,"button6":button6,"button7":button7,"button8":button8,
       "button9":button9,"button10":button10]
-    let verticalConstraits = NSLayoutConstraint.constraintsWithVisualFormat("V:|-edgeMargin-[button3(==height)]|", options: .AlignAllCenterX, metrics: metrics, views: views)
-    NSLayoutConstraint.activateConstraints(verticalConstraits)
+    let verticalConstraits = NSLayoutConstraint.constraints(withVisualFormat: "V:|-edgeMargin-[button3(==height)]|", options: .alignAllCenterX, metrics: metrics, views: views)
+    NSLayoutConstraint.activate(verticalConstraits)
     
-    let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-edgeMargin-[button3(==width)]-betweenMargin-[button4(==width)]-betweenMargin-[button5(==width)]-betweenMargin-[button6(==width)]-betweenMargin-[button7(==width)]-betweenMargin-[button8(==width)]-betweenMargin-[button9(==width)]-betweenMargin-[button10(==width)]-edgeMargin-|", options: [.AlignAllTop , .AlignAllBottom], metrics: metrics, views: views)
-    NSLayoutConstraint.activateConstraints(horizontalConstraints)
+    let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-edgeMargin-[button3(==width)]-betweenMargin-[button4(==width)]-betweenMargin-[button5(==width)]-betweenMargin-[button6(==width)]-betweenMargin-[button7(==width)]-betweenMargin-[button8(==width)]-betweenMargin-[button9(==width)]-betweenMargin-[button10(==width)]-edgeMargin-|", options: [.alignAllTop , .alignAllBottom], metrics: metrics, views: views)
+    NSLayoutConstraint.activate(horizontalConstraints)
   }
     override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
@@ -115,150 +115,150 @@ class BookActivityDetailsController: UIViewController {
     }
   
   
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "BOOK YOUR GUIDE"
   }
   
   func closeButtonTapped(){
-    cancelActivityView.hidden = false
-    self.navigationController?.navigationBarHidden = true
-    UIApplication.sharedApplication().statusBarHidden = true
+    cancelActivityView.isHidden = false
+    self.navigationController?.isNavigationBarHidden = true
+    UIApplication.shared.isStatusBarHidden = true
     
   }
   func takeBackButtonPressed(){
-    cancelActivityView.hidden = true
-    self.navigationController?.navigationBarHidden = false
-    UIApplication.sharedApplication().statusBarHidden = false
-    self.navigationController?.popToRootViewControllerAnimated(true)
+    cancelActivityView.isHidden = true
+    self.navigationController?.isNavigationBarHidden = false
+    UIApplication.shared.isStatusBarHidden = false
+    self.navigationController?.popToRootViewController(animated: true)
   }
   func dontCancelButtonPressed(){
-    cancelActivityView.hidden = true
-    self.navigationController?.navigationBarHidden = false
-    UIApplication.sharedApplication().statusBarHidden = false
+    cancelActivityView.isHidden = true
+    self.navigationController?.isNavigationBarHidden = false
+    UIApplication.shared.isStatusBarHidden = false
   }
   
   //MARK: ScheduleTimeView
-  private func createSliderButtons(title:String, tag:Int) -> UIButton{
+  fileprivate func createSliderButtons(_ title:String, tag:Int) -> UIButton{
     let button = UIButton()
-    button.setTitle(title, forState: .Normal)
+    button.setTitle(title, for: UIControlState())
     button.titleLabel?.font = UIFont(name: "Gotham Book", size: 15)
-    button.frame = CGRectMake(0, 0, 75, 44)
+    button.frame = CGRect(x: 0, y: 0, width: 75, height: 44)
     button.layer.borderWidth = 2
-    button.layer.borderColor = UIColor(hex: "2F2F2F").CGColor
-    button.setTitleColor(UIColor(hex: "2F2F2F"), forState: .Normal)
+    button.layer.borderColor = UIColor(hex: "2F2F2F").cgColor
+    button.setTitleColor(UIColor(hex: "2F2F2F"), for: UIControlState())
     button.layer.cornerRadius = 4
     button.tag = tag
-    button.addTarget(self, action: "startButtonSelected:", forControlEvents: .TouchUpInside)
+    button.addTarget(self, action: #selector(BookActivityDetailsController.startButtonSelected(_:)), for: .touchUpInside)
     button.translatesAutoresizingMaskIntoConstraints = false
     scheduleTimeView.startScrolView.addSubview(button)
     
     return button
   }
-  private func createSliderButtonForEndTime(title:String,tag:Int) -> UIButton{
+  fileprivate func createSliderButtonForEndTime(_ title:String,tag:Int) -> UIButton{
     let button = UIButton()
-    button.setTitle(title, forState: .Normal)
+    button.setTitle(title, for: UIControlState())
     button.titleLabel?.font = UIFont(name: "Gotham Book", size: 15)
-    button.frame = CGRectMake(0, 0, 75, 44)
+    button.frame = CGRect(x: 0, y: 0, width: 75, height: 44)
     button.layer.borderWidth = 2
-    button.layer.borderColor = UIColor(hex: "2F2F2F").CGColor
-    button.setTitleColor(UIColor(hex: "2F2F2F"), forState: .Normal)
+    button.layer.borderColor = UIColor(hex: "2F2F2F").cgColor
+    button.setTitleColor(UIColor(hex: "2F2F2F"), for: UIControlState())
     button.layer.cornerRadius = 4
     button.tag = tag
-    button.addTarget(self, action: "endButtonSelected:", forControlEvents: .TouchUpInside)
+    button.addTarget(self, action: #selector(BookActivityDetailsController.endButtonSelected(_:)), for: .touchUpInside)
     button.translatesAutoresizingMaskIntoConstraints = false
     scheduleTimeView.endScrollView.addSubview(button)
     
     return button
   }
-  func startButtonSelected(button:UIButton)
+  func startButtonSelected(_ button:UIButton)
   {
-    button.selected = true
+    button.isSelected = true
     startTimeButtonList.filter { (butt) -> Bool in
       button.tag != butt.tag
     }.forEach { (butt) -> () in
-      butt.selected = false
+      butt.isSelected = false
       self.styleForSelectedButton(butt)
     }
     self.styleForSelectedButton(button)
     //Check if end time is selected from the button list, if true show next view
     selectedEndTimeButton = endTimeButtonList.filter { (butt) -> Bool in
-      return butt.selected == true
+      return butt.isSelected == true
     }.first
-    if(selectedEndTimeButton != .None){
-      selectTransportView.hidden = false
-      scheduleTimeView.hidden = true
+    if(selectedEndTimeButton != .none){
+      selectTransportView.isHidden = false
+      scheduleTimeView.isHidden = true
       setTimeLabel(button,end: selectedEndTimeButton)
     }else{
-      selectTransportView.hidden = true
-      scheduleTimeView.hidden = false
+      selectTransportView.isHidden = true
+      scheduleTimeView.isHidden = false
     }
   }
-  func endButtonSelected(button:UIButton)
+  func endButtonSelected(_ button:UIButton)
   {
     //Style button when button tapped
-    button.selected = true
+    button.isSelected = true
     endTimeButtonList.filter { (butt) -> Bool in
       button.tag != butt.tag
       }.forEach { (butt) -> () in
-        butt.selected = false
+        butt.isSelected = false
         self.styleForSelectedButton(butt)
     }
     self.styleForSelectedButton(button)
     
     //Check if start time is selected from the button list, if true show next view
     selectedStartTimeButton = startTimeButtonList.filter { (butt) -> Bool in
-      return butt.selected == true
+      return butt.isSelected == true
     }.first
-    if(selectedStartTimeButton != .None){
-      selectTransportView.hidden = false
-      scheduleTimeView.hidden = true
+    if(selectedStartTimeButton != .none){
+      selectTransportView.isHidden = false
+      scheduleTimeView.isHidden = true
       setTimeLabel(selectedStartTimeButton,end: button)
     }else{
-      selectTransportView.hidden = true
-      scheduleTimeView.hidden = false
+      selectTransportView.isHidden = true
+      scheduleTimeView.isHidden = false
     }
   }
   
-  func setTimeLabel(start:UIButton ,end:UIButton){
+  func setTimeLabel(_ start:UIButton ,end:UIButton){
     timeLabel.text = "\(start.titleLabel!.text!) - \(end.titleLabel!.text!)"
-    timeLabel.hidden = false
+    timeLabel.isHidden = false
   }
   
-  func styleForSelectedButton(button:UIButton){
-    if button.selected == true{
-       button.setTitleColor(UIColor.whiteColor() , forState: .Normal)
+  func styleForSelectedButton(_ button:UIButton){
+    if button.isSelected == true{
+       button.setTitleColor(UIColor.white , for: UIControlState())
        button.backgroundColor = UIColor(hex: "2F2F2F")
     }else{
-      button.setTitleColor(UIColor(hex: "2F2F2F"), forState: .Normal)
-       button.backgroundColor = UIColor.whiteColor()
+      button.setTitleColor(UIColor(hex: "2F2F2F"), for: UIControlState())
+       button.backgroundColor = UIColor.white
     }
     
   }
   
   //MARK: SelectTransportView
   func noTransportButtonPressed(){
-    chooseLanguage.hidden = false
-    selectTransportView.hidden = true
+    chooseLanguage.isHidden = false
+    selectTransportView.isHidden = true
     
   }
   func transportButtonPressed(){
-    selectTransportView.addLocationButton.hidden = false
-    selectTransportView.addLocationButton.layer.borderColor = UIColor(hex: "#2F2F2F").CGColor
+    selectTransportView.addLocationButton.isHidden = false
+    selectTransportView.addLocationButton.layer.borderColor = UIColor(hex: "#2F2F2F").cgColor
     selectTransportView.addLocationButton.layer.borderWidth = 2
     selectTransportView.addLocationButton.layer.cornerRadius = 4
-    selectTransportView.addLocationButton.addTarget(self, action: "showLocationView", forControlEvents: .TouchUpInside)
-    selectTransportView.addresLabel.hidden = false
+    selectTransportView.addLocationButton.addTarget(self, action: #selector(BookActivityDetailsController.showLocationView), for: .touchUpInside)
+    selectTransportView.addresLabel.isHidden = false
   }
   func showLocationView(){
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("location") as! LocationViewController
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "location") as! LocationViewController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }
   
   //MARK: ChooseLanguageView
   func buttonTapped(){
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("confirmDetails") as! ConfirmDetailsViewController
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "confirmDetails") as! ConfirmDetailsViewController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }

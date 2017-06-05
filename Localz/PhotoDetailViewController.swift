@@ -20,11 +20,11 @@ class PhotoDetailViewController: UIViewController {
     }
     func configureView(){
       makeCoverButton.layer.cornerRadius = 4
-      makeCoverButton.layer.borderColor = UIColor.blackColor().CGColor
+      makeCoverButton.layer.borderColor = UIColor.black.cgColor
       makeCoverButton.layer.borderWidth = 2
     }
 
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "PHOTO 1"
   }

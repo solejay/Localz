@@ -13,15 +13,15 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
   @IBOutlet weak var potentialButton: UIButton!
   @IBOutlet weak var filterButton: UIButton!
   @IBOutlet weak var guideTableView: UITableView!
-  var curFromDate : NSDate? = NSDate()
+  var curFromDate : Date? = Date()
   lazy var calendarPicker : THDatePickerViewController = {
     let picker = THDatePickerViewController.datePicker()
-    picker.delegate = self
-    picker.date = self.curFromDate
-    picker.selectedBackgroundColor = UIColor(hex: "#E13F53")
-    picker.currentDateColor = UIColor.whiteColor()
-    picker.currentDateColorSelected = UIColor.whiteColor()
-    return picker
+    picker?.delegate = self
+    picker?.date = self.curFromDate
+    picker?.selectedBackgroundColor = UIColor(hex: "#E13F53")
+    picker?.currentDateColor = UIColor.white
+    picker?.currentDateColorSelected = UIColor.white
+    return picker!
   }()
   var dateViewContainer:PickDateView!
   var guideList:[GuideObject] = []
@@ -32,11 +32,11 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
     }
   
     func configureView(){
-      let searchButton = UIButton(type: .System)
-      searchButton.frame = CGRectMake(0, 0, 29, 29);
-      searchButton.setImage(UIImage(named:"search-icon"), forState: UIControlState.Normal)
-      searchButton.addTarget(self, action: "showSearch:", forControlEvents: .TouchUpInside)
-      searchButton.tintColor = UIColor.whiteColor()
+      let searchButton = UIButton(type: .system)
+      searchButton.frame = CGRect(x: 0, y: 0, width: 29, height: 29);
+      searchButton.setImage(UIImage(named:"search-icon"), for: UIControlState())
+      searchButton.addTarget(self, action: #selector(FindGuideViewController.showSearch(_:)), for: .touchUpInside)
+      searchButton.tintColor = UIColor.white
       
       self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: searchButton)
       self.guideTableView.delegate = self
@@ -46,7 +46,7 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
       
       self.potentialButton.layer.cornerRadius = 4
       self.filterButton.layer.cornerRadius = 4
-      self.filterButton.addTarget(self, action: "showFilterView", forControlEvents: .TouchUpInside)
+      self.filterButton.addTarget(self, action: #selector(FindGuideViewController.showFilterView), for: .touchUpInside)
       guideList = GuideObject.getGuide()
       
       setupDatePickerView()
@@ -54,14 +54,14 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
   
     func setupDatePickerView(){
       
-      dateViewContainer = NSBundle.mainBundle().loadNibNamed("PickDateView", owner: nil, options: nil).first as! PickDateView
+      dateViewContainer = Bundle.main.loadNibNamed("PickDateView", owner: nil, options: nil)?.first as! PickDateView
       dateViewContainer.frame = self.view.bounds
-      dateViewContainer.backgroundColor = UIColor.whiteColor()
-      dateViewContainer.containerView.layer.borderColor = UIColor.darkGrayColor().CGColor
+      dateViewContainer.backgroundColor = UIColor.white
+      dateViewContainer.containerView.layer.borderColor = UIColor.darkGray.cgColor
       dateViewContainer.containerView.layer.borderWidth = 0.5
   
       
-      dateViewContainer.hidden = true
+      dateViewContainer.isHidden = true
       
       calendarPicker.setDisableYearSwitch(true)
       //calendarPicker.view.center = dateViewContainer.containerView.center
@@ -69,16 +69,16 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
       
       dateViewContainer.containerView.addSubview(calendarPicker.view)
       self.addChildViewController(calendarPicker)
-      calendarPicker.didMoveToParentViewController(self)
+      calendarPicker.didMove(toParentViewController: self)
       
       self.view.addSubview(dateViewContainer)
     }
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       return guideList.count
     }
   
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = self.guideTableView.dequeueReusableCellWithIdentifier("guideCells") as! GuideViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = self.guideTableView.dequeueReusableCell(withIdentifier: "guideCells") as! GuideViewCell
       let guide = guideList[indexPath.row]
       cell.guideNameLabel.text = guide.guideName
       cell.guidePhotoView.image = UIImage(named: guide.guideImage)
@@ -89,9 +89,9 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
       cell.tourTypesLabel.text = guide.tourTypes
       cell.timeAgoLabel.text = guide.locationDistance
       cell.reviewLabel.text = guide.reviews
-      cell.guidePhotoView.layer.cornerRadius  = CGRectGetWidth(cell.guidePhotoView.bounds) / 2
+      cell.guidePhotoView.layer.cornerRadius  = cell.guidePhotoView.bounds.width / 2
       cell.guidePhotoView.layer.borderWidth = 2
-      cell.guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+      cell.guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").cgColor
       
       
       cell.ratingsView.rating = 3.5
@@ -105,12 +105,12 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
       
       return cell
     }
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "Baltimore"
   }
-  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("findGuideDetail") as! FindGuideDetailViewController
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "findGuideDetail") as! FindGuideDetailViewController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }
@@ -119,31 +119,31 @@ class FindGuideViewController: UIViewController,UITableViewDelegate,UITableViewD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-  func showSearch(button:UIButton){
+  func showSearch(_ button:UIButton){
     
     if(isSearchSelected == true){
-     dateViewContainer.hidden = true
+     dateViewContainer.isHidden = true
     }else{
-       dateViewContainer.hidden = false
+       dateViewContainer.isHidden = false
     }
     isSearchSelected = !isSearchSelected
   }
   
   func showFilterView(){
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("filterView") as! FilterViewController
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "filterView") as! FilterViewController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }
-  func datePickerDonePressed(datePicker: THDatePickerViewController!) {
+  func datePickerDonePressed(_ datePicker: THDatePickerViewController!) {
     
    // dismissSemiModalView()
   }
   
-  func datePickerCancelPressed(datePicker: THDatePickerViewController!) {
+  func datePickerCancelPressed(_ datePicker: THDatePickerViewController!) {
    // dismissSemiModalView()
   }
   
-  func datePicker(datePicker: THDatePickerViewController!, selectedDate: NSDate!) {
+  func datePicker(_ datePicker: THDatePickerViewController!, selectedDate: Date!) {
     print("Date selected: \(selectedDate)")
     //dateViewContainer.hidden = true
    // isSearchSelected = !isSearchSelected

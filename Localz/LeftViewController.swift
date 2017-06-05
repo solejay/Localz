@@ -22,39 +22,39 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
   @IBOutlet weak var photoCell: UITableViewCell!
   @IBOutlet weak var manageCalenderCell: UITableViewCell!
   var historyIdentifier:String!
-  var isGuideMode:Int = NSUserDefaults.standardUserDefaults().objectForKey("mode") as! Int
+  var isGuideMode:Int = UserDefaults.standard.object(forKey: "mode") as! Int
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
         // Do any additional setup after loading the view.
     }
     func configureView(){
-      tableView?.tableFooterView  = UIView(frame: CGRectZero)
+      tableView?.tableFooterView  = UIView(frame: CGRect.zero)
       tableView?.tableHeaderView = createHeader()
-      tableView?.separatorStyle = .None
-      tableView?.tableHeaderView?.backgroundColor = UIColor.clearColor()
+      tableView?.separatorStyle = .none
+      tableView?.tableHeaderView?.backgroundColor = UIColor.clear
       tableView?.backgroundColor = UIColor(hex: "#2F2F2F")
       
       
-      logout = NSBundle.mainBundle().loadNibNamed("LogoutView", owner: nil, options: nil).first as! LogoutView
+      logout = Bundle.main.loadNibNamed("LogoutView", owner: nil, options: nil)?.first as! LogoutView
       
     
      
     }
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
   
   }
   func createHeader() -> SideBarHeader{
-    let header = NSBundle.mainBundle().loadNibNamed("SideBarHeader", owner: nil, options: nil).first as! SideBarHeader
+    let header = Bundle.main.loadNibNamed("SideBarHeader", owner: nil, options: nil)?.first as! SideBarHeader
     
-    header.guidePhotoView.layer.cornerRadius  = CGRectGetWidth(header.guidePhotoView.bounds) / 2
+    header.guidePhotoView.layer.cornerRadius  = header.guidePhotoView.bounds.width / 2
     header.guidePhotoView.layer.borderWidth = 2
-    header.guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+    header.guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").cgColor
     
     header.type.text = isGuideMode == 1 ? "Guide" : "Explorer"
     
-    header.frame = CGRectMake(0, 0, 260, 200)
+    header.frame = CGRect(x: 0, y: 0, width: 260, height: 200)
     header.ratingView.rating = 3.5
     header.ratingView.starImage = UIImage(named:"star.png")
     header.ratingView.starHighlightedImage =  UIImage(named:"starhighlighted.png");
@@ -69,14 +69,14 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-  func selectedIndexPath() -> NSIndexPath! {
+  func selectedIndexPath() -> IndexPath! {
     if(isGuideMode == 1){
-        return NSIndexPath(forItem: 1, inSection: 0)
+        return IndexPath(item: 1, section: 0)
     }else{
-       return NSIndexPath(forItem: 0, inSection: 0)
+       return IndexPath(item: 0, section: 0)
     }
   }
-  func  segueIdForIndexPath(indexPath: NSIndexPath!) -> String! {
+  func  segueId(for indexPath: IndexPath!) -> String! {
     var stringIndex:String!
     print(indexPath.row)
 
@@ -95,32 +95,32 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
     return stringIndex
   }
   
-   override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+   override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
     if(identifier == "logout" ){
       return false
     }else{
       return true
     }
   }
-  func disablePanGestureForIndexPath(indexPath: NSIndexPath!) -> Bool {
+  func disablePanGesture(for indexPath: IndexPath!) -> Bool {
     if(indexPath.row == 0){
       return true
     }
     return false
   }
  
-  override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-    cell.backgroundColor = UIColor.clearColor()
+  override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    cell.backgroundColor = UIColor.clear
    
   }
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     if(indexPath.row == 8){
-      let controller = self.storyboard?.instantiateViewControllerWithIdentifier("logout") as! LogoutViewController  
-      self.presentViewController(controller, animated: false, completion: nil)
+      let controller = self.storyboard?.instantiateViewController(withIdentifier: "logout") as! LogoutViewController  
+      self.present(controller, animated: false, completion: nil)
     }
   }
-  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    let cell: UITableViewCell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
+  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    let cell: UITableViewCell = super.tableView(tableView, cellForRowAt: indexPath)
    
     if(isGuideMode == 1){
         if(cell == findGuideCell || cell == historyExploreCell){
@@ -138,13 +138,13 @@ class LeftViewController: SASlideMenuViewController,SASlideMenuDataSource,SASlid
     
   }
 
-  func configureMenuButton(menuButton: UIButton!) {
-    menuButton.frame = CGRectMake(0, 0, 40, 29);
-    menuButton.setImage(UIImage(named:"menu-icon"), forState: UIControlState.Normal)
+  func configureMenuButton(_ menuButton: UIButton!) {
+    menuButton.frame = CGRect(x: 0, y: 0, width: 40, height: 29);
+    menuButton.setImage(UIImage(named:"menu-icon"), for: UIControlState())
   }
   
-  func configureSlideLayer(layer: CALayer!) {
-    layer.shadowColor = UIColor.blackColor().CGColor
+  func configureSlideLayer(_ layer: CALayer!) {
+    layer.shadowColor = UIColor.black.cgColor
     layer.shadowOpacity = 0.3;
   }
   func leftMenuVisibleWidth() -> CGFloat {

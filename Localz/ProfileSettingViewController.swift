@@ -10,7 +10,7 @@ class ProfileSettingViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.tableView.tableFooterView = UIView(frame: CGRectZero)
+      self.tableView.tableFooterView = UIView(frame: CGRect.zero)
       self.tableView.estimatedRowHeight = 70
       self.tableView.rowHeight = UITableViewAutomaticDimension
     }
@@ -20,9 +20,9 @@ class ProfileSettingViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
   
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     if(indexPath.row == 2){
-      let controller = self.storyboard?.instantiateViewControllerWithIdentifier("descView") as! DescriptionViewController
+      let controller = self.storyboard?.instantiateViewController(withIdentifier: "descView") as! DescriptionViewController
       self.navigationController?.pushViewController(controller, animated: true)
     }
   }

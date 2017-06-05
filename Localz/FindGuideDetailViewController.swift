@@ -19,14 +19,14 @@ class FindGuideDetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       self.automaticallyAdjustsScrollViewInsets =  false;
-      self.edgesForExtendedLayout = .Top
+      self.edgesForExtendedLayout = .top
      // self.extendedLayoutIncludesOpaqueBars = false
-      self.tableView.tableFooterView = UIView(frame: CGRectZero)
+      self.tableView.tableFooterView = UIView(frame: CGRect.zero)
       
-      bookGuideButton.addTarget(self, action: "bookGuide", forControlEvents: .TouchUpInside)
-      guidePhotoView.layer.cornerRadius  = CGRectGetWidth(guidePhotoView.bounds) / 2
+      bookGuideButton.addTarget(self, action: #selector(FindGuideDetailViewController.bookGuide), for: .touchUpInside)
+      guidePhotoView.layer.cornerRadius  = guidePhotoView.bounds.width / 2
       guidePhotoView.layer.borderWidth = 2
-      guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+      guidePhotoView.layer.borderColor = UIColor(hex: "E13F53").cgColor
       
       
       ratingsView1.rating = 3.5
@@ -48,46 +48,46 @@ class FindGuideDetailViewController: UITableViewController {
       ratingsView1.editable = false;
       ratingsView2.displayMode = UInt(EDStarRatingDisplayHalf)
     }
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     oldColor = (self.navigationController?.navigationBar.barTintColor)!
     makeNavigationBarTransparent(self)
     
   }
-  override func viewWillDisappear(animated: Bool) {
+  override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
      makeNavigationBarOpaque(self, color: oldColor)
   }
-  override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+  override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
     return 44
   }
-  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
      if(indexPath.row == 2 || indexPath.row == 4){
       return UITableViewAutomaticDimension
     }else{
-      return super.tableView(tableView, heightForRowAtIndexPath: indexPath)
+      return super.tableView(tableView, heightForRowAt: indexPath)
     }
   }
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     if(indexPath.row == 3){
-      let controller = self.storyboard?.instantiateViewControllerWithIdentifier("tourDetails") as! TourDetailsViewController
+      let controller = self.storyboard?.instantiateViewController(withIdentifier: "tourDetails") as! TourDetailsViewController
       self.navigationItem.title = ""
       self.navigationController?.pushViewController(controller, animated: true)
     }
   }
   
-  override func scrollViewDidScroll(scrollView: UIScrollView) {
+  override func scrollViewDidScroll(_ scrollView: UIScrollView) {
     let offSetY = scrollView.contentOffset.y
     if(offSetY > 50){
       let alpha = min(1, 1 - (50 + 64 - offSetY) / 64)
-      self.navigationController?.navigationBar.lt_setBackgroundColor(oldColor.colorWithAlphaComponent(alpha))
+      self.navigationController?.navigationBar.lt_setBackgroundColor(oldColor.withAlphaComponent(alpha))
     }else{
-      self.navigationController?.navigationBar.lt_setBackgroundColor(oldColor.colorWithAlphaComponent(0))
+      self.navigationController?.navigationBar.lt_setBackgroundColor(oldColor.withAlphaComponent(0))
     }
   }
   
   func bookGuide(){
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("bookGuide") as! BookGuideViewController
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "bookGuide") as! BookGuideViewController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }

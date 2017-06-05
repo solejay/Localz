@@ -12,19 +12,19 @@ class Utils: NSObject {
 }
 
     
-func makeNavigationBarTransparent(sourceViewController:UIViewController){
-  sourceViewController.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+func makeNavigationBarTransparent(_ sourceViewController:UIViewController){
+  sourceViewController.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
   sourceViewController.navigationController?.navigationBar.shadowImage = UIImage()
-  sourceViewController.navigationController?.navigationBar.translucent = true
+  sourceViewController.navigationController?.navigationBar.isTranslucent = true
 }
-func makeNavigationBarOpaque(sourceViewController:UIViewController,color:UIColor){
+func makeNavigationBarOpaque(_ sourceViewController:UIViewController,color:UIColor){
   
   //  sourceViewController.navigationController?.navigationBar.barTintColor = color
   
   
-  sourceViewController.navigationController?.navigationBar.setBackgroundImage(UINavigationBar.appearance().backgroundImageForBarMetrics(UIBarMetrics.Default), forBarMetrics: UIBarMetrics.Default)
+  sourceViewController.navigationController?.navigationBar.setBackgroundImage(UINavigationBar.appearance().backgroundImage(for: UIBarMetrics.default), for: UIBarMetrics.default)
   sourceViewController.navigationController?.navigationBar.shadowImage = UINavigationBar.appearance().shadowImage
-  sourceViewController.navigationController?.navigationBar.translucent = UINavigationBar.appearance().translucent
+  sourceViewController.navigationController?.navigationBar.isTranslucent = UINavigationBar.appearance().isTranslucent
   
 }
 
@@ -38,13 +38,13 @@ public extension UIColor {
     var hex:   String = hex
     
     if hex.hasPrefix("#") {
-      let index   = hex.startIndex.advancedBy(1)
-      hex         = hex.substringFromIndex(index)
+      let index   = hex.characters.index(hex.startIndex, offsetBy: 1)
+      hex         = hex.substring(from: index)
     }
     
-    let scanner = NSScanner(string: hex)
+    let scanner = Scanner(string: hex)
     var hexValue: CUnsignedLongLong = 0
-    if scanner.scanHexLongLong(&hexValue) {
+    if scanner.scanHexInt64(&hexValue) {
       switch (hex.characters.count) {
       case 3:
         red   = CGFloat((hexValue & 0xF00) >> 8)       / 15.0
@@ -74,7 +74,7 @@ public extension UIColor {
   }
 }
  extension Array {
-  func take(x:Int) -> Array{
+  func take(_ x:Int) -> Array{
     if(self.count < x  || x <= 0){
       return self
     }else{
@@ -82,25 +82,25 @@ public extension UIColor {
     }
   }
   
-  public func mapWithIndex<T> (f: (Int, Element) -> T) -> [T] {
-    return zip((self.startIndex ..< self.endIndex), self).map(f)
+  public func mapWithIndex<T> (_ f: (Int, Element) -> T) -> [T] {
+    return zip((self.indices), self).map(f)
   }
   
-  func toDictionary<K,V>(
-    transformer: (element: Element) -> (key: K, value: V)?) -> Dictionary<K, V>
-  {
-    return self.reduce([:]) {
-      (var dict, e) in
-      if let (key, value) = transformer(element: e)
-      {
-        dict[key] = value
-      }
-      return dict
-    }
-  }
+//  func toDictionary<K,V>(
+//    _ transformer: @escaping (_ element: Element) -> (key: K, value: V)?) -> Dictionary<K, V>
+//  {
+//    return self.reduce([:]) {
+//        (dict: inout Dictionary<AnyObject,AnyObject>, e) in
+//      if let (key, value) = transformer(e)
+//      {
+//        dict[key] = value
+//      }
+//      return dict
+//    }
+//  }
 }
 extension Dictionary {
-  mutating func merge<K, V>(dict: [K: V]){
+  mutating func merge<K, V>(_ dict: [K: V]){
     for (k, v) in dict {
       self.updateValue(v as! Value, forKey: k as! Key)
     }

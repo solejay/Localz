@@ -19,9 +19,9 @@ class PaymentsViewController: UIViewController,UITextFieldDelegate {
        configureView()
     }
     func configureView(){
-      cardView = NSBundle.mainBundle().loadNibNamed("CardView", owner: nil, options: nil).first as!  CardView
-      cardView.frame = CGRectMake(0, 0, containerView.frame.size.width, 250)
-      cardView.hidden = true
+      cardView = Bundle.main.loadNibNamed("CardView", owner: nil, options: nil)?.first as!  CardView
+      cardView.frame = CGRect(x: 0, y: 0, width: containerView.frame.size.width, height: 250)
+      cardView.isHidden = true
       addLeftViewtoTextField(cardView.cardNumberTextField, width: 10)
       addCorneredBorder(cardView.cardNumberTextField)
       addLeftViewtoTextField(cardView.fullNameTextField, width: 10)
@@ -32,23 +32,23 @@ class PaymentsViewController: UIViewController,UITextFieldDelegate {
       addCorneredBorder(cardView.monthTextField)
       self.containerView.addSubview(cardView)
       
-      payPalButton.selected = true
+      payPalButton.isSelected = true
       self.styleForSelectedButton(payPalButton)
-      payPalButton.addTarget(self, action: "doPayPalAction", forControlEvents: .TouchUpInside)
+      payPalButton.addTarget(self, action: #selector(PaymentsViewController.doPayPalAction), for: .touchUpInside)
       
-      visaButton.selected = false
+      visaButton.isSelected = false
       self.styleForSelectedButton(visaButton)
-      visaButton.addTarget(self, action: "doVisaAction", forControlEvents: .TouchUpInside)
+      visaButton.addTarget(self, action: #selector(PaymentsViewController.doVisaAction), for: .touchUpInside)
   }
   
-  func styleForSelectedButton(button:UIButton)
+  func styleForSelectedButton(_ button:UIButton)
     {
-      if(button.selected == true){
-        button.layer.borderColor = UIColor(hex: "#EFB961").CGColor
+      if(button.isSelected == true){
+        button.layer.borderColor = UIColor(hex: "#EFB961").cgColor
         button.layer.borderWidth = 1
         
       }else{
-        button.layer.borderColor = UIColor(hex: "#BFBFBF").CGColor
+        button.layer.borderColor = UIColor(hex: "#BFBFBF").cgColor
         button.layer.borderWidth = 0.5
 
       }
@@ -62,44 +62,44 @@ class PaymentsViewController: UIViewController,UITextFieldDelegate {
   
   func doPayPalAction(){
     self.showCardView(false)
-    payPalButton.selected = true
+    payPalButton.isSelected = true
     self.styleForSelectedButton(payPalButton)
     
-    visaButton.selected = false
+    visaButton.isSelected = false
     self.styleForSelectedButton(visaButton)
   }
   func doVisaAction(){
     self.showCardView(true)
-    payPalButton.selected = false
+    payPalButton.isSelected = false
     self.styleForSelectedButton(payPalButton)
     
-    visaButton.selected = true
+    visaButton.isSelected = true
     self.styleForSelectedButton(visaButton)
   }
   
-  func showCardView(show:Bool){
+  func showCardView(_ show:Bool){
     if(show)  {
-      cardView.hidden = false
+      cardView.isHidden = false
     }else{
-      cardView.hidden = true
+      cardView.isHidden = true
     }
   }
   
-  func addLeftViewtoTextField(textField:UITextField,width:CGFloat){
-    let left = UIView(frame: CGRectMake(0,0,width,CGRectGetHeight(textField.frame)))
+  func addLeftViewtoTextField(_ textField:UITextField,width:CGFloat){
+    let left = UIView(frame: CGRect(x: 0,y: 0,width: width,height: textField.frame.height))
     textField.leftView = left
-    textField.leftViewMode = .Always
+    textField.leftViewMode = .always
     
   }
   
-  func addCorneredBorder(textField:UITextField){
-    textField.layer.borderColor = UIColor(hex: "#CED1D2").CGColor
+  func addCorneredBorder(_ textField:UITextField){
+    textField.layer.borderColor = UIColor(hex: "#CED1D2").cgColor
     textField.layer.borderWidth = 1
     textField.layer.cornerRadius = 3
     textField.delegate = self
   }
     
-  func textFieldShouldReturn(textField: UITextField) -> Bool {
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()
     return true
   }

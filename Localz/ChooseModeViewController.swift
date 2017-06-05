@@ -20,20 +20,20 @@ class ChooseModeViewController: UIViewController {
   
   func configureView(){
     explorerButton.layer.cornerRadius = 5
-    explorerButton.selected = true
-    explorerButton.addTarget(self, action: "explore:", forControlEvents: .TouchUpInside)
+    explorerButton.isSelected = true
+    explorerButton.addTarget(self, action: #selector(ChooseModeViewController.explore(_:)), for: .touchUpInside)
     
     guideButton.layer.cornerRadius = 5
-    guideButton.selected = false
-    guideButton.addTarget(self, action: "guide:", forControlEvents: .TouchUpInside)
+    guideButton.isSelected = false
+    guideButton.addTarget(self, action: #selector(ChooseModeViewController.guide(_:)), for: .touchUpInside)
     
     buttonStyleForState(explorerButton)
     buttonStyleForState(guideButton)
     
-    locationOverlay = NSBundle.mainBundle().loadNibNamed("LocationOverlay", owner: nil, options: nil).first as! LocationOverlay
+    locationOverlay = Bundle.main.loadNibNamed("LocationOverlay", owner: nil, options: nil)?.first as! LocationOverlay
     locationOverlay.frame = self.view.bounds
-    locationOverlay.gotItButton.addTarget(self, action: "gotItButtonPressed", forControlEvents: .TouchUpInside)
-    locationOverlay.hidden = true
+    locationOverlay.gotItButton.addTarget(self, action: #selector(ChooseModeViewController.gotItButtonPressed), for: .touchUpInside)
+    locationOverlay.isHidden = true
     self.view.addSubview(locationOverlay)
     
     
@@ -44,14 +44,14 @@ class ChooseModeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
   }
   
-  func buttonStyleForState(button:UIButton){
-    if(button.selected == true){
+  func buttonStyleForState(_ button:UIButton){
+    if(button.isSelected == true){
       button.backgroundColor = UIColor(hex: "#E13F53")
       button.layer.borderWidth = 0
     }else{
-      button.backgroundColor = UIColor.clearColor()
+      button.backgroundColor = UIColor.clear
       button.layer.borderWidth = 0.5
-      button.layer.borderColor = UIColor.whiteColor().CGColor
+      button.layer.borderColor = UIColor.white.cgColor
     }
     
   }
@@ -59,45 +59,45 @@ class ChooseModeViewController: UIViewController {
 
 }
 extension ChooseModeViewController{
-  func explore(button:UIButton){
-    button.selected = true
-    guideButton.selected = false
+  func explore(_ button:UIButton){
+    button.isSelected = true
+    guideButton.isSelected = false
     buttonStyleForState(button)
     buttonStyleForState(guideButton)
-    locationOverlay.hidden = false
+    locationOverlay.isHidden = false
     
   }
-  func guide(button:UIButton){
-    button.selected = true
-    explorerButton.selected = false
+  func guide(_ button:UIButton){
+    button.isSelected = true
+    explorerButton.isSelected = false
     buttonStyleForState(button)
     buttonStyleForState(explorerButton)
-    locationOverlay.hidden = false
+    locationOverlay.isHidden = false
   }
   func gotItButtonPressed(){
-    let alertController = UIAlertController(title: "\"Localz\" Would Like to Use Your Current Location", message: "", preferredStyle: .Alert)
-    let cancelAction: UIAlertAction = UIAlertAction(title: "Don't Allow", style: .Cancel) { action -> Void in
+    let alertController = UIAlertController(title: "\"Localz\" Would Like to Use Your Current Location", message: "", preferredStyle: .alert)
+    let cancelAction: UIAlertAction = UIAlertAction(title: "Don't Allow", style: .cancel) { action -> Void in
       //Do some stuff
     }
     alertController.addAction(cancelAction)
     //Create and an option action
-    let nextAction: UIAlertAction = UIAlertAction(title: "OK", style: .Default) { action -> Void in
+    let nextAction: UIAlertAction = UIAlertAction(title: "OK", style: .default) { action -> Void in
       //Do some other stuff
-      let controller = self.storyboard?.instantiateViewControllerWithIdentifier("home") as! SASlideMenuRootViewController
-      if(self.guideButton.selected == true){
-        NSUserDefaults.standardUserDefaults().removeObjectForKey("mode")
-        NSUserDefaults.standardUserDefaults().setInteger(1, forKey: "mode")
+      let controller = self.storyboard?.instantiateViewController(withIdentifier: "home") as! SASlideMenuRootViewController
+      if(self.guideButton.isSelected == true){
+        UserDefaults.standard.removeObject(forKey: "mode")
+        UserDefaults.standard.set(1, forKey: "mode")
       }else{
-        NSUserDefaults.standardUserDefaults().removeObjectForKey("mode")
-        NSUserDefaults.standardUserDefaults().setInteger(0, forKey: "mode")
+        UserDefaults.standard.removeObject(forKey: "mode")
+        UserDefaults.standard.set(0, forKey: "mode")
       }
     
-      self.presentViewController(controller, animated: true, completion: nil)
+      self.present(controller, animated: true, completion: nil)
     }
     alertController.addAction(nextAction)
     
-    locationOverlay.hidden = true
-    self.presentViewController(alertController, animated: true, completion: nil)
+    locationOverlay.isHidden = true
+    self.present(alertController, animated: true, completion: nil)
     
   }
   

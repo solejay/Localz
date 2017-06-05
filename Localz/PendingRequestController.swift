@@ -17,27 +17,27 @@ class PendingRequestController: UIViewController,UITableViewDataSource,UITableVi
   func configureView(){
     pendingRequestTableView.dataSource = self
     pendingRequestTableView.delegate = self
-    pendingRequestTableView.tableFooterView = UIView(frame: CGRectZero)
+    pendingRequestTableView.tableFooterView = UIView(frame: CGRect.zero)
   }
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "PENDING REQUESTS"
   }
   
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 2
   }
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell  = pendingRequestTableView.dequeueReusableCellWithIdentifier("pendingRequestCell") as! PendingRequestCell
-    cell.userPhotoView.layer.cornerRadius = CGRectGetWidth(cell.userPhotoView.frame) / 2
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell  = pendingRequestTableView.dequeueReusableCell(withIdentifier: "pendingRequestCell") as! PendingRequestCell
+    cell.userPhotoView.layer.cornerRadius = cell.userPhotoView.frame.width / 2
     cell.userPhotoView.layer.borderWidth = 2
-    cell.userPhotoView.layer.borderColor = UIColor(hex: "E13F53").CGColor
+    cell.userPhotoView.layer.borderColor = UIColor(hex: "E13F53").cgColor
     
     
     return cell
   }
-  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let controller = self.storyboard?.instantiateViewControllerWithIdentifier("pendingRequestDetail") as! PendingRequestDetailController
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let controller = self.storyboard?.instantiateViewController(withIdentifier: "pendingRequestDetail") as! PendingRequestDetailController
     self.navigationItem.title = ""
     self.navigationController?.pushViewController(controller, animated: true)
   }

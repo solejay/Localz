@@ -17,28 +17,28 @@ class LocationViewController: UIViewController,UITextFieldDelegate{
     }
     func configureView(){
       
-      let closeButton = UIButton(frame: CGRectMake(0, 0, 44, 44))
-      closeButton.setImage(UIImage(named: "closeButton"), forState: .Normal)
-      closeButton.tintColor = UIColor.whiteColor()
-      closeButton.addTarget(self, action: "closeButtonTapped", forControlEvents: .TouchUpInside)
+      let closeButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+      closeButton.setImage(UIImage(named: "closeButton"), for: UIControlState())
+      closeButton.tintColor = UIColor.white
+      closeButton.addTarget(self, action: #selector(LocationViewController.closeButtonTapped), for: .touchUpInside)
       self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: closeButton)
       
-      cancelActivityView = NSBundle.mainBundle().loadNibNamed("CancelActivitiesView", owner: nil, options: nil).first as! CancelActivitiesView
+      cancelActivityView = Bundle.main.loadNibNamed("CancelActivitiesView", owner: nil, options: nil)?.first as! CancelActivitiesView
       cancelActivityView.frame = self.view.bounds
       cancelActivityView.cancelDetailsHeight.constant = 0
-      cancelActivityView.hidden = true
-      cancelActivityView.takeBackButton.addTarget(self, action: "takeBackButtonPressed", forControlEvents: .TouchUpInside)
-      cancelActivityView.dontCancelButton.addTarget(self, action: "dontCancelButtonPressed", forControlEvents: .TouchUpInside)
+      cancelActivityView.isHidden = true
+      cancelActivityView.takeBackButton.addTarget(self, action: #selector(LocationViewController.takeBackButtonPressed), for: .touchUpInside)
+      cancelActivityView.dontCancelButton.addTarget(self, action: #selector(LocationViewController.dontCancelButtonPressed), for: .touchUpInside)
       self.view.addSubview(cancelActivityView)
       
       locationTextField.delegate = self
       let locationLayer = CALayer()
-      locationLayer.frame = CGRectMake(0, CGRectGetHeight(locationTextField.bounds) - 1, CGRectGetWidth(locationTextField.bounds), 0.5)
-      locationLayer.backgroundColor = UIColor.darkGrayColor().CGColor
+      locationLayer.frame = CGRect(x: 0, y: locationTextField.bounds.height - 1, width: locationTextField.bounds.width, height: 0.5)
+      locationLayer.backgroundColor = UIColor.darkGray.cgColor
       locationTextField.layer.addSublayer(locationLayer)
 
     }
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.title = "ADD NEW LOCATION"
   }
@@ -47,26 +47,26 @@ class LocationViewController: UIViewController,UITextFieldDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-  func textFieldShouldReturn(textField: UITextField) -> Bool {
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()
     return true
   }
   func closeButtonTapped(){
-    cancelActivityView.hidden = false
-    self.navigationController?.navigationBarHidden = true
-    UIApplication.sharedApplication().statusBarHidden = true
+    cancelActivityView.isHidden = false
+    self.navigationController?.isNavigationBarHidden = true
+    UIApplication.shared.isStatusBarHidden = true
     
   }
   func takeBackButtonPressed(){
-    cancelActivityView.hidden = true
-    self.navigationController?.navigationBarHidden = false
-    UIApplication.sharedApplication().statusBarHidden = false
-    self.navigationController?.popToRootViewControllerAnimated(true)
+    cancelActivityView.isHidden = true
+    self.navigationController?.isNavigationBarHidden = false
+    UIApplication.shared.isStatusBarHidden = false
+    self.navigationController?.popToRootViewController(animated: true)
   }
   func dontCancelButtonPressed(){
-    cancelActivityView.hidden = true
-    self.navigationController?.navigationBarHidden = false
-    UIApplication.sharedApplication().statusBarHidden = false
+    cancelActivityView.isHidden = true
+    self.navigationController?.isNavigationBarHidden = false
+    UIApplication.shared.isStatusBarHidden = false
   }
     
 

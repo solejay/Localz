@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C302705885AAAB934CD94F9C'
+               BlueprintIdentifier = 'FAF2B05A76A9CB41C47E67423FED95A4'
                BlueprintName = 'SASlideMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SASlideMenu.framework'>
